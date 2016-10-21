@@ -1,13 +1,17 @@
 GOALS:
 
-[G1]
-[G2]
-[G3]
+[G1]: The user must be able to register to the service by providing his/her credentials and payment info (TODO: which credentials? Restrictions on driving license? ID document? Payment methods?(SPLIT REQUIREMENTS))
+[G2.0]: The user must be able to find the location of all available cars within a cartain range from their current location
+[G2.1]: The user must be able to find the location of all available cars within a cartain range from a specified adress
+[G3.0]: The user must be able to pick a car among the available ones and reserve it
+[G3.1]: A reserved car must not be available for renting until one hour has passed from the moment a user reserved it
+[G3.2]: After one hour from its reservation, a car becomes available again
 [G4]: User should pay 1 EUR if he/she doesn't reach the car within 1 hour from the reservation.
 [G5]: Allows the user to unlock and open the car when he/she is nearby the car.
-[G6]
+[G6]: From the moment of ignition the user is charged for a constant amount of money per minute (do we know how much?)
 [G7]: Stop charging the user and automatically locks the car as soon as the user parks the car in a safe area and exits from it.
 [G8]: Applies a discount of 10% on the last ride if the user took at least two other passengers onto the car.
-[G9]: 
+[G9]: If a car is left with more than 50% of it's battery available, a discount of 20% is applied on the last ride
 [G10]: Applies a discount of 30% on the last ride if a car is left at special parking areas where they can be recharged and the user takes care of  plugging the car into the power grid.
-[G11]:  
+[G11.0]: If a car is left at more than 3 kilometers from the nearest power grid station, the user is charged for an extra corresponding to 30% of the amount charged for the last ride
+[G11.1]: If a car is left with less than 20% of its battery available, the user is charged for an extra corresponding to 30% of the amount charged for the last ride
