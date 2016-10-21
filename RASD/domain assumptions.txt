@@ -1,4 +1,8 @@
-DOMAIN ASSUMPTIONS:
+Domain assumptions
+
+1) Every user the register into the system are at least 18 years old and own a not expired type B driver license.
+2) In case of an accident with other drivers, the user will follow the well-expected procedures that each driver should follow.
+3) At the end of each ride, the user has enough money to pay for the service.
 
 
 
