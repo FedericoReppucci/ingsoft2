@@ -1,2 +1,13 @@
 GOALS:
 
+[G1]
+[G2]
+[G3]
+[G4]: User should pay 1 EUR if he/she doesn't reach the car within 1 hour from the reservation.
+[G5]: Allows the user to unlock and open the car when he/she is nearby the car.
+[G6]
+[G7]: Stop charging the user and automatically locks the car as soon as the user parks the car in a safe area and exits from it.
+[G8]: Applies a discount of 10% on the last ride if the user took at least two other passengers onto the car.
+[G9]: 
+[G10]: Applies a discount of 30% on the last ride if a car is left at special parking areas where they can be recharged and the user takes care of  plugging the car into the power grid.
+[G11]:  
