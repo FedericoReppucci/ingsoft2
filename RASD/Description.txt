@@ -1,6 +1,44 @@
 Description
 
 PowerEnJoy project has the aim to provide an electrical car sharing system.
-The system allows the users to create an account providing their credentials and payment information. Each user, using the proper PowerEnJoy application, is able to book an available car within a certain distance from their current location or from a specified address. 
+The system allows the users to create an account providing their credentials and payment information. 
+Each user, using the proper PowerEnJoy application, is able to book an available car within a certain distance from their current location or from a specified address. 
+
+//Alternative description
+
+PROBLEM DESCRIPTION
+
+The PowerEnJoy project aims to develop a car-sharing service run exclusively employing electric cars.
+The system will provide a platform available both as a desktop and mobile application by means of which
+the users, once registered, will be able to utilize the car sharing services.
+
+The registration requires the user to provide a valid e-mail address and a valid driving license (of type B or higher), as
+well as to select one of the available payment methods. //more specific once the payment methods will be decided
+After the verification of the provided data, an e-mail will be sent to the user containing a password that will be used to access
+the platform.
+
+Any registered user will be able to see on a map of the city the available cars within a certain radius either from their current position or
+from a selected address. By clicking on an available car on the map the user will be able to reserve it. The reserved car can be then unlocked
+either via the appropriate function on the mobile app or by providing a pin code obtained through the reservation. //to be revised
+
+A pre-defined set of safe areas will be available for parking the cars, as well as a number of power grid stations to recharge them.  
+
+The main goals of the service are to provide a sustainable and envoronmentally-friendly car sharing service as well as to promote virtuous 
+behaviors from its users: a number of discounts will be applied to users who carry more than two passengers, leave the car with more than half 
+of if its battery left or park it near to a power grid and take care of plugging it in. On the other hand, users who leave
+the car more than three kilometers away from the nearest power grid or leave it with less than 20% of its battery will be charged for an additional
+amount.
+
+
+
+ 
+
+
+
+
+
+
+
+
 
 
