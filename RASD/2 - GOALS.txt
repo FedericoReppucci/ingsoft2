@@ -1,6 +1,6 @@
 GOALS:
 
-[G1]: The user must be able to register to the service by providing his/her credentials and payment info (TODO: which credentials? Restrictions on driving license? ID document? Payment methods?(SPLIT REQUIREMENTS))
+[G1]: The user must be able to register to the service by providing his/her credentials and payment info (TODO: which credentials? Restrictions on driving license? ID document? Payment methods?
 [G2.0]: The user must be able to find the location of all available cars within a certain range from their current location
 [G2.1]: The user must be able to find the location of all available cars within a certain range from a specified address
 [G3.0]: The user must be able to pick a car among the available ones and reserve it
