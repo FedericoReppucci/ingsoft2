@@ -1,8 +1,23 @@
-Domain assumptions
+DOMAIN PROPERTIES
 
-1) Every user the register into the system are at least 18 years old and own a not expired type B driver license.
-2) In case of an accident with other drivers, the user will follow the well-expected procedures that each driver should follow.
-3) At the end of each ride, the user has enough money to pay for the service.
+[D1.0]: The validity check for the identity card delegated to the external service is always correct.
+[D1.1]: The validity check for the payment info delegated to the external service is always correct.
+[D1.2]: The external payment service always charges the user for the exact amount of charging requested by the system.
 
+[D2]: The user has always enough money to pay for the ride. 
 
+[D3.0]: The GPS coordinates of the cars received by the system always correspond to the actual positions of the cars.
+[D3.1]: The GPS coordinates of a user received by the system always correspond to the actual position of the user.
 
+[D4]: The user who enters a car in the driver seat, also ignites it.
+
+[D5.0]: The user who ignites a car is the same user who rent it.
+[D5.1]: The user who ignites a car drives it for the current ride.
+
+[D6]: A user never drives a car to battery exhaustion.
+
+[D7]: An employee is always able to retrieve a dislocated car within 24 hours//TODO define dislocated and retrieved in glossary.
+
+[D8]: If the sensor in the car detect other passengers, human passengers are on board
+
+[D9]: Power grid stations are always operational

@@ -1,0 +1,14 @@
+NON FUNCTIONAL REQUIREMENTS
+
+
+The car is able to communicate with the system at all times.
+//TODO availability of service
+
+FUNCTIONAL REQUIREMENTS
+//TODO expand/formalize requirements
+System can detect discount conditions.
+The car can communicate the exact level of its battery to the system.
+A car can be left in a pause state.
+After 2 hours, a car in pause state outside of a safe area becomes dislocated.
+After 2 hours, a car in pause state inside of a safe area becomes parked.
+

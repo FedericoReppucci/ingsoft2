@@ -1,0 +1,5 @@
+TEXT ASSUMPTIONS
+
+[T1]: We have in mind that our target customer has a smartphone which supports GPS related services
+[T2]: We assume that the actual transaction with the payment service provider is performed only once, at a later time
+after the end of the ride

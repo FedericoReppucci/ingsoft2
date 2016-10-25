@@ -4,7 +4,7 @@ The PowerEnJoy project aims to develop a car-sharing service run exclusively emp
 The system will provide a platform available both as a desktop and mobile application by means of which
 the users, once registered, will be able to use the car sharing services.
 
-The registration requires the user to provide a valid e-mail address and a valid driving license (of type B or higher), as
+The registration requires the user to provide a valid e-mail address, telephone number and a valid driving license (of type B or higher), as
 well as to select one of the available payment methods. //TODO more specific once the payment methods will be decided
 After the verification of the provided data, an e-mail will be sent to the user containing a password that will be used to access
 the platform.
