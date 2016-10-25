@@ -1,11 +1,4 @@
-Description
-
-PowerEnJoy project has the aim to provide an electrical car sharing system.
-The system allows the users to create an account providing their credentials and payment information. 
-Each user, using the proper PowerEnJoy application, is able to book an available car within a certain distance from their current location or from a specified address. 
-
-//Alternative description
-
+//FINAL
 PROBLEM DESCRIPTION
 
 The PowerEnJoy project aims to develop a car-sharing service run exclusively employing electric cars.
