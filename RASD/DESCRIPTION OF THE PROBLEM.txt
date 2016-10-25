@@ -1,5 +1,5 @@
 //FINAL
-PROBLEM DESCRIPTION
+DESCRIPTION OF THE PROBLEM
 
 The PowerEnJoy project aims to develop a car-sharing service run exclusively employing electric cars.
 The system will provide a platform available both as a desktop and mobile application by means of which
