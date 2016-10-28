@@ -1,0 +1,77 @@
+
+GLOSSARY:
+
+user: person who uses the application and the services provided by PowerEnJoy.
+driver: person who enters a car in the driver seat. 
+
+system: the server side software providing the core functionalities of the application.
+
+application or app: the client side of the software present on the user’s phone.
+
+registration: iter through which the user can create a personal account in order to access the services of the application.
+
+credentials: set of information provided by the user during the registration. These include: the user’s first name, family name, gender, “Comune” of birth, “Provincia” of birth, his/her “Codice Fiscale”, his/her identity card number, date of release and date of expiration, a valid driving license (B or higher or equivalent) a valid e-mail address and a mobile phone number. 
+
+payment info: a valid credit card number, verification value (CVV), expiration date and the holder’s full name.
+
+external payment service: a software system which allows the company to charge the users.
+
+car: electric powered vehicles owned by PowerEnJoy.
+
+range: distance value selected by the user.
+
+available car: a car that can be reserved by a user for a future ride.
+
+reserved car: a car that cannot be reserved and can only be used by the one who performed its reservation.
+
+‘in use’ car: a car is in this state from the moment it is turned on by the user who reserved it until the moment such user exits from it while the car is in a safe area, which causes it to automatically close.
+
+parked car: a car that is left in a safe area by the driver.
+
+dislocated car: a car that is left in a non-safe area by the driver.
+
+retrieve a car: action performed by an employee that can be described as follows: 
+
+-the employee is notified that a car has been left outside of a safe area 
+-the employee reaches the car, possibly manually recharges it and drives it back to a safe area.
+
+safe area: legal parking spots according to the driving regulations within a limited area defined by the system administrator.
+
+‘nearby’ the car: a user is ‘nearby’ the car when he/she is distant from the car less than 10 meters. 
+
+special parking area: part of safe area in which user can recharge the electrical car. 
+
+power grid station: little tower that provides electrical current situated in a special parking area that allows the user to recharge a car.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

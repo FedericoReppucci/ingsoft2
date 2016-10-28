@@ -1,23 +1,22 @@
 DOMAIN PROPERTIES
 
-[D1.0]: The validity check for the identity card delegated to the external service is always correct.
-[D1.1]: The validity check for the payment info delegated to the external service is always correct.
+[D1.0]: The credentials provided by the user at the moment of his/her registration  are always correct.
+[D1.1]: The validity check for the payment info delegated to the external payment service is always correct.
 [D1.2]: The external payment service always charges the user for the exact amount of charging requested by the system.
 
-[D2]: The user has always enough money to pay for the ride. 
+[D2]: The user has always enough money to pay for the ride !DEPRECATED 
 
 [D3.0]: The GPS coordinates of the cars received by the system always correspond to the actual positions of the cars.
 [D3.1]: The GPS coordinates of a user received by the system always correspond to the actual position of the user.
 
-[D4]: The user who enters a car in the driver seat, also ignites it.
+[D4]:  If a person enters a car in the driver seat, also ignites it.
 
-[D5.0]: The user who ignites a car is the same user who rent it.
-[D5.1]: The user who ignites a car drives it for the current ride.
+[D5]: Every road traffic offence received by the company  is forwarded to the user who last rent the car before the offence occurred.   
 
-[D6]: A user never drives a car to battery exhaustion.
+[D6]: An employee is always able to retrieve a dislocated car within 24 hours
 
-[D7]: An employee is always able to retrieve a dislocated car within 24 hours//TODO define dislocated and retrieved in glossary.
+[D7]: If the sensor in the car detect other passengers, human passengers are on board
 
-[D8]: If the sensor in the car detect other passengers, human passengers are on board
+[D8]: Power grid stations are always operational
 
-[D9]: Power grid stations are always operational
+[D9]: A car must be parked or dislocated to be plugged in a power grid station.
