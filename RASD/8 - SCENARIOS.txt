@@ -1,6 +1,10 @@
 
-1) Yesterday Betty brought her car to the mechanic for changing the front tires. Today she needs to go to the supermarket, approximately 5km far away and because of the strike of public transport she chooses to use the new electric car-sharing system provided by PowerEnJoy. So she takes her smartphone and opens the PowerEnJoy application. From the menu, she chooses "Find a car", checking the option "From my position", and sets the maximum distance of 500 meters in which she would like to find a car. There are 2 cars within 500 meters and Betty reserves the nearest one.
-After a while, she arrives at the car that she is able to unlock through the proper button "Unlock the car". Ones entered into the cars, she ignites it pushing the "Start" button next to the steering wheel.
+1) TRIP TO THE SUPERMARKET
+
+Yesterday Betty brought her car to the mechanic to change the front tires. Today she needs to go to the supermarket, which is approximately 5km away. Since she notices that today there is a strike of public transport
+she chooses to use the new electric car-sharing system provided by PowerEnJoy. So she takes her smartphone and opens the PowerEnJoy application. From the menu, she chooses "Find a car", checking the option "From my position",
+and sets the maximum distance within which she would like to find a car to 500 meters . There are 2 cars within 500 meters and Betty reserves the nearest one.
+After a while, she arrives at the car and she is able to unlock it through the proper button "Unlock the car". After getting in the car, she ignites it pushing the "Start" button next to the steering wheel.
 Betty arrives at the supermarket 10 minutes later. She parks the car in the supermarket parking lot and 30 seconds after she exits the car, the system locks automatically the car tagging it as "available" again.
 
 2) TRANSFER STUDENT
