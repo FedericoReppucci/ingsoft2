@@ -36,4 +36,14 @@ the car using the option provided by the application. After igniting the car he 
 road today and it is getting late. He finally reaches his destination, but an even worse problem presents itself, that is to say there are no parking spots to leave 
 the car. Knowing full well that he is in the wrong, he decides to park the car illegaly, hoping to get away with it. After he exits the car a notification informs
 him that an extra fee has been applied to his ride, since he decided to park in a non safe area. 
-    
+
+5) ABANDONED CAR
+
+Giorgio's shift starts as he meets up with his colleague Mario. Carlo, who is responsible for the supervision of the car's positions tells them that a car has been 
+left in a non safe area just outside of the city with the battery almost empty and asks them to go retrieve it as soon as they have a spare moment. Seeing how there
+are no other urgent matters that require their attention, Giorgio and Mario decide to head there immediately. After entering the company's car they can see through
+a screen the position of the car that they need to retrieve and so they mark it to signal that they intend to head there, to avoid the deployment of more cars than
+needed. They bring an extra battery with them to recharge the car and drive to the marked location. As soon as they arrive there they recharge the car and Giorgio
+opens it with his special key, an electronic device provided by the company, and drives it back to a safe area where Mario picks him up once again.
+
+   
