@@ -1,16 +1,18 @@
 
-1) Yesterday Betty brought her car to the mechanic for changing the front tires. Today she needs to go to the supermarket, approximately 5km far away. Through PowerEnJoy mobile application installed on her smartphone, she reserves a car parked just 200 meters away. 
-Arrived at the car, she unlocks it and enters into it and in 10 minutes she reaches the supermarket.
+1) Yesterday Betty brought her car to the mechanic for changing the front tires. Today she needs to go to the supermarket, approximately 5km far away and because of the strike of public transport she chooses to use the new electric car-sharing system provided by PowerEnJoy. So she takes her smartphone and opens the PowerEnJoy application. From the menu, she chooses "Find a car", checking the option "From my position", and sets the maximum distance of 500 meters in which she would like to find a car. There are 2 cars within 500 meters and Betty reserves the nearest one.
+After a while, she arrives at the car that she is able to unlock through the proper button "Unlock the car". Ones entered into the cars, she ignites it pushing the "Start" button next to the steering wheel.
+Betty arrives at the supermarket 10 minutes later. She parks the car in the supermarket parking lot and 30 seconds after she exits the car, the system locks automatically the car tagging it as "available" again.
 
-TRANFER STUDENT
+2) TRANSFER STUDENT
 
-Giulia has come from her hometown Pescara to Milano to attend university, and since her family could not afford to buy another car just for her, she tought that her effort towards obtaining a driving 
+Giulia has come from her hometown Pescara to Milano to attend university, and since her family could not afford to buy another car just for her, she thought that her effort towards obtaining a driving 
 license would have gone to waste. Her new friends tell her that she should consider registering to a car sharing service, and so after a bit of search on the web she reads about PowerEnJoy. The curiosity
-towards electric powered cars and the potential benefits that the service could provide to her daily life lead her to decide to register to the service, so she downloads the app to her sartphone and installs it. 
+towards electric powered cars and the potential benefits that the service could provide to her daily life lead her to decide to register to the service, so she downloads the app to her smartphone and installs it. 
 After starting the app a sign in/sign up screen appears, so she selects the sign up option and starts filling in the required information. 
-After double-checking that her identity card's number and her Codice Fiscale are typed correctly, as well as the data of her driving license, she proceeds to the next step of the regisration process.
+After double-checking that her identity card's number and her Codice Fiscale are typed correctly, as well as the data of her driving license, she proceeds to the next step of the registration process.
 At this point the system asks Giulia o provide a valid credit card to associate to her account. Luckily her parents just recently gave her a visa credit card for her living expenses, so she promptly 
 inserts the credit card number and CVV. The  system replies confirming that the payment information she provided are indeed valid, and so her registration is almost complete:
-upon agreeing to the terms of servicea confirmation e-mail is sent to her,  she opens her mail box and she writes down the password that the system has sent her, and than tries to log in the applicaion.
+upon agreeing to the terms of services confirmation e-mail is sent to her,  she opens her mail box and she writes down the password that the system has sent her, and than tries to log in the application.
 The e-mail and password provided are correct and so Giulia can start using PowerEnJoy.
 
+nel  
