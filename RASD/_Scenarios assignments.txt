@@ -1,9 +1,9 @@
-﻿LIST
+LIST
 
 - user reserves  a car. He/She uses it for a couple or hours and parks in a safe area. He/She leaves the car with more than 50% of available battery, so a discount of a 20% is applied on his/her last ride [√]
 
 - person registers to the system [X]
-- user reserves a car and the reservation expires
+- user reserves a car and the reservation expires [√]
 - user who had reserved car drives it, correct parking, ride with more than two passengers.
 - user who had reserved car drives it, parking outside of the safe area.
 - ride with parking + power grid station plugging
