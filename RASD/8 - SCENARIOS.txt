@@ -10,9 +10,7 @@ license would have gone to waste. Her new friends tell her that she should consi
 towards electric powered cars and the potential benefits that the service could provide to her daily life lead her to decide to register to the service, so she downloads the app to her smartphone and installs it. 
 After starting the app a sign in/sign up screen appears, so she selects the sign up option and starts filling in the required information. 
 After double-checking that her identity card's number and her Codice Fiscale are typed correctly, as well as the data of her driving license, she proceeds to the next step of the registration process.
-At this point the system asks Giulia o provide a valid credit card to associate to her account. Luckily her parents just recently gave her a visa credit card for her living expenses, so she promptly 
-inserts the credit card number and CVV. The  system replies confirming that the payment information she provided are indeed valid, and so her registration is almost complete:
+At this point the system asks Giulia to provide a valid credit card to associate to her account. Luckily her parents just recently gave her a visa credit card for her living expenses, so she promptly inserts the credit card number and CVV. The  system replies confirming that the payment information she provided are indeed valid, and so her registration is almost complete:
 upon agreeing to the terms of services confirmation e-mail is sent to her,  she opens her mail box and she writes down the password that the system has sent her, and than tries to log in the application.
 The e-mail and password provided are correct and so Giulia can start using PowerEnJoy.
 
-nel  
