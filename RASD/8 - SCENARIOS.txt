@@ -27,3 +27,13 @@ option on the app on his smartphone and they all get in the car before the reser
 wheel and he heads towards his destination. It is quite a long trip to the movie theather, and unfortunately the battery of the car was already at 60 % so by the time
 they reach their destination the battery of the car is at 35%. At this point Marco parks the car in a proper parking spot at the movie theather and everyone exits the 
 car. Marco checks on his smartphone to see how much the ride has cost him, and finds out that the presence of his friends has netted him a 10% discount.
+
+4) JOB INTERVIEW
+
+Giovanni has a job interview today, and since he has just recently registered to  PowerEnJoy he decides to reserve a near his house, to drive to the place where the 
+interview will be held. He opens the PowerEnJoy app and looks for a car from his current position up to 1 km away and finds one nearby, so he gets there and unlocks
+the car using the option provided by the application. After igniting the car he starts driving and realizes the mistake he has made: there are a lot of people on the
+road today and it is getting late. He finally reaches his destination, but an even worse problem presents itself, that is to say there are no parking spots to leave 
+the car. Knowing full well that he is in the wrong, he decides to park the car illegaly, hoping to get away with it. After he exits the car a notification informs
+him that an extra fee has been applied to his ride, since he decided to park in a non safe area. 
+    
