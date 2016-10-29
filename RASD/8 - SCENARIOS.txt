@@ -29,7 +29,6 @@ Giorgio's shift starts as he meets up with his colleague Mario. Carlo, who is re
 
 6) TRIP TO THE COMPANY
 
-<<<<<<< HEAD
 Clare needs to be at her company's conference room within two hours in order to attend the monthly company meeting. Today the mayor of Milan has announced a car ban
 in order to reduce the amount of pollution in the air. Given that the nearest bus stop is ten minutes away on foot from her house, she decides to rent a PowerEnJoy 
 electric car to get to the company, since during the car ban electric cars can circulate, in virtue of being considered non-polluting machines.
