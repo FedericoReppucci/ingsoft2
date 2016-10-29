@@ -14,7 +14,16 @@ license would have gone to waste. Her new friends tell her that she should consi
 towards electric powered cars and the potential benefits that the service could provide to her daily life lead her to decide to register to the service, so she downloads the app to her smartphone and installs it. 
 After starting the app a sign in/sign up screen appears, so she selects the sign up option and starts filling in the required information. 
 After double-checking that her identity card's number and her Codice Fiscale are typed correctly, as well as the data of her driving license, she proceeds to the next step of the registration process.
-At this point the system asks Giulia to provide a valid credit card to associate to her account. Luckily her parents just recently gave her a visa credit card for her living expenses, so she promptly inserts the credit card number and CVV. The  system replies confirming that the payment information she provided are indeed valid, and so her registration is almost complete:
+At this point the system asks Giulia to provide a valid credit card to associate to her account. Luckily her parents just recently gave her a visa credit card for her living expenses, so she promptly inserts
+the credit card number and CVV. The  system replies confirming that the payment information she provided are indeed valid, and so her registration is almost complete:
 upon agreeing to the terms of services confirmation e-mail is sent to her,  she opens her mail box and she writes down the password that the system has sent her, and than tries to log in the application.
 The e-mail and password provided are correct and so Giulia can start using PowerEnJoy.
 
+3) CINEMA WITH FRIENDS
+
+Stefano Chiara and Marco have decided to go see a movie tonight, and since is Marco's turn to drive today, he has decided to reserve a PowerEnJoy for himself and his 
+friends. Even though Stefano was a bit late, they all manage to arrive where the car is in time. As soon as his friends are all present, Marco uses the "Unlock the car"
+option on the app on his smartphone and they all get in the car before the reservation expires. At this point Marco ignites the car through the button near thre steering
+wheel and he heads towards his destination. It is quite a long trip to the movie theather, and unfortunately the battery of the car was already at 60 % so by the time
+they reach their destination the battery of the car is at 35%. At this point Marco parks the car in a proper parking spot at the movie theather and everyone exits the 
+car. Marco checks on his smartphone to see how much the ride has cost him, and finds out that the presence of his friends has netted him a 10% discount.
