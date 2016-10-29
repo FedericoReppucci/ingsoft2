@@ -36,7 +36,7 @@ Opening the PowerEnJoy app, through the proper "Find" functionality, she finds a
 After reserving the nearest one she waits about twenty minutes bedore reaching the car to drive towards her company.
 Unfortunately, ten minutes after her reservation, Daniel - her boss - texts her that the meeting has been postponed by a week. Therefore, Clare has booked a car that
 she will never use. As stated the PowerEnJoy's terms of service, if a user's reservation expires and he/she doesn't pick up the car within one hour from the 
-reservation, he/she will pay a fee of 1 EUR. As expected, one hour later the reservation of the car, the system deducts 1 EUR from Clare's credit card.
+reservation, he/she will pay a fee of 1 EUR. As expected, one hour after the reservation of the car, the system deducts 1 EUR from Clare's credit card.
 
 
    
