@@ -46,4 +46,12 @@ a screen the position of the car that they need to retrieve and so they mark it 
 needed. They bring an extra battery with them to recharge the car and drive to the marked location. As soon as they arrive there they recharge the car and Giorgio
 opens it with his special key, an electronic device provided by the company, and drives it back to a safe area where Mario picks him up once again.
 
+6) TRIP TO THE COMPANY
+
+Clare needs to be at her company conference room within 2h in order to attend the monthly company meeting. Today the mayor of Milan has announced a car ban in order to reduce the amount of pollution in the air. Given that the nearest bus stop is 10 minutes on foot far from her house, she decides to rent a PowerEnJoy electric car to get to the company. In fact, during the car ban, the electric car can circulate, since they are non-polluting machines.
+Opening the PowerEnJoy app, through the proper "Find" functionality, she finds a couple of cars just next to her home, 1 or 2 minutes on foot. Reserved the nearest one, she has just to wait around 20 minutes after which she may reach the car to drive toward her company.
+Unfortunately, 10 minutes after her reservation, Daniel - her boss - text to her that the meeting has been postponed to the next week. Therefore, Clare has booked a car that she will never use. As the PowerEnJoy agreement states, if a user expires his/her reservation, 
+that is he/she doesn't pick up the car within 1 hour from the reservation, he/she will pay a fee of 1 EUR.
+As expected, 1 hour later the reservation of the car, the system deducts 1 EUR from Clare's checking account.
+
    
