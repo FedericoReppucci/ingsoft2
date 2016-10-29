@@ -9,45 +9,27 @@ Betty arrives at the supermarket 10 minutes later. She parks the car in the supe
 
 2) TRANSFER STUDENT
 
-Giulia has come from her hometown Pescara to Milano to attend university, and since her family could not afford to buy another car just for her, she thought that her effort towards obtaining a driving 
-license would have gone to waste. Her new friends tell her that she should consider registering to a car sharing service, and so after a bit of search on the web she reads about PowerEnJoy. The curiosity
-towards electric powered cars and the potential benefits that the service could provide to her daily life lead her to decide to register to the service, so she downloads the app to her smartphone and installs it. 
+Giulia has come from her hometown Pescara to Milano to attend university, and since her family could not afford to buy another car just for her, she thought that her effort towards obtaining a driving license would have gone to waste. Her new friends tell her that she should consider registering to a car sharing service, and so after a bit of search on the web she reads about PowerEnJoy. The curiosity towards electric powered cars and the potential benefits that the service could provide to her daily life lead her to decide to register to the service, so she downloads the app to her smartphone and installs it. 
 After starting the app a sign in/sign up screen appears, so she selects the sign up option and starts filling in the required information. 
 After double-checking that her identity card's number and her Codice Fiscale are typed correctly, as well as the data of her driving license, she proceeds to the next step of the registration process.
-At this point the system asks Giulia to provide a valid credit card to associate to her account. Luckily her parents just recently gave her a visa credit card for her living expenses, so she promptly inserts
-the credit card number and CVV. The  system replies confirming that the payment information she provided are indeed valid, and so her registration is almost complete:
-upon agreeing to the terms of services confirmation e-mail is sent to her,  she opens her mail box and she writes down the password that the system has sent her, and than tries to log in the application.
+At this point the system asks Giulia to provide a valid credit card to associate to her account. Luckily her parents just recently gave her a visa credit card for her living expenses, so she promptly inserts the credit card number and CVV. The  system replies confirming that the payment information she provided are indeed valid, and so her registration is almost complete: upon agreeing to the terms of services confirmation e-mail is sent to her,  she opens her mail box and she writes down the password that the system has sent her, and than tries to log in the application.
 The e-mail and password provided are correct and so Giulia can start using PowerEnJoy.
 
 3) CINEMA WITH FRIENDS
 
-Stefano Chiara and Marco have decided to go see a movie tonight, and since is Marco's turn to drive today, he has decided to reserve a PowerEnJoy for himself and his 
-friends. Even though Stefano was a bit late, they all manage to arrive where the car is in time. As soon as his friends are all present, Marco uses the "Unlock the car"
-option on the app on his smartphone and they all get in the car before the reservation expires. At this point Marco ignites the car through the button near thre steering
-wheel and he heads towards his destination. It is quite a long trip to the movie theather, and unfortunately the battery of the car was already at 60 % so by the time
-they reach their destination the battery of the car is at 35%. At this point Marco parks the car in a proper parking spot at the movie theather and everyone exits the 
-car. Marco checks on his smartphone to see how much the ride has cost him, and finds out that the presence of his friends has netted him a 10% discount.
+Stefano Chiara and Marco have decided to go see a movie tonight, and since is Marco's turn to drive today, he has decided to reserve a PowerEnJoy for himself and his friends. Even though Stefano was a bit late, they all manage to arrive where the car is in time. As soon as his friends are all present, Marco uses the "Unlock the car" option on the app on his smartphone and they all get in the car before the reservation expires. At this point Marco ignites the car through the button near the steering wheel and he heads towards his destination. It is quite a long trip to the movie theatre, and unfortunately the battery of the car was already at 60% so by the time they reach their destination the battery of the car is at 35%. At this point Marco parks the car in a proper parking spot at the movie theatre and everyone exits the car. Marco checks on his smartphone to see how much the ride has cost him, and finds out that the presence of his friends has netted him a 10% discount.
 
 4) JOB INTERVIEW
 
-Giovanni has a job interview today, and since he has just recently registered to  PowerEnJoy he decides to reserve a near his house, to drive to the place where the 
-interview will be held. He opens the PowerEnJoy app and looks for a car from his current position up to 1 km away and finds one nearby, so he gets there and unlocks
-the car using the option provided by the application. After igniting the car he starts driving and realizes the mistake he has made: there are a lot of people on the
-road today and it is getting late. He finally reaches his destination, but an even worse problem presents itself, that is to say there are no parking spots to leave 
-the car. Knowing full well that he is in the wrong, he decides to park the car illegaly, hoping to get away with it. After he exits the car a notification informs
-him that an extra fee has been applied to his ride, since he decided to park in a non safe area. 
+Giovanni has a job interview today, and since he has just recently registered to PowerEnJoy he decides to reserve a car near his house, to drive to the place where the interview will be held. He opens the PowerEnJoy app and looks for a car from his current position up to 1 km away and finds one nearby, so he gets there and unlocks the car using the option provided by the application. After igniting the car he starts driving and realises the mistake he has made: there are a lot of people on the road today and it is getting late. He finally reaches his destination, but an even worse problem presents itself, that is to say there are no parking spots to leave the car. Knowing full well that he is in the wrong, he decides to park the car illegally, hoping to get away with it. After he exits the car a notification informs him that an extra fee has been applied to his ride, since he decided to park in a non safe area. 
 
 5) ABANDONED CAR
 
-Giorgio's shift starts as he meets up with his colleague Mario. Carlo, who is responsible for the supervision of the car's positions tells them that a car has been 
-left in a non safe area just outside of the city with the battery almost empty and asks them to go retrieve it as soon as they have a spare moment. Seeing how there
-are no other urgent matters that require their attention, Giorgio and Mario decide to head there immediately. After entering the company's car they can see through
-a screen the position of the car that they need to retrieve and so they mark it to signal that they intend to head there, to avoid the deployment of more cars than
-needed. They bring an extra battery with them to recharge the car and drive to the marked location. As soon as they arrive there they recharge the car and Giorgio
-opens it with his special key, an electronic device provided by the company, and drives it back to a safe area where Mario picks him up once again.
+Giorgio's shift starts as he meets up with his colleague Mario. Carlo, who is responsible for the supervision of the car's positions tells them that a car has been left in a non safe area just outside of the city with the battery almost empty and asks them to go retrieve it as soon as they have a spare moment. Seeing how there are no other urgent matters that require their attention, Giorgio and Mario decide to head there immediately. After entering the company's car they can see through a screen the position of the car that they need to retrieve and so they mark it to signal that they intend to head there, to avoid the deployment of more cars than needed. They bring an extra battery with them to recharge the car and drive to the marked location. As soon as they arrive there they recharge the car and Giorgio opens it with his special key, an electronic device provided by the company, and drives it back to a safe area where Mario picks him up once again.
 
 6) TRIP TO THE COMPANY
 
+<<<<<<< HEAD
 Clare needs to be at her company's conference room within two hours in order to attend the monthly company meeting. Today the mayor of Milan has announced a car ban
 in order to reduce the amount of pollution in the air. Given that the nearest bus stop is ten minutes away on foot from her house, she decides to rent a PowerEnJoy 
 electric car to get to the company, since during the car ban electric cars can circulate, in virtue of being considered non-polluting machines.
@@ -56,5 +38,6 @@ After reserving the nearest one she waits about twenty minutes bedore reaching t
 Unfortunately, ten minutes after her reservation, Daniel - her boss - texts her that the meeting has been postponed by a week. Therefore, Clare has booked a car that
 she will never use. As stated the PowerEnJoy's terms of service, if a user's reservation expires and he/she doesn't pick up the car within one hour from the 
 reservation, he/she will pay a fee of 1 EUR. As expected, one hour later the reservation of the car, the system deducts 1 EUR from Clare's credit card.
+
 
    
