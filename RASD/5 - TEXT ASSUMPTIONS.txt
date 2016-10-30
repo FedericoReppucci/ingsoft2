@@ -6,3 +6,6 @@ after the end of the ride
 [T3.0]: We assume only the highest-percentage discount to be applied on a ride.
 [T3.1]: Any extra charge prevents any discount from being applied on a ride.
 [T3.2]: All the extra charges are applied cumulatively, but not multiplicatively.
+
+// possible text assumption
+[T4]: We assume that a 

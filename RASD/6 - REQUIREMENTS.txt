@@ -11,6 +11,9 @@ The car can communicate the exact level of its battery to the system.
 In the car the driver can see the position of safe areas and power grid available
 (maybe through the app? Place to rcharge + place the phone? )
 
+// possible requirement
+The company can remove non-operational cars from the system if necessary.
+
 If a user did not pay for the last ride, cannot reserve a car.
 If a user drives a car to battery exhaustion or leaves it outside of a safe area, an extra fee is applied.
 A car either parked or dislocated is automatically locked by the system after 1 minute.

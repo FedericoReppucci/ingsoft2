@@ -4,6 +4,7 @@ DOMAIN PROPERTIES
 [D1.1]: The validity check for the payment info delegated to the external payment service is always correct.
 [D1.2]: The external payment service always charges the user for the exact amount of charging requested by the system.
 
+NEW [D2]: The user is always able to receive the e-mail after a finite number of tries 
 [D2]: The user has always enough money to pay for the ride !DEPRECATED 
 
 [D3.0]: The GPS coordinates of the cars received by the system always correspond to the actual positions of the cars.
@@ -20,3 +21,7 @@ DOMAIN PROPERTIES
 [D8]: Power grid stations are always operational
 
 [D9]: A car must be parked or dislocated to be plugged in a power grid station.
+
+//possible domain assumption
+[D10]: The company is noified of car incidents
+
