@@ -8,9 +8,8 @@ FUNCTIONAL REQUIREMENTS
 //TODO expand/formalize requirements
 System can detect discount conditions.
 The car can communicate the exact level of its battery to the system.
-A car can be left in a pause state.
-After 2 hours, a car in pause state outside of a safe area becomes dislocated.
-After 2 hours, a car in pause state inside of a safe area becomes parked.
+In the car the driver can see the position of safe areas and power grid available
+(maybe through the app? Place to rcharge + place the phone? )
 
 If a user did not pay for the last ride, cannot reserve a car.
 If a user drives a car to battery exhaustion or leaves it outside of a safe area, an extra fee is applied.

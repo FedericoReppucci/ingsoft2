@@ -17,7 +17,8 @@ The e-mail and password provided are correct and so Giulia can start using Power
 
 3) CINEMA WITH FRIENDS
 
-Stefano Chiara and Marco have decided to go see a movie tonight, and since is Marco's turn to drive today, he has decided to reserve a PowerEnJoy for himself and his friends. Even though Stefano was a bit late, they all manage to arrive where the car is in time. As soon as his friends are all present, Marco uses the "Unlock the car" option on the app on his smartphone and they all get in the car before the reservation expires. At this point Marco ignites the car through the button near the steering wheel and he heads towards his destination. It is quite a long trip to the movie theatre, and unfortunately the battery of the car was already at 60% so by the time they reach their destination the battery of the car is at 35%. At this point Marco parks the car in a proper parking spot at the movie theatre and everyone exits the car. Marco checks on his smartphone to see how much the ride has cost him, and finds out that the presence of his friends has netted him a 10% discount.
+Stefano Chiara and Marco have decided to go see a movie tonight, and since is Marco's turn to drive today, he has decided to reserve a PowerEnJoy for himself and his friends.
+To do so, Marco selects the "Find a car" option on the app and checks the option "From address", which allows him to reserve a car near his and his friends' usual meeting point. Even though Stefano was a bit late, they all manage to arrive where the car is in time. As soon as his friends are all present, Marco uses the "Unlock the car" option on the app on his smartphone and they all get in the car before the reservation expires. At this point Marco ignites the car through the button near the steering wheel and he heads towards his destination. It is quite a long trip to the movie theatre, and unfortunately the battery of the car was already at 60% so by the time they reach their destination the battery of the car is at 35%. At this point Marco parks the car in a proper parking spot at the movie theatre and everyone exits the car. Marco checks on his smartphone to see how much the ride has cost him, and finds out that the presence of his friends has netted him a 10% discount.
 
 4) JOB INTERVIEW
 
@@ -32,11 +33,14 @@ Giorgio's shift starts as he meets up with his colleague Mario. Carlo, who is re
 Clare needs to be at her company's conference room within two hours in order to attend the monthly company meeting. Today the mayor of Milan has announced a car ban
 in order to reduce the amount of pollution in the air. Given that the nearest bus stop is ten minutes away on foot from her house, she decides to rent a PowerEnJoy 
 electric car to get to the company, since during the car ban electric cars can circulate, in virtue of being considered non-polluting machines.
-Opening the PowerEnJoy app, through the proper "Find" functionality, she finds a couple of cars just next to her home, one or two minutes away on foot.
+Opening the PowerEnJoy app, through the proper "Find a car" functionality, she finds a couple of cars just next to her home, one or two minutes away on foot.
 After reserving the nearest one she waits about twenty minutes bedore reaching the car to drive towards her company.
 Unfortunately, ten minutes after her reservation, Daniel - her boss - texts her that the meeting has been postponed by a week. Therefore, Clare has booked a car that
 she will never use. As stated the PowerEnJoy's terms of service, if a user's reservation expires and he/she doesn't pick up the car within one hour from the 
 reservation, he/she will pay a fee of 1 EUR. As expected, one hour after the reservation of the car, the system deducts 1 EUR from Clare's credit card.
 
+7) USUAL WENSDAY OF WORK
 
+Usually Franco uses public transportation to go to work, but since on Wensdays he needs to go to a different building which is not well served by the subway and he does not have a car, he registered to PowerEnJoy to be able to go there by car.
+So as he does every week Franco reserves a car through the appropriate function on the app, checing the "From my position" option. Then he reaches the car and unlocks it through the "Unlock the car" option, ignites it and drives to work. The place where he needs to go is near a PowerEnJoy power grid station, so he checks that there are currently available power grids there through the "See charging stations near me" function, sees that there are indeed available parking spots at the usual place, and parks there, also taking care of plugging the car in, which nets him a 30% discount on the ride.
    

@@ -3,3 +3,6 @@ TEXT ASSUMPTIONS
 [T1]: We have in mind that our target customer has a smartphone which supports GPS related services
 [T2]: We assume that the actual transaction with the payment service provider is performed only once, at a later time
 after the end of the ride
+[T3.0]: We assume only the highest-percentage discount to be applied on a ride.
+[T3.1]: Any extra charge prevents any discount from being applied on a ride.
+[T3.2]: All the extra charges are applied cumulatively, but not multiplicatively.
