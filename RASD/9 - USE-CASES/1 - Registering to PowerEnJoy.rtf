@@ -1,0 +1,60 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\vieww28600\viewh18000\viewkind0
+\deftab720
+\pard\pardeftab720\sl276\slmult1\sa200\partightenfactor0
+
+\f0\b\fs30 \cf0                                                        USE CASES CHARTS\
+ NAME :           	                         
+\b0 Registering to PowerEnJoy
+\b \
+PARTECIPATING ACTORS:       \
+	- Non-registered person
+\b0  
+\b :
+\b0       someone who is not registered in the system\
+
+\b ENTRY CONDITION\
+ 
+\b0 The person downloads the app, starts it and clicks on  "Sign up".\
+
+\b FLOW OF EVENTS:\
+
+\b0 1. A new screen appears containing a number of blank required fields and a "Continue" button.
+\b \
+
+\b0 2. The non-registered person fills the required fields with his/her personal data which include: a valid e-mail address which is not already present in the system's database, a valid telephone number, the non-registered person's full name, gender, "Comune" , "Provincia" and date of birth, his/her "Codice Fiscale",  his/her  driving license data, his/her identity card number, release date and expiration date.\
+3. The non registered person clicks the "Continue" button.\
+4. A new screen appears containing three required fields to fill: the credit card circuit (Visa, MasterCard, American Express...), the credit card number and the credit card's Card Verification Value (CVV) as well as a tick-box for the "Terms of Service" agreement and a "Register" button, both inactive.\
+5. The non-registered person fills the required fields with the data of a valid credit card.\
+6. The system sends a verification request to the external payment service for the credit card information.\
+7.  The the external payment service  confirms to the system the validity of the data and the tick-box and "Register" button become active.\
+8. The non-registered person clicks on the "Register" button.\
+9.  A screen appears with the following sentence: "Registration succesful! Please check your e-mail, we sent you the password to access your account" and also a "Didn't receive the e-mail? Try again!" link.\
+
+\b EXIT CONDITION\
+
+\b0 The use case terminates when the e-mail  sent from the system is received by the non-registered person\
+
+\b EXCEPTIONS\
+- System/connection failure:  
+\b0 if either the system ceases to function or the connection with the non-registered person's phone is lost at any time between step 2 and 8 before step 8 is completed, the procedure needs to be performed again from the entry condition. If the connection is lost after step 8 is completed and the user does not receive the e-mail nor is abe to request another e-mail to be sent, the user will need to initiate the
+\b  Retrieving Password 
+\b0 use case.\
+
+\b -Invalid data: 
+\b0 If the non-registered person is not able to provide valid data to fill any of the required fields, the procedure cannot be carried out any further, and the non-registered person can only stop the procedure by exiting the app.
+\b \
+SPECIAL REQUIREMENTS\
+
+\b0 - The non-registered person's phone is required to be 
+\b connected to the internet 
+\b0 either via wi-fi or 3G (or similar) connection.\
+- The system's server needs to be 
+\b operational
+\b0  and 
+\b responsive
+\b0  enough to allow the procedure to be carried out in a reasonable amount of time.\
+\
+}

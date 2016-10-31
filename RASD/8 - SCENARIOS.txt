@@ -34,13 +34,13 @@ Clare needs to be at her company's conference room within two hours in order to 
 in order to reduce the amount of pollution in the air. Given that the nearest bus stop is ten minutes away on foot from her house, she decides to rent a PowerEnJoy 
 electric car to get to the company, since during the car ban electric cars can circulate, in virtue of being considered non-polluting machines.
 Opening the PowerEnJoy app, through the proper "Find a car" functionality, she finds a couple of cars just next to her home, one or two minutes away on foot.
-After reserving the nearest one she waits about twenty minutes bedore reaching the car to drive towards her company.
+After reserving the nearest one she waits about twenty minutes before reaching the car to drive towards her company.
 Unfortunately, ten minutes after her reservation, Daniel - her boss - texts her that the meeting has been postponed by a week. Therefore, Clare has booked a car that
 she will never use. As stated the PowerEnJoy's terms of service, if a user's reservation expires and he/she doesn't pick up the car within one hour from the 
 reservation, he/she will pay a fee of 1 EUR. As expected, one hour after the reservation of the car, the system deducts 1 EUR from Clare's credit card.
 
-7) USUAL WENSDAY OF WORK
+7) USUAL WEDNSDAY OF WORK
 
-Usually Franco uses public transportation to go to work, but since on Wensdays he needs to go to a different building which is not well served by the subway and he does not have a car, he registered to PowerEnJoy to be able to go there by car.
-So as he does every week Franco reserves a car through the appropriate function on the app, checing the "From my position" option. Then he reaches the car and unlocks it through the "Unlock the car" option, ignites it and drives to work. The place where he needs to go is near a PowerEnJoy power grid station, so he checks that there are currently available power grids there through the "See charging stations near me" function, sees that there are indeed available parking spots at the usual place, and parks there, also taking care of plugging the car in, which nets him a 30% discount on the ride.
+Usually Franco uses public transportation to go to work, but since on WeDnsdays he needs to go to a different building which is not well served by the subway and he does not have a car, he registered to PowerEnJoy to be able to go there by car.
+So as he does every week Franco reserves a car through the appropriate function on the app, checking the "From my position" option. Then he reaches the car and unlocks it through the "Unlock the car" option, ignites it and drives to work. The place where he needs to go is near a PowerEnJoy power grid station, so he checks that there are currently available power grids there through the "See charging stations near me" function, sees that there are indeed available parking spots at the usual place, and parks there, also taking care of plugging the car in, which nets him a 30% discount on the ride.
    

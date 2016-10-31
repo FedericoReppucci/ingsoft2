@@ -4,8 +4,8 @@ DOMAIN PROPERTIES
 [D1.1]: The validity check for the payment info delegated to the external payment service is always correct.
 [D1.2]: The external payment service always charges the user for the exact amount of charging requested by the system.
 
-NEW [D2]: The user is always able to receive the e-mail after a finite number of tries 
 [D2]: The user has always enough money to pay for the ride !DEPRECATED 
+[D2]: The user is always able to receive the e-mail after a finite number of tries 
 
 [D3.0]: The GPS coordinates of the cars received by the system always correspond to the actual positions of the cars.
 [D3.1]: The GPS coordinates of a user received by the system always correspond to the actual position of the user.
