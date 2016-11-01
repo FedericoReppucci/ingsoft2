@@ -1,0 +1,45 @@
+		USE CASES CHARTS
+
+NAME : Reserving a car next to the user
+
+PARTICIPATING ACTORS
+    - Registered person: a person who has been registered in the system (user from now on)
+
+ENTRY CONDITION
+The user opens the (already downloaded) PowerEnJoy app on his smartphone and clicks on "Reserve a car" option.
+
+FLOW OF EVENTS
+1. a new screen appears containing:
+  • two mutually exclusive checkboxes used to decide whether the user wants to search a car around himself/herself or from another specific position, named "my position" and "other position".
+  • a blank text box for which is required an integer number indicating a range in which the app will search the cars
+  • a drop-down list containing the unit of measurement (m or km)
+  • a “submit” button
+2. the user inserts into the text box the range in which he/her wants to find a car
+3. the user selects the correct unit of measurement (km is preselected) 
+4. the user selects the checkbox “other position"
+5. the user taps the "submit" button
+6. a new screen appears
+7. a new screen he/she has to insert a string containing the address of the specific position (e.g. address, city, postal code) and then press the ‘continue’ button.
+8. The application displays a Google provided map with the found cars
+9. The user taps the favourite one
+19. A little pop-up asks to the user if he/she wants to confirm the reservation
+11. The user taps "yes" button
+12. The app confirms to the user that the car has been reserved correctly showing the following sentence: “Reservation successful! Please check your e-mail, we sent you a recap of your reservation” and also a "Didn't receive the e-mail? Try again!" link.
+
+EXIT CONDITION
+The use case terminates when the e-mail  sent from the system is received by the user
+
+EXCEPTIONS
+
+- System/connection failure: if either the system ceases to function or the connection with the non-registered person's phone is lost at any time between step 2 and 10 before step 10 is completed, the procedure needs to be performed again from the entry condition. If the connection is lost after step 10 is completed and the user doesn’t receive the e-mail, he/she can still check is the reservation is successful in the proper “My reservations” section in the application.
+
+-Invalid data:
+  • in the text box in the first screen (step 2) the user can insert only a positive integer number. If the user inserts something else, the button “submit” become unclickable (not clickable).
+  • the specific address is not found. The application stays on screen specified in step 7 until the user doesn’t insert a valid address.
+
+SPECIAL REQUIREMENTS
+
+- The user’s phone is required to be connected to the internet 
+ either via wi-fi or 3G (or similar) connection.
+- The system's server needs to be operational and responsive enough to allow the procedure to be carried out in a reasonable amount of time.
+
