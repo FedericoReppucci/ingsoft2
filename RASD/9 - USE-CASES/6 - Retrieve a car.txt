@@ -3,16 +3,28 @@ USE CASES CHARTS
 NAME: 
 
 PARTICIPATING ACTORS
-	Non logged person : someone who is not logged in the system
-	User : a person who is logged in the system 
 	Employee : a person hired by the company
 
 ENTRY CONDITION
-
+Two employees are informed that there is a car that needs to be retrieved.
 
 FLOW OF EVENTS
+1. the employees open special application (adminPowerEnJoy) provided by the company
+2. the employees tap on the “Cars to retrieve” button in the new screen appeared
+3. the employees accepts the assignment tapping the "Accept" button
+4. the employees head to a company car to reach the non-safe parked car
+5. one employee sets the navigator to reach the destination
+6. arrived at the car one of the two employee (E1 from now on) exits from the car
+7. E1 opens adminPowerEnJoy app
+8. E1 taps on the “Cars to retrieve” button
+9. E1 taps on “Unlock the car” button to unlock the car that needs to be retrieved
+10. E1 enters and ignites the car
+11. the two employees comes back to the nearest safe area
+12. arrived at the nearest safe area E1 parks and exits the car
 
 EXIT CONDITION
+E1 in the “Cars to retrieve” section in the adminPowerEnJoy app and taps on “Retrieved car”. The car becomes now available again and the two employees return to the company.
+
 
 EXCEPTIONS
 
