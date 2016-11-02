@@ -2,7 +2,7 @@
  NAME : Register
 
 PARTICIPATING ACTORS:       
-	- Non-registered person : someone who is not registered in the system
+	Non logged person : someone who is not logged in the system
 
 ENTRY CONDITION
  

@@ -1,9 +1,9 @@
-﻿		USE CASES CHARTS
+		USE CASES CHARTS
 
 NAME : Reserve a car from user position
 
 PARTICIPATING ACTORS
-    - User: a person who has been registered in the system 
+    User : a person who is logged in the system 
 
 ENTRY CONDITION
 The user opens the PowerEnJoy app on his/her smartphone and taps on the "Reserve a car" option.

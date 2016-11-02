@@ -1,10 +1,9 @@
 USE CASES CHARTS
 
-NAME
+NAME: 
 
 PARTICIPATING ACTORS
-
-	Non-logged person : someone who is not logged in the system
+	Non logged person : someone who is not logged in the system
 	User : a person who is logged in the system 
 	Employee : a person hired by the company
 
