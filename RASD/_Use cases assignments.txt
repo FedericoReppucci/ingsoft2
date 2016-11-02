@@ -1,3 +1,18 @@
 LIST
 
--
+- browse site 
+- register
+
+
+- reserve a car
+- reserve from current position
+- reserve from address
+
+- ride a car
+- plug in a car
+- browse profile
+- view history
+
+- unlock a car
+
+- retrieve a car
