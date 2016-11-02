@@ -1,13 +1,12 @@
 ﻿		USE CASES CHARTS
 
-NAME : Reserving a car from address
+NAME : Reserve a car from user position
 
 PARTICIPATING ACTORS
-    - Registered person: a person who has been registered to the system
+    - User: a person who has been registered in the system 
 
 ENTRY CONDITION
 The user opens the PowerEnJoy app on his/her smartphone and taps on the "Reserve a car" option.
-
 
 FLOW OF EVENTS
 1. A new screen appears containing:
@@ -17,7 +16,7 @@ FLOW OF EVENTS
   • a “Submit” button
 2. The user inserts the range in which he/she wants to find a car.
 3. The user selects the desired unit of measurement (km is preselected) 
-4. The user selects the "From Address" checkbox.
+4. The user selects the "From current Position" checkbox.
 5. The user taps the "Submit" button.
 6. The application displays a Google provided map with the found cars
 7. The user taps on the dot representing the car he/she wants to reserve.
@@ -39,3 +38,4 @@ SPECIAL REQUIREMENTS
 either via wi-fi or 3G (or similar) connection.
 - The user’s phone needs an activated GPS connection.
 - The system's server needs to be operational and responsive enough to allow the procedure to be carried out in a reasonable amount of time.
+

@@ -1,12 +1,12 @@
                   USE CASES CHARTS
- NAME : Registering to PowerEnJoy
+ NAME : Register
 
-PARTICIPATING ACTORS:       \
-	- Non-registered person : someone who is not registered in the system\
+PARTICIPATING ACTORS:       
+	- Non-registered person : someone who is not registered in the system
 
 ENTRY CONDITION
  
-The person downloads the app, starts it and clicks on  "Sign up".\
+The person downloads the app, starts it and clicks on  "Sign up".
 
 FLOW OF EVENTS:
 
