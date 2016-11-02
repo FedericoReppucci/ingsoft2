@@ -2,7 +2,7 @@ LIST
 
 - browse site 
 - register
-
+- retrieve password
 
 - reserve a car
 - reserve from current position
