@@ -1,6 +1,6 @@
 USE CASES CHARTS
 
-NAME
+NAME: 
 
 PARTICIPATING ACTORS
 	Non logged person : someone who is not logged in the system

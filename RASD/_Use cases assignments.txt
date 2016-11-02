@@ -11,6 +11,7 @@ LIST
 - ride a car
 - plug in a car
 - browse profile
+- edit profile
 - view history
 
 - unlock a car
