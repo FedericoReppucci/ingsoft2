@@ -1,32 +1,35 @@
 USE CASES CHARTS
 
-NAME: 
+NAME: Retrieve a car
 
 PARTICIPATING ACTORS
 	Employee : a person hired by the company
 
 ENTRY CONDITION
-Two employees are informed that there is a car that needs to be retrieved.
+
+Two employees are informed by a notification from their AdminPowerEnJoy that a car needs to be retrieved.
 
 FLOW OF EVENTS
-1. the employees open a special application (adminPowerEnJoy) provided by the company
-2. the employees tap on the “Cars to retrieve” button in the new appeared screen
-3. the employees accepts the assignment tapping the "Accept" button
-4. the employees head to a company car in order to reach the non-safe parked car
-5. the employees enter into the car and one of them sets the navigator - if necessary
-6. arrived at the car one of the two employee (E1 from now on) exits from the car
-7. E1 opens adminPowerEnJoy app
-8. E1 taps on the “Cars to retrieve” button
-9. E1 taps on “Unlock the car” button to unlock the car that needs to be retrieved
-10. E1 enters and ignites the car
-11. the two employees comes back to the nearest safe area
-12. arrived at the nearest safe area E1 parks and exits the car
+
+1. One of the employees opens the AdminPowerEnjoy application. 
+2. The employee taps on the "Retrieval procedure" button in the newly appeared screen.
+3. A new screen appears containing a list of codes representing cars that need to be retrieved and a "Confrm" button and an "Unlock" button.
+4. The employee accepts the assignment by tapping on the code representing the car which was specified in the notification and tapping "Confirm".
+5. The pair of employees heads to a company car and enters it.
+6. They proceed to insert the code of the car to retrieve in the navigator of the company car, which instructs them on how to reach the car's location.
+7. Once they arrive to the car they use the equipment in the company's car to recharge the car to retrieve if necesary.
+8. The employee who accepted the task uses his app to unlock the car through the "Unlock" button.
+9. One of the employees ignites the car and drives to the nearest safe area, while the other follows him with the company car.
+10. Arrived at the nearest safe area the employee parks and exits the car that had to be retrieved.
 
 EXIT CONDITION
-E1 in the “Cars to retrieve” section of the adminPowerEnJoy app taps the “Car has been retrieved” button. The car becomes now available again and the two employees return to the company.
+
+The car parked in a safe area becomes available and this is notified to the app of the employee who accepted the task
 
 EXCEPTIONS
--
+
+- The car cannot be recharged/moved : the employees request the help of a special unit that handles these situations
 
 SPECIAL REQUIREMENTS
+
 - The system's server needs to be operational and responsive enough to allow the procedure to be carried out in a reasonable amount of time.

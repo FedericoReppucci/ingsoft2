@@ -1,11 +1,11 @@
 USE CASES CHARTS
 
-NAME
+NAME : Ride a car
 
 PARTICIPATING ACTORS
 
 	Non-logged person : someone who is not logged in the system
-	User : a person who is logged in the system 
+	User : a person logged in the system
 
 ENTRY CONDITION
 
@@ -13,7 +13,7 @@ The Reserve a car use case
 
 FLOW OF EVENTS
 
-1. The Unlock a car use case.
+1. From his profile the user selects his/her reservation and clicks the "Unlock" button.
 2. The user who unlocked the car or another person enters the unlocked car in the driver seat (he will be referred to as the driver).
 3. Up to four other people or three other people and the user enter the car in the passenger seats.
 4. The driver ignites the car, and the system starts charging the user.
