@@ -1,0 +1,31 @@
+USE CASES CHARTS
+
+NAME : Login
+
+PARTICIPATING ACTORS
+
+	Non-logged person : someone who is not logged in the system
+
+ENTRY CONDITION
+
+The person start the PowerEnJoy app and taps on the "Sign in" button. 
+
+FLOW OF EVENTS
+
+1. A screen appears containing two blank textboxes named "E-mail" and "Password" respectively and a "Login" button.
+2. The person fills in the two textboxes with his/her e-mail address and the password to access his/her account.
+3. The user taps on the "Login" button.
+  
+EXIT CONDITION
+
+A new screen displays the user's profile. The person can now access all the functionalities available to a user.
+
+EXCEPTIONS
+
+-Invalid data: if the non-registered person is not able to provide valid data to fill the required fields, the procedure cannot be carried out any further, and the person can only stop the procedure by exiting the app.
+
+
+SPECIAL REQUIREMENTS
+
+- The non-registered person's phone is required to be connected to the internet either via wi-fi or 3G (or similar) connection.
+- The system's server needs to be operational and responsive enough to allow the procedure to be carried out in a reasonable amount of time.

@@ -25,7 +25,7 @@ EXIT CONDITION
 The use case terminates when the e-mail  sent from the system is received by the non-registered person\
 
 EXCEPTIONS
-- System/connection failure: if either the system ceases to function or the connection with the non-registered person's phone is lost at any time between step 2 and 8 before step 8 is completed, the procedure needs to be performed again from the entry condition. If the connection is lost after step 8 is completed and the user does not receive the e-mail nor is able to request another e-mail to be sent, the user will need to initiate the
+- System/connection failure: if either the system ceases to function or the connection with the person's phone is lost at any time between step 2 and 8 before step 8 is completed, the procedure needs to be performed again from the entry condition. If the connection is lost after step 8 is completed and the user does not receive the e-mail nor is able to request another e-mail to be sent, the user will need to initiate the
 Retrieving Password use case.
 
 -Invalid data: if the non-registered person is not able to provide valid data to fill any of the required fields, the procedure cannot be carried out any further, and the non-registered person can only stop the procedure by exiting the app.
