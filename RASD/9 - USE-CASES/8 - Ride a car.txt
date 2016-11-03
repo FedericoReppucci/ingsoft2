@@ -1,0 +1,36 @@
+USE CASES CHARTS
+
+NAME
+
+PARTICIPATING ACTORS
+
+	Non-logged person : someone who is not logged in the system
+	User : a person who is logged in the system 
+
+ENTRY CONDITION
+
+The Reserve a car use case
+
+FLOW OF EVENTS
+
+1. The Unlock a car use case.
+2. The user who unlocked the car or another person enters the unlocked car in the driver seat (he will be referred to as the driver).
+3. Up to four other people or three other people and the user enter the car in the passenger seats.
+4. The driver ignites the car, and the system starts charging the user.
+5. The driver drives the car to his/her destination.
+6. The driver stops the car and the system stops charging the user.
+7. All the people who entered the car exit the car.
+8. Insertion point for the Plug in a car use case.
+
+EXIT CONDITION
+
+8. The system automatically locks the car
+
+EXCEPTIONS
+
+- Car accident: the driver notifies the company that an accident happened, if possible he completes the ride, otherwise he leaves the car there.
+
+SPECIAL REQUIREMENTS
+
+- The non-registered person's phone is required to be connected to the internet either via wi-fi or 3G (or similar) connection.
+- The user¡¯s phone needs an activated GPS connection.
