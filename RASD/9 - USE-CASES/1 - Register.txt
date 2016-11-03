@@ -18,11 +18,11 @@ FLOW OF EVENTS:
 6. The system sends a verification request to the external payment service for the credit card information.
 7.  The the external payment service  confirms to the system the validity of the data and the tick-box and "Register" button become active.
 8. The non-registered person clicks on the "Register" button.
-9.  A screen appears with the following sentence: "Registration successful! Please check your e-mail, we sent you the password to access your account" and also a "Didn't receive the e-mail? Try again!" link.\
+9.  A screen appears with the following sentence: "Registration successful! Please check your e-mail, we sent you the password to access your account" and also a "Didn't receive the e-mail? Try again!" link.
 
 EXIT CONDITION
 
-The use case terminates when the e-mail  sent from the system is received by the non-registered person\
+The use case terminates when the e-mail sent from the system is received by the non-registered person
 
 EXCEPTIONS
 - System/connection failure: if either the system ceases to function or the connection with the person's phone is lost at any time between step 2 and 8 before step 8 is completed, the procedure needs to be performed again from the entry condition. If the connection is lost after step 8 is completed and the user does not receive the e-mail nor is able to request another e-mail to be sent, the user will need to initiate the
