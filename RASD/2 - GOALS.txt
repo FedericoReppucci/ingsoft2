@@ -1,6 +1,7 @@
 GOALS:
 
-[G1]: The user is able to register to the service by providing his/her credentials and payment info.
+[G1.0]: The user is able to register to the service by providing his/her credentials and payment info. 
+[G1.1]: They user recieves back a password with which he/she is able to access the system.
 [G2.0]: The user is able to find the location of all available cars within a certain range from their current location.
 [G2.1]: The user is able to find the location of all available cars within a certain range from a specified address.
 [G3.0]: The user is able to pick a car among the available ones and reserve it.

@@ -36,6 +36,8 @@ EXCEPTIONS
 
 -Expired credit card/identity card:  if the user's credit card or identity card has expired, when the user taps the continue button in step 5 another pop-up appears which reads: "Expired document, please edit profile" . The user must interrupt the procedure
 
+-Double reservation : if the user has aready a reservat?ion which is not expired yet, when the user taps the continue button in step 5 another pop-up appears which reads: "Another reservation is active".  
+
 SPECIAL REQUIREMENTS
 
 - The user’s phone is required to be connected to the internet 
