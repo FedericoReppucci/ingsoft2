@@ -1,0 +1,39 @@
+		USE CASES CHARTS
+
+NAME : Reserve a car
+
+PARTICIPATING ACTORS
+    User : a person who is logged in the system 
+
+ENTRY CONDITION
+The user opens the PowerEnJoy app on his/her smartphone and taps on the "Reserve a car" option.
+
+FLOW OF EVENTS
+1. A new screen appears containing a "Continue" button and a form where the user is able to select :
+     - The range of the search
+     - The unit of measurement of such range
+     - The starting point of the search
+2. The user inserts the range in which he/she wants to find a car.
+3. The user selects the desired unit of measurement (km is preselected) 
+4. The user selects a starting point for the search.
+5. The user taps the "Continue" button.
+6. The application displays a Google provided map with the found cars.
+7. The user taps on the dot representing the car he/she wants to reserve.
+8. A pop-up appears asking the user whether he/she wants to confirm the reservation.
+9. The user taps on the "Yes" button.
+10. The app confirms to the user that the car has been reserved correctly by displaying the following sentence: ¡°Reservation successful!¡±.
+
+EXIT CONDITION
+A notification from the app tells the user that the car has been reserved.
+
+EXCEPTIONS
+- System/connection failure: if either the system ceases to function or the connection with the user's phone is lost at any time between step 2 and 9 before step 9 is completed, the procedure needs to be performed again from the entry condition.
+
+-Invalid data: in the text box in the first screen the user can insert only a positive integer number. If the user inserts something else, the button ¡°Continue¡± becomes inactive.
+
+SPECIAL REQUIREMENTS
+
+- The user¡¯s phone is required to be connected to the internet either via wi-fi or 3G (or similar) connection.
+- The user¡¯s phone needs an activated GPS connection.
+- The system's server needs to be operational and responsive enough to allow the procedure to be carried out in a reasonable amount of time.
+

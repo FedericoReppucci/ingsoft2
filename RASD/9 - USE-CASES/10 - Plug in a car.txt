@@ -1,0 +1,21 @@
+USE CASES CHARTS
+
+NAME
+
+PARTICIPATING ACTORS
+
+	Person : any human person
+
+ENTRY CONDITION
+
+There is a car parked near a power grid and not plugged in
+
+FLOW OF EVENTS
+
+1. The person plugs the car in the power grid.
+2. The system is informed that the car in question is now plugged in.
+
+
+EXIT CONDITION
+
+A light on the power grid displays that the car has been succesfully plugged in 

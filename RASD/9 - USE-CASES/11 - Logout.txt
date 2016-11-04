@@ -1,0 +1,25 @@
+USE CASES CHARTS
+
+NAME : Logout
+
+PARTICIPATING ACTORS
+
+	User : a person who is logged in the system 
+
+ENTRY CONDITION
+
+The user is logged in his/her account. 
+
+FLOW OF EVENTS
+
+1. The user taps the "Logout" button in the top right corner of any of the screens which appear when the user is logged in the application. 
+
+EXIT CONDITION
+
+The application shows the Sign in / Sign up screen
+
+
+SPECIAL REQUIREMENTS
+
+- The non-registered person's phone is required to be connected to the internet either via wi-fi or 3G (or similar) connection.
+- The system's server needs to be operational and responsive enough to allow the procedure to be carried out in a reasonable amount of time.
