@@ -8,7 +8,7 @@ PARTICIPATING ACTORS
 
 ENTRY CONDITION
 
-The person start the PowerEnJoy app and taps on the "Sign in" button. 
+The person start the PowerEnJoy app
 
 FLOW OF EVENTS
 

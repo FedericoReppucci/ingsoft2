@@ -16,3 +16,7 @@ GOALS:
 [G10]: A discount of 30% is applied on the last ride if a car is left at special parking areas where they can be recharged and the driver takes care of  plugging the car into the power grid and no higher discount or any extra fee can be applied.
 [G11.0]: If a car is left at more than 3 kilometers from the nearest power grid station, the user is charged for an extra corresponding to 30% of the amount charged for the last ride.
 [G11.1]: If a car is left with less than 20% of its maximum battery available, the user is charged for an extra corresponding to 30% of the amount charged for the last ride.
+
+//NEW GOALS
+- If the user has not paid for his/her last ride, the user cannot reserve a car.
+- If the user's ID card or credit card has expired, he/she cannot reserve a car.

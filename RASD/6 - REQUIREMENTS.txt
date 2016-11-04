@@ -17,3 +17,4 @@ The company can remove non-operational cars from the system if necessary.
 If a user did not pay for the last ride, cannot reserve a car.
 If a user drives a car to battery exhaustion or leaves it outside of a safe area, an extra fee is applied.
 A car either parked or dislocated is automatically locked by the system after 1 minute.
+If the user has an expired credit card/ identity card, he/she cannot reserve a car.

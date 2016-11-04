@@ -6,7 +6,7 @@ PARTICIPATING ACTORS
     User : a person who is logged in the system 
 
 ENTRY CONDITION
-The user opens the PowerEnJoy app on his/her smartphone and taps on the "Reserve a car" option.
+The user opens the PowerEnJoy app, logs in and taps "Reserve a car".
 
 FLOW OF EVENTS
 1. A new screen appears containing a "Continue" button and a form where the user is able to select :
@@ -30,6 +30,9 @@ EXCEPTIONS
 - System/connection failure: if either the system ceases to function or the connection with the user's phone is lost at any time between step 2 and 9 before step 9 is completed, the procedure needs to be performed again from the entry condition.
 
 -Invalid data: in the text box in the first screen the user can insert only a positive integer number. If the user inserts something else, the button ¡°Continue¡± becomes inactive.
+
+-Pending payment: if the user has yet to pay for his/her last ride, when the user taps the continue button in step 5 another pop-up appears which reads: "Pending ride, cannot confirm resevation". The user must interrupt the procedure 
+-Expired credit card/identity card:  if the user's credit card or identity card has expired, when the user taps the continue button in step 5 another pop-up appears which reads: "Expired document, please edit profile" . The user must interrupt the procedure
 
 SPECIAL REQUIREMENTS
 

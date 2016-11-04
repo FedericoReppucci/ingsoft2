@@ -1,0 +1,31 @@
+USE CASES CHARTS
+
+NAME : View payment history
+
+PARTICIPATING ACTORS
+
+	User : a person who is logged in the system 
+
+ENTRY CONDITION
+
+Extension from the Browse profile use case
+
+FLOW OF EVENTS
+
+1. The user from his/her main profile page taps on the "View payment history" button.
+2. A screen appears containing a "Back" button and a chart with five coloumns :
+- Date : the date of the ride 
+- Start/Finish : the starting time and stopping time of the charging for the ride
+- Extras : the extra fee percentage + flat amount if any
+- Discounts : the discount percentage if any
+- Payment state : OK / PENDING
+with a tuple for each ride the user has performed.
+
+EXIT CONDITION
+
+The user taps the "Back" button and returns to his/her profile
+
+SPECIAL REQUIREMENTS
+
+- The non-registered person's phone is required to be connected to the internet either via wi-fi or 3G (or similar) connection.
+- The system's server needs to be operational and responsive enough to allow the procedure to be carried out in a reasonable amount of time.

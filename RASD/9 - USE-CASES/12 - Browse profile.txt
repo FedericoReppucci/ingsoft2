@@ -8,28 +8,24 @@ PARTICIPATING ACTORS
 
 ENTRY CONDITION
 
-The user opens the application and logs in
+The user opens the application, logs in and taps on "My profile"
 
 FLOW OF EVENTS
 
 1. A screen appears containing a chart with all the user's personal data and an "Edit" button, as well as some statistics regarding the user's rides:
-- Total number of rides, followed by a "medal" associated with a number ( 50+ bronze, 150+ silver, 250+ gold ).
-- Total distance traveled.
-- Behavior history : 
+- Total number of rides, followed by a "medal" associated with a number ( 50+ bronze, 150+ silver, 250+ gold )
+- Total distance traveled
+- Behavior history : total of negative, positive and neutral behavior cases, associated with a "karma level" color which ranges from green(good) to yellow(neutral) to red(bad)
+determined by the sum of extra fees (-2) and discounts (+1)
+on the side there is a "View Payment history" button.
 2. Extension point for the Edit profile and View payment history use cases.
 
 EXIT CONDITION
 
-EXCEPTIONS
-
-- System/connection failure: if either the system ceases to function or the connection with the user's phone is lost at any time between step 2 and 8 before step 8 is completed, the procedure needs to be performed again from the entry condition. If the connection is lost after step 8 is completed and the user does not receive the e-mail nor is able to request another e-mail to be sent, the user will need to initiate the
-Retrieving Password use case.
-
--Invalid data: if the non-registered person is not able to provide valid data to fill any of the required fields, the procedure cannot be carried out any further, and the non-registered person can only stop the procedure by exiting the app.
+The user either logs out, closes the app or goes back to the home page
 
 
 SPECIAL REQUIREMENTS
 
-- The non-registered person's phone is required to be connected to the internet either via wi-fi or 3G (or similar) connection.
+- The user's phone is required to be connected to the internet either via wi-fi or 3G (or similar) connection.
 - The system's server needs to be operational and responsive enough to allow the procedure to be carried out in a reasonable amount of time.
-- The user¡¯s phone needs an activated GPS connection.
