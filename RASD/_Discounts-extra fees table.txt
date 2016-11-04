@@ -10,7 +10,7 @@ NON-SAFE PARKING  YES     NO     NO     YES    YES    YES
 SAFE + PLUGGED    ANY     ANY     ANY    ANY    ANY    ANY         
 
 result :      	+fixed   +30%  +30%   +fixed +fixed +fixed
-       	 +30%   +30%   +60%
+       								   +30%   +30%   +60%
 
 DISCOUNTS TABLE (NO EXTRA FEES)
 

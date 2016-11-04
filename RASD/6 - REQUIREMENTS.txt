@@ -18,7 +18,7 @@ FUNCTIONAL REQUIREMENTS
 
 	NOTE: this goal is interpreted as: providing one's credentials and some valid payment condition is sufficient and necessary to register to the system
 
-	ADDITIONAL GOALS EMERGED THROUGH SCENARIOS
+	ADDITIONAL GOALS EMERGED THROUGH SCENARIO ANALISYS
 
 	[GA1.0]: Any person registered to the system  is able to log in the application.
 	[GA1.1]: Only a person registered to the system is able to log in the application 
@@ -44,7 +44,13 @@ FUNCTIONAL REQUIREMENTS
 
 		[RA3]: Access to the PowerEnJoy's website (a static page) is granted upon request (no login required)
 
+- User
+	
+	[G2.0]: The user is able to find the location of all available cars within a certain range from their current location.
 
+		[R2.1]:  The user can access the "Reserve a car" function from the home page and select the 
+
+	[G2.1]: The user is able to find the location of all available cars within a certain range from a specified address.
 
 
 
