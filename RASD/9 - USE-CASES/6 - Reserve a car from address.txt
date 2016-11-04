@@ -1,4 +1,4 @@
-﻿		USE CASES CHARTS
+		USE CASES CHARTS
 
 NAME : Reserve a car from address
 
@@ -33,11 +33,11 @@ EXCEPTIONS
 
 -Invalid data: in the text box in the first screen the user can insert only a positive integer number. If the user inserts something else, the button “submit” becomes inactive.
 
--Pending payment: if the user has yet to pay for his/her last ride, when the user taps the continue button in step 5 another pop-up appears which reads: "Pending ride, cannot confirm resevation". And the user must interrupt the procedure
+-Pending payment: if the user has yet to pay for his/her last ride, when the user taps the continue button in step 5 another pop-up appears which reads: "Pending ride, cannot confirm reservation". And the user must interrupt the procedure
 
 -Expired credit card/identity card:  if the user's credit card or identity card has expired, when the user taps the continue button in step 5 another pop-up appears which reads: "Expired document, please edit profile" . The user must interrupt the procedure
 
--Double reservation : if the user has aready a reservat?ion which is not expired yet, when the user taps the continue button in step 5 another pop-up appears which reads: "Another reservation is active".  
+-Double reservation : if the user has already a reservation which is not expired yet, when the user taps the continue button in step 5 another pop-up appears which reads: "Another reservation is active".  
 
 SPECIAL REQUIREMENTS
 
