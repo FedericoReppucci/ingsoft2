@@ -20,3 +20,6 @@ GOALS:
 //NEW GOALS
 - If the user has not paid for his/her last ride, the user cannot reserve a car.
 - If the user's ID card or credit card has expired, he/she cannot reserve a car.
+- The user can reserve just one car at a time
+
+
