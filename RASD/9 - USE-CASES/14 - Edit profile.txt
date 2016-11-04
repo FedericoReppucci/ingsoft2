@@ -8,21 +8,25 @@ PARTICIPATING ACTORS
 
 ENTRY CONDITION
 
+Extension from the Browse profile use case
 
 FLOW OF EVENTS
 
+1. The user taps the "Edit Profile" button.
+2. The chart containing the user's data can now be modified and the "Edit profile" button disappears and a "Confirm" and "Back" buttons appear.
+3. The user modifies his/her data.
+4. The user taps the "Confirm" burron.
+
 EXIT CONDITION
+
+The data inserted is valid and the user goes back to the Browse profile use case
 
 EXCEPTIONS
 
-- System/connection failure: if either the system ceases to function or the connection with the user's phone is lost at any time between step 2 and 8 before step 8 is completed, the procedure needs to be performed again from the entry condition. If the connection is lost after step 8 is completed and the user does not receive the e-mail nor is able to request another e-mail to be sent, the user will need to initiate the
-Retrieving Password use case.
-
--Invalid data: if the non-registered person is not able to provide valid data to fill any of the required fields, the procedure cannot be carried out any further, and the non-registered person can only stop the procedure by exiting the app.
+-Invalid data: if the user is not able to provide valid data to fill any of the required fields, the procedure cannot be carried out any further, and the user can only stop the procedure by tapping the "Back" button.
 
 
 SPECIAL REQUIREMENTS
 
 - The non-registered person's phone is required to be connected to the internet either via wi-fi or 3G (or similar) connection.
 - The system's server needs to be operational and responsive enough to allow the procedure to be carried out in a reasonable amount of time.
-- The user¡¯s phone needs an activated GPS connection.
