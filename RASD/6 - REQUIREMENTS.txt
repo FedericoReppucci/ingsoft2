@@ -5,37 +5,44 @@ FUNCTIONAL REQUIREMENTS
 	[G1.0]: Any person is able to register to the service by providing his/her credentials and valid payment info.
 	[G1.1]: He/she recieves back a password with which he/she is able to access the system.
 
-	[R1.1]: Any person can download and run the app on his/her phone
-	[R1.2]: From the home page of the app any person can carry out the registration procedure (see: Registraion use case)
-	[R1.3]: The registration procedure uses the external payment service to verify the validity of the provided payment info
-	[R1.4]: At the end of the registration procedure the person whose credentials were used is registered in the system 
-	[R1.5]: At the end of the registration procedure the person recieves an e-mail containing a password which he/she can use to access the system
+		[R1.1]: Any person can download and run the app on his/her phone
+		[R1.2]: From the home page of the app any person can carry out the registration procedure (see: Registraion use case)
+		[R1.3]: The registration procedure uses the external payment service to verify the validity of the provided payment info
+		[R1.4]: At the end of the registration procedure the person whose credentials were used is registered in the system 
+		[R1.5]: At the end of the registration procedure the person recieves an e-mail containing a password which he/she can use to access the system
 
 	Domain assumptions that ensure the desired outcome:
 
-	[D1.0]: The credentials provided by the person at the moment of his/her registration  are always correct, and always belong to the person carrying out the procedure.
-	[D1.2]: The validity check for the payment info delegated to the external payment service is always correct.
+		[D1.0]: The credentials provided by the person at the moment of his/her registration  are always correct, and always belong to the person carrying out the procedure.
+		[D1.2]: The validity check for the payment info delegated to the external payment service is always correct.
 
 	NOTE: this goal is interpreted as: providing one's credentials and some valid payment condition is sufficient and necessary to register to the system
 
 	ADDITIONAL GOALS EMERGED THROUGH SCENARIOS
 
-	[GA1]: Any person registered to the system  is able to log in the application.
+	[GA1.0]: Any person registered to the system  is able to log in the application.
 	[GA1.1]: Only a person registered to the system is able to log in the application 
 
-	[RA1]: If a person provides a valid e-mail and password, he/she can log in application (see: Login use case)
-	[RA2]: If a person provides a non valid e-mail and password pair, he/she cannot log in the application
+		[RA1.1]: If a person provides a valid e-mail and password, from the home page he/she can log in application (see: Login use case)
+		[RA1.2]: If a person provides a non valid e-mail and password pair, he/she cannot log in the application
 
 	Domain assumption that ensure the desired outcome:
 
-	[DA1]: Only a registered person is able to provide a valid e-mail and password
+		[DA1]: Only a registered person is able to provide a valid e-mail and password
+
 
 	[GA2]: Any person registered to the system is able to retrieve his/her password
 
+		[RA2.1]: From the home page of the app any person can initiate the password retrieval procedure (see: Retrieve password use case)
+		[RA2.2]: If a person provides a valid e-mail address an e-mail is sent to that address containing the associated password
 
+	Domain assumption that ensure the desired outcome:	
 
+		[DA2]: If an e-mail is sent to a person's address that password is considered retrieved by the person
 
+	[GA3]: Any person is able to browse the PowerEnJoy website
 
+		[RA3]: Access to the PowerEnJoy's website (a static page) is granted upon request (no login required)
 
 
 
