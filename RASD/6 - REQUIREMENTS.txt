@@ -64,8 +64,9 @@ FUNCTIONAL REQUIREMENTS
 		[R2.4]: The system tracks all available cars' current position through their GPS coordinates 
 		[R2.4.1]: The cars must posses a device which can be tracked via GPS
 		[R2.5]: The "Reserve a car" function allows the user to select a starting position for the search, which can be either their current location or a given address
-		[R2.6]: The "Reserve a car" function allows the user to request to the system the current position of all available cars' GPS coordinates within the selected range from the selected starting position   
-		[R2.7]: The "Reserve a car" function displays to the user the data of the search acquired from the system in a Google provided map
+		[R2.6]: When the user confirms the inserted parameters the search is carried out and the "Reserve a car" function displays to the user the data of the search acquired from the system in a Google provided map
+
+		NOTE: here we chose not to detail the interaction between the app and the system, to avoid talking about any architectural detail 
 
 		Domain assumptions that ensure the desired outcome:
 
@@ -75,12 +76,11 @@ FUNCTIONAL REQUIREMENTS
 
 	[G3.0]: The user is able to pick a car among the available ones and reserve it.
 
-	NOTE: this goal is interpreted as: if there are available cars the user can pick one among them and reserve it, so it does not guarantee anything regarding the availability of the cars
+	NOTE: this goal is interpreted as: if there are available cars the user can pick any one among them and reserve it, so it does not guarantee anything regarding the presence of available cars. Moreover the availability of the selected car needs to persist until the moment the user confirms the reservation of a car or interrupts the procedure for it to be considered an available car in this instance
 
 		[R3.1]: The app allows the user to tap on any available car on the map displayed as the result of a search conducted through the "Reserve a car" function
 		[R3.2]: When a user taps on a car the app generates a pop-up asking the user if he/she wants to confirm the reservation
-		[R3.3]: When the user confirms the app sends a reservation request to the system 
-		[R3.4]: When the system recieves a reservation request and the car to be reserved is available the system marks it as reserved by the user's account
+		[R3.3]: As long as the car was not reserved by another user in the mean time, when the user confirms the car is marked as reserved by the system and the user can see the "Reservation succesfull!" message on the app
 
 	[G3.1]: A reserved car is not available for renting until one hour has passed from the moment a user reserved it.
 
