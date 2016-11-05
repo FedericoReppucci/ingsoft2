@@ -11,13 +11,14 @@ DOMAIN PROPERTIES
 [D3.0]: The GPS coordinates of the cars received by the system always correspond to the actual positions of the cars.
 [D3.1]: The GPS coordinates of a user received by the system always correspond to the actual position of the user.
 
-[D4]:  If a person enters a car in the driver seat, also ignites it.
+[D4]:  If a person enters a car in the driver seat, also ignites it. !!DEPRECATED, see new D4
 
 [D5]: Every road traffic offence received by the company  is forwarded to the user who last rent the car before the offence occurred.   
 
 [D6]: An employee is always able to retrieve a dislocated car within 24 hours
 
-[D7]: If the sensor in the car detect other passengers, human passengers are on board
+[D7.0]: If the sensors in the car detect other passengers, human passengers are on board
+[D7.1]: If the sensors in the car detect no one inside, there are no people in the car
 
 [D8]: Power grid stations are always operational
 

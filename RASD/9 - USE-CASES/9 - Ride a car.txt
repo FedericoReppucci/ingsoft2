@@ -13,14 +13,15 @@ The Reserve a car use case
 
 FLOW OF EVENTS
 
-1. From his profile the user selects his/her reservation and clicks the "Unlock" button.
-2. The user who unlocked the car or another person enters the unlocked car in the driver seat (he will be referred to as the driver).
-3. Up to four other people or three other people and the user enter the car in the passenger seats.
-4. The driver ignites the car, and the system starts charging the user.
-5. The driver drives the car to his/her destination.
-6. The driver stops the car and the system stops charging the user.
-7. All the people who entered the car exit the car.
-8. Insertion point for the Plug in a car use case.
+1. From the home page of the app the user selects "My reservations".
+2. The user selects his/her reservation and clicks the "Unlock" button.
+3. The user who unlocked the car or another person enters the unlocked car in the driver seat (he will be referred to as the driver).
+4. Up to four other people or three other people and the user enter the car in the passenger seats.
+5. The driver ignites the car, and the system starts charging the user.
+6. The driver drives the car to his/her destination.
+7. The driver stops the car and the system stops charging the user.
+8. All the people who entered the car exit the car.
+9. Insertion point for the Plug in a car use case.
 
 EXIT CONDITION
 
@@ -33,4 +34,4 @@ EXCEPTIONS
 SPECIAL REQUIREMENTS
 
 - The non-registered person's phone is required to be connected to the internet either via wi-fi or 3G (or similar) connection.
-- The user¡¯s phone needs an activated GPS connection.
+- The user's phone needs an activated GPS connection.

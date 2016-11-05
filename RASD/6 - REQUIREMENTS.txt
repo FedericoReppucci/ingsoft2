@@ -83,14 +83,89 @@ FUNCTIONAL REQUIREMENTS
 		[R3.3]: As long as the car was not reserved by another user in the mean time, when the user confirms the car is marked as reserved by the system and the user can see the "Reservation succesful!" message on the app
 
 	[G3.1]: A reserved car is not available for renting until one hour has passed from the moment a user reserved it.
+	
+	[G3.2]: After one hour from its reservation, a car becomes available again (NO LONGER IN USE)
+
+	RATIONALE: G3.2 is formulated in a way which does not completely reflect the desired outcome, since a car is not meant to be available for renting even if an hour has passed from the moment it was reserved if it is currently in use, it has been left with less than 20% battery or it is more than 3km away from the nearest power grid, and therefore it has been substituted with the following goal
+
+	[G3.2] A car becomes available again after one hour has passed from its reservation and it is parked in a safe area less than 3 km away from a power grid having more than 20% of its battery 
 
 
-	[G3.2]: After one hour from its reservation, a car becomes available again
+		[R3.1]: When the system marks a car as reserved any reservation request from any user is rejected by the system while the car is in the reserved state
+		[R3.2]: A car is in reserved state for one hour from the moment it was marked as reserved
+		[R3.3]: A car in reserved state is not signaled by the system during the "Reserve a car" procedure
+		[R3.4]: After one hour from it's reservation a car is no longer in reserved state
+		[R3.5]: A car not in reserved state is considered available by the system only if it is parked in a safe area less than 3 km away from a power grid station and has more than 20% of its battery
 
+	[G4]: The user pays 1 EUR if he/she doesn't reach the car he/she rent within 1 hour from the reservation.
 
+	NOTE: "reach" in this case means that the user has unlocked the car 
 
+		[R4.1]: One hour after a car has been reserved if it was never opened the system charges for 1 EUR the user who reserved it 
 
+	[G5]: The user is able to unlock and open the car he/she rent when he/she is nearby the car
 
+		[R5.1]: From the home page of the app the user can access the "My reservations" section
+		[R5.2]: In the "My resevations" section if the user has reserved a car less than an hour ago an active reservation is displayed with an "Unlock" button 
+		[R5.3]: If the user is less than 2 meters away from the car and presses the unlock button the car unlocks
+
+	NOTE: a user is a logged in person, therefore he/she is identified by the system through an account and a GPS position. Whether the phisical person who opens the car is the same who reserved it is not our concern.
+
+	[G6]: From the moment of ignition, the user is charged for a constant amount of money per minute
+	[G7.0]: The charging of the user stops as soon as the driver parks the car in a safe area and exits from it.
+
+	NOTE: G7 is interpreted as: if the car is parked in a safe area and the driver and all the passengers exit from it, the user stops being charged (as a simple implication)
+
+		[R6.1]: When a car is ignited the system starts charging the last user who reserved the car
+		[R7.1]: When a car is stopped and the sensors in the car detect no one inside, if a user was being charged for the car the system stops charging him/her. 
+
+		NOTE: in R7.1 we mean as soon as both conditions are met, the user stops being charged
+
+	[G7.1]: The car is automatically locked as soon as the driver parks the car in a safe area and exits from it. 
+
+		[R7.2]: One minute after a car has been stopped and the sensors in the car detect no one inside, the system locks the car
+
+	Domain assumption to ensure the goals G7.0,G7.1
+
+		[D7.1]: If the sensors in the car detect no one inside, there are no people in the car  
+		
+	[G8]: A discount of 10% is applied on the last ride if the driver took at least two  passengers onto the car and no higher discount or any extra fee can be applied.
+
+		[R8]: The moment the car is stopped, if the sensor in the car detected two passengers the system records it as a possible discount of 10%
+		[R12]: After two minutes since the car has been stopped and its sensors detected no one  was inside, the system applies all the extra fees and if there are none it applies the highest discount among the possible ones to the cost of the ride
+
+	Domain assumptions that ensure the desired outcome:
+	
+		[D7.0]: If the sensors in the car detect other passengers, human passengers are on board
+		[D7.1]: If the sensors in the car detect no one inside, there are no people in the car
+
+	[G9]: If a car is left with more than 50% of its maximum battery available, a discount of 20% is applied on the last ride and no higher discount or any extra fee can be applied.
+
+		[R9]: The moment the car is stopped and the sensors in the car detect no one inside, if the car has more than 50% of its maximum battery the system records it as a possible discount of 20%
+		[R12]: After two minutes since the car has been stopped and its sensors detected no one  was inside, the system applies all the extra fees and if there are none it applies the highest discount among the possible ones to the cost of the ride 
+
+	[G10]: A discount of 30% is applied on the last ride if a car is left at special parking areas where they can be recharged and the driver takes care of  plugging the car into the power grid and no higher discount or any extra fee can be applied.
+
+		[R10]: If before 2 minutes since the moment the car has been stopped and its sensors detected no one  was inside the car is plugged in a power grid and its position is within a special parking area, the system records it as a possible discount of 30%
+		[R12]: After two minutes since the car has been stopped and its sensors detected no one  was inside, the system applies all the extra fees and if there are none it applies the highest discount among the possible ones to the cost of the ride
+
+	Domain assumption that ensures the desired outcome:
+
+		[D3.0]: The GPS coordinates of the cars received by the system always correspond to the actual positions of the cars.
+
+	[G11.0]: If a car is left at more than 3 kilometers from the nearest power grid station, the user is charged for an extra corresponding to 30% of the amount charged for the last ride.
+	
+		[R11.0]: The moment the car is stopped and the sensors in the car detect no one inside, if the safe area nearest to the car is more than 3km away from it, the system records an extra fee of 30%
+		[R12]: After two minutes since the car has been stopped and its sensors detected no one  was inside, the system applies all the extra fees and if there are none it applies the highest discount among the possible ones to the cost of the ride
+
+	Domain assumptions that ensure the desired outcome:
+
+		[D3.0]: The GPS coordinates of the cars received by the system always correspond to the actual positions of the cars.
+
+	[G11.1]: If a car is left with less than 20% of its maximum battery available, the user is charged for an extra corresponding to 30% of the amount charged for the last ride.
+
+		[R11.1]: The moment the car is stopped and the sensors in the car detect no one inside, if the car has less than 20% of its maximum battery, the system records an extra fee of 30%
+		[R12]: After two minutes since the car has been stopped and its sensors detected no one  was inside, the system applies all the extra fees and if there are none it applies the highest discount among the possible ones to the cost of the ride
 
 
 
