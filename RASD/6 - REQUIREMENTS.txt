@@ -3,14 +3,14 @@ FUNCTIONAL REQUIREMENTS
 - Non registered person
 	
 	[G1.0]: Any person is able to register to the service by providing his/her credentials and valid payment info.
-	[G1.1]: He/she recieves back a password with which he/she is able to access the system.
+	[G1.1]: He/she receives back a password with which he/she is able to access the system.
 
 		[R1.1]: The app is available for any person to download and run on his/her phone
 		[R1.2]: From the home page of the app any person can carry out the registration procedure
-		[R1.3]: The registration procedure requires a parson's credentials and payment info to be carried out
+		[R1.3]: The registration procedure requires a person's credentials and payment info to be carried out
 		[R1.4]: The registration procedure uses the external payment service to verify the validity of the provided payment info
 		[R1.5]: At the end of the registration procedure the person whose credentials were used is registered in the system 
-		[R1.6]: At the end of the registration procedure the person recieves an e-mail containing a password which he/she can use to access the system
+		[R1.6]: At the end of the registration procedure the person receives an e-mail containing a password which he/she can use to access the system
 		[R1.7]: At the end of the registration procedure the person can ask the system to send another mail
 
 	Domain assumptions that ensure the desired outcome:
@@ -21,7 +21,7 @@ FUNCTIONAL REQUIREMENTS
 
 	NOTE: this goal is interpreted as: providing one's credentials and some valid payment condition is sufficient and necessary to register to the system
 
-	ADDITIONAL GOALS EMERGED THROUGH SCENARIO ANALISYS
+	ADDITIONAL GOALS EMERGED THROUGH SCENARIO ANALYSIS
 
 	[GA1.0]: Any person registered to the system  is able to log in the application.
 	[GA1.1]: Only a person registered to the system is able to log in the application 
@@ -46,7 +46,7 @@ FUNCTIONAL REQUIREMENTS
 
 	[GA3]: Any person is able to access the PowerEnJoy website
 
-		[RA3]: Access to the PowerEnJoy's website (a static page) is granted upon request by the systemv(no login required)
+		[RA3]: Access to the PowerEnJoy's website (a static page) is granted upon request by the system (no login required)
 
 	Domain assumption that ensures the desired outcome
 
@@ -80,7 +80,7 @@ FUNCTIONAL REQUIREMENTS
 
 		[R3.1]: The app allows the user to tap on any available car on the map displayed as the result of a search conducted through the "Reserve a car" function
 		[R3.2]: When a user taps on a car the app generates a pop-up asking the user if he/she wants to confirm the reservation
-		[R3.3]: As long as the car was not reserved by another user in the mean time, when the user confirms the car is marked as reserved by the system and the user can see the "Reservation succesfull!" message on the app
+		[R3.3]: As long as the car was not reserved by another user in the mean time, when the user confirms the car is marked as reserved by the system and the user can see the "Reservation succesful!" message on the app
 
 	[G3.1]: A reserved car is not available for renting until one hour has passed from the moment a user reserved it.
 
