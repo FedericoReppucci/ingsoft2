@@ -20,7 +20,7 @@ FLOW OF EVENTS
 4. The user selects the "From Address" checkbox.
 5. The user taps the "Submit" button.
 6. The application displays a Google provided map with the found cars
-7. The user taps on the dot representing the car he/she wants to reserve.
+7. The user taps on the object representing the car he/she wants to reserve.
 8. A pop-up appears asking the user whether he/she wants to confirm the reservation.
 9. The user taps on the "Yes" button.
 10. The app confirms to the user that the car has been reserved correctly by displaying the following sentence: “Reservation successfull!!”.
