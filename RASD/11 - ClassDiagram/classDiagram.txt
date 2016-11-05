@@ -1,0 +1,4 @@
+The following class diagram wants to show which are and how are connected the main information that the system tracks.
+The system has saved records both for users and employees. For each user (in addition to his/her personal information) the system tracks his/her reservations and rides. For each ride, for example, the system keeps track the duration time and the start/ending position.
+On the other hand for the employee is important to know which cars he/she has retrieved, when and where.
+The system knows also which are the safe areas, with which it can control if a car is well parked (in a safe area) or not.
