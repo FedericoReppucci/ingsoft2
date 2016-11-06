@@ -171,16 +171,32 @@ FUNCTIONAL REQUIREMENTS
 
 	[GA4]: If the user has not paid for his/her last ride, the user cannot reserve a car
 
-		[RA4.1]: If a user with a pending payment procedure tries to reserve a car, a pop-up lets the user know that he/she needs to pay for his/her last ride to be able to reserve a car
-		[RA4.2]: The system refues reservation requests from users with pending payment procedures 
+		[RA4]: If a user with a pending payment procedure tries to reserve a car, a pop-up lets the user know that he/she needs to pay for his/her last ride to be able to reserve a car and the app does not allow the user complete the reservation procedure
 
-	[GA5]: If the user's identity card or credit card has expired, he/she cannot reserve a car
+	[GA5]: If the user's identity card or credit card has expired, he/she cannot reserve a car 
 
-	[GA6]: The user must be able to edit his/her profile (to update expired credit card or identity card)
+		[RA4]: If in the user's profile either the credit card or identity card expiration date has already passed, when the user tries to reserve a car a pop-up lets him/her know that the data in the user's profile need to be updated and the app prevents the reservation procedure from being completed
+
+	[GA6]: The user is able to update expired credit card or identity card data
+
+		[RA6.1]: From the home page of the app the user can access the "My profile" section
+		[RA6.2]: From the "My profile" section the user can use the "Edit profile" button to modify his/her credential and payment info
+		[RA6.3]: The system can check via the external payment service wether the payment info inserted are valid
+		[RA6.4]: If the inserted payment info are valid the user can save the changes by tapping the "Confirm" button
+
+	Domain assumptions that ensure the desired outcome:
+
+		[D1.1]: The credentials provided by the user while editing his/her profile are always correct.
+		[D1.2]: The validity check for the payment info delegated to the external payment service is always correct.
 
 	[GA7]: The user can reserve just one car at a time
 
+		[RA7]: If the user has aready a reservation which is not expired yet when he/she tries to reserve a car, a pop-up lets the user know that he/she needs to pay for his/her last ride to be able to reserve a car and the app does not allow the user complete the reservation procedure
+
 	[GA8]: If the user parks the car outside of a safe area he/she is charged for a set extra fee
+
+		[RA8]: When a car is locked the system checks its GPS coordinates, and if they correspond to those of a non safe area the last user who reserved the car is charged for a set extra fee
+
 
 During requirements elicitation, we identified the need to specify some additional goals for the part of the system used by the employees, the resulting set of additional functional requirements for the system
 
