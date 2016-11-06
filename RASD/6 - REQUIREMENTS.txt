@@ -111,12 +111,16 @@ FUNCTIONAL REQUIREMENTS
 
 	NOTE: a user is a logged in person, therefore he/she is identified by the system through an account and a GPS position. Whether the physical person who opens the car is the same who reserved it is not our concern.
 
-	[G6]: From the moment of ignition, the user is charged for a constant amount of money per minute
+	[G6.0]: From the moment of ignition, the user is charged for a constant amount of money per minute
+	[G6.1]: The user is notified of the current charges through a screen on the car.
 	[G7.0]: The charging of the user stops as soon as the driver parks the car in a safe area and exits from it.
 
+	NOTE: The request to the external payment service is made only once, and after the end of each ride; here by charged we mean that the system records and updates the amount of money to charge the user for at a later time 
 	NOTE: G7 is interpreted as: if the car is parked in a safe area and the driver and all the passengers exit from it, the user stops being charged (as a simple implication)
 
 		[R6.1]: When a car is ignited the system starts charging the last user who reserved the car
+		[R6.2]: When the charging starts, the display on the car shows a "Current charge" field with a number representing the current total charge, which starts from 0
+		[R6.3]: Once a minute the "Current charge" value is incremented by a set amount
 		[R7.1]: When a car is stopped and the sensors in the car detect no one inside, if a user was being charged for the car the system stops charging him/her. 
 
 		NOTE: in R7.1 we mean as soon as both conditions are met, the user stops being charged
@@ -152,6 +156,7 @@ FUNCTIONAL REQUIREMENTS
 	Domain assumption that ensures the desired outcome:
 
 		[D3.0]: The GPS coordinates of the cars received by the system always correspond to the actual positions of the cars.
+		[D8]: Power grid stations are always operational
 
 	[G11.0]: If a car is left at more than 3 kilometers from the nearest power grid station, the user is charged for an extra corresponding to 30% of the amount charged for the last ride.
 	
@@ -197,6 +202,9 @@ FUNCTIONAL REQUIREMENTS
 
 		[RA8]: When a car is locked the system checks its GPS coordinates, and if they correspond to those of a non safe area the last user who reserved the car is charged for a set extra fee
 
+	Domain assumptions to ensure the desired outcome:
+
+		[D3.0]: The GPS coordinates of the cars received by the system always correspond to the actual positions of the cars.
 
 During requirements elicitation, we identified the need to specify some additional goals for the part of the system used by the employees, the resulting set of additional functional requirements for the system
 
@@ -204,47 +212,28 @@ During requirements elicitation, we identified the need to specify some addition
 
 	[G12]: An employee is notified if a car is parked in a non safe area
 
+		[R12.1]: Each employee has access to an application, AdminPowerEnJoy, on their phone
+		[R12.2]: When a car is locked the system checks its GPS coordinates, and if they correspond to those of a non safe area all employees are notified through AdminPowerEnJoy that the car needs to be retrieved
+
 	[G13]: An employee is able find the position of the car to retrieve
 
-	[G14]: The employee is able to announce that he/she will retrieve a specific car
+		[R13.1]: When an employee is notified of a car to retrieve, the notification contains the information necessary to set up the navigator of the company's cars to find the position of the car to retrieve
+
+	Domain assumptions to ensure the desired outcome:
+
+		[D3.0]: The GPS coordinates of the cars received by the system always correspond to the actual positions of the cars.
+		[D9]: The company's cars used by the employees are equipped with a navigation system
+
+	[G14.0]: The employee is able to announce that he/she will retrieve a specific car
+	[G14.1]: If an employee has already announced that he/she will retrieve a specific car, no other employee can do the same
+
+		[R14.1]: AdminPowerEnJoy allows an employee to accept a retrieval request through the "Retrieval procedure" function
+		[R14.2]: If an employee has already accepted a retrieval request, the app does not show the retrieval request anymore
 
 	[G15]: The employee is able to open any car he/she needs to retrieve
 
-	[G16]: The employee is never charged for retrieving a car
+		[R15.1]: AdminPowerEnJoy allows an employee to unlock any car for which he/she has accepted a retrieval request
 
+	[G16]: No one is charged for the retrieval of a car
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-NON FUNCTIONAL REQUIREMENTS
-
-
-The car is able to communicate with the system at all times.
-//TODO availability of service
-
-FUNCTIONAL REQUIREMENTS
-//TODO expand/formalize requirements
-System can detect discount conditions.
-The car can communicate the exact level of its battery to the system.
-In the car the driver can see the position of safe areas and power grid available
-(maybe through the app? Place to rcharge + place the phone? )
-
-// possible requirement
-The company can remove non-operational cars from the system if necessary.
-
-If a user did not pay for the last ride, cannot reserve a car.
-If a user drives a car to battery exhaustion or leaves it outside of a safe area, an extra fee is applied.
-A car either parked or dislocated is automatically locked by the system after 1 minute.
-If the user has an expired credit card/ identity card, he/she cannot reserve a car.
+		[R16.1]: When the employee ignites a car which was opened through AdminPowerEnJoy the system does not initiate any charging procedure

@@ -15,15 +15,10 @@ DOMAIN PROPERTIES
 
 [D5]: Every road traffic offence received by the company  is forwarded to the user who last rent the car before the offence occurred.   
 
-[D6]: An employee is always able to retrieve a dislocated car within 24 hours
-
 [D7.0]: If the sensors in the car detect other passengers, human passengers are on board
 [D7.1]: If the sensors in the car detect no one inside, there are no people in the car
 
 [D8]: Power grid stations are always operational
 
-[D9]: A car must be parked or dislocated to be plugged in a power grid station.
-
-//possible domain assumption
-[D10]: The company is notified of car incidents
+[D9]: The company's cars used by the employees are equipped with a navigation system
 

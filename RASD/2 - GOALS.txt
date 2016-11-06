@@ -34,9 +34,4 @@ GOALS:
 [GA7]: The user can reserve just one car at a time
 [GA8]: If the user parks the car outside of a safe area he/she is charged for a set extra fee
 
-//NEW GOALS
-- If the user has not paid for his/her last ride, the user cannot reserve a car.
-- If the user's ID card or credit card has expired, he/she cannot reserve a car.
-- The user can reserve just one car at a time
-
 
