@@ -25,5 +25,5 @@ DOMAIN PROPERTIES
 [D9]: A car must be parked or dislocated to be plugged in a power grid station.
 
 //possible domain assumption
-[D10]: The company is noified of car incidents
+[D10]: The company is notified of car incidents
 

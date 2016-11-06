@@ -80,7 +80,7 @@ FUNCTIONAL REQUIREMENTS
 
 		[R3.1]: The app allows the user to tap on any available car on the map displayed as the result of a search conducted through the "Reserve a car" function
 		[R3.2]: When a user taps on a car the app generates a pop-up asking the user if he/she wants to confirm the reservation
-		[R3.3]: As long as the car was not reserved by another user in the mean time, when the user confirms the car is marked as reserved by the system and the user can see the "Reservation succesful!" message on the app
+		[R3.3]: As long as the car was not reserved by another user in the meantime, when the user confirms the car is marked as reserved by the system and the user can see the "Reservation successful!" message on the app
 
 	[G3.1]: A reserved car is not available for renting until one hour has passed from the moment a user reserved it.
 	
@@ -106,10 +106,10 @@ FUNCTIONAL REQUIREMENTS
 	[G5]: The user is able to unlock and open the car he/she rent when he/she is nearby the car
 
 		[R5.1]: From the home page of the app the user can access the "My reservations" section
-		[R5.2]: In the "My resevations" section if the user has reserved a car less than an hour ago an active reservation is displayed with an "Unlock" button 
+		[R5.2]: In the "My reservations" section if the user has reserved a car less than an hour ago an active reservation is displayed with an "Unlock" button 
 		[R5.3]: If the user is less than 2 meters away from the car and presses the unlock button the car unlocks
 
-	NOTE: a user is a logged in person, therefore he/she is identified by the system through an account and a GPS position. Whether the phisical person who opens the car is the same who reserved it is not our concern.
+	NOTE: a user is a logged in person, therefore he/she is identified by the system through an account and a GPS position. Whether the physical person who opens the car is the same who reserved it is not our concern.
 
 	[G6]: From the moment of ignition, the user is charged for a constant amount of money per minute
 	[G7.0]: The charging of the user stops as soon as the driver parks the car in a safe area and exits from it.
