@@ -99,7 +99,7 @@ FUNCTIONAL REQUIREMENTS
 
 	[G4]: The user pays 1 EUR if he/she doesn't reach the car he/she rent within 1 hour from the reservation.
 
-	NOTE: "reach" in this case means that the user has unlocked the car 
+	NOTE: "reach" in this case means that the user has ignited the car the car. This is to prevents the user from avoiding the fee by just opening the car, discouraging negative behvior 
 
 		[R4.1]: One hour after a car has been reserved if it was never opened the system charges for 1 EUR the user who reserved it 
 
@@ -167,15 +167,33 @@ FUNCTIONAL REQUIREMENTS
 		[R11.1]: The moment the car is stopped and the sensors in the car detect no one inside, if the car has less than 20% of its maximum battery, the system records an extra fee of 30%
 		[R12]: After two minutes since the car has been stopped and its sensors detected no one  was inside, the system applies all the extra fees and if there are none it applies the highest discount among the possible ones to the cost of the ride
 
+	ADDITIONAL GOALS EMERGED THROUGH SCENARIO ANALYSIS
 
+	[GA4]: If the user has not paid for his/her last ride, the user cannot reserve a car
 
+		[RA4]: W
 
+	[GA5]: If the user's identity card or credit card has expired, he/she cannot reserve a car
 
+	[GA6]: The user must be able to edit his/her profile (to update expired credit card or identity card)
 
+	[GA7]: The user can reserve just one car at a time
 
+	[GA8]: If the user parks the car outside of a safe area he/she is charged for a set extra fee
 
+During requirements elicitation, we identified the need to specify some additional goals for the part of the system used by the employees, and consequantly a set of additional functional requirements for the system
 
+- Employee
 
+	[G12]: An employee is notified if a car is parked in a non safe area
+
+	[G13]: An employee is able find the position of the car to retrieve
+
+	[G14]: The employee is able to announce that he/she will retrieve a specific car
+
+	[G15]: The employee is able to open any car he/she needs to retrieve
+
+	[G16]: The employee is never charged for retrieving a car
 
 
 
