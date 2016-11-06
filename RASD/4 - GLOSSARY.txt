@@ -1,8 +1,8 @@
 
 GLOSSARY:
 
-non registered person: as far as our system is concerned, we consider only those people who posses a smartphone with GPS functionalities
-user: person who uses the application and the services provided by PowerEnJoy.
+non registered person: as far as our system is concerned, we consider only those people who posses a smartphone with GPS functionalities.
+user: person who is logged into his/her account.
 driver: person who enters a car in the driver seat. 
 
 system: the server side software providing the core functionalities of the application.

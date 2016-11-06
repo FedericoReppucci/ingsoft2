@@ -171,7 +171,8 @@ FUNCTIONAL REQUIREMENTS
 
 	[GA4]: If the user has not paid for his/her last ride, the user cannot reserve a car
 
-		[RA4]: W
+		[RA4.1]: If a user with a pending payment procedure tries to reserve a car, a pop-up lets the user know that he/she needs to pay for his/her last ride to be able to reserve a car
+		[RA4.2]: The system refues reservation requests from users with pending payment procedures 
 
 	[GA5]: If the user's identity card or credit card has expired, he/she cannot reserve a car
 
@@ -181,7 +182,7 @@ FUNCTIONAL REQUIREMENTS
 
 	[GA8]: If the user parks the car outside of a safe area he/she is charged for a set extra fee
 
-During requirements elicitation, we identified the need to specify some additional goals for the part of the system used by the employees, and consequantly a set of additional functional requirements for the system
+During requirements elicitation, we identified the need to specify some additional goals for the part of the system used by the employees, the resulting set of additional functional requirements for the system
 
 - Employee
 
