@@ -99,7 +99,7 @@ FUNCTIONAL REQUIREMENTS
 
 	[G4]: The user pays 1 EUR if he/she doesn't reach the car he/she rent within 1 hour from the reservation.
 
-	NOTE: "reach" in this case means that the user has ignited the car the car. This is to prevents the user from avoiding the fee by just opening the car, discouraging negative behvior 
+	NOTE: "reach" in this case means that the user has ignited the car. This is to prevents the user from avoiding the fee by just opening the car, discouraging negative behvior 
 
 		[R4.1]: One hour after a car has been reserved if it was never opened the system charges for 1 EUR the user who reserved it 
 
@@ -240,41 +240,60 @@ During requirements elicitation, we identified the need to specify some addition
 
 NON-FUNCTIONAL REQUIREMENTS
 	
+		
+		USER INTERFACES
 
-		Performance:
+		- The login screen:
 
-		[NFR1]: The system is able to handle the interaction with the expected number of users and employees guaranteeing a maximum response time (to be determined) 
+		- The registration screens:
 
- 		Reliability:
+		- The password retrieval screens:
 
- 		[NFR2]: The time for which the system is expected to operate without failures is (to be determined) 
+		- The home page:
+
+		- The car reservation screens:
+
+
+		PERFORMANCE REQUIREMENTS
+
+		[NFR1]: The system is able to handle the interaction with the expected number of users and employees guaranteeing a maximum response time of 5 seconds
+
+		SOFTWARE SYSTEM ATTRIBUTES 
 
 		Scalability:
 
-		[NFR3]: The system is highly scalable to adapt to the possible increasing number of users 
+		[NFR2]: The system is highly scalable to adapt to the possible increasing number of users 
 
 		Capacity:
 
-		[NFR4]: The system is able to store all the data regarding the users, the cars and the employees
-
- 		Accuracy
- 		Accessibility
+		[NFR3]: The system is able to store all the data regarding the users, the cars and the employees up to the expected number of users
 
  		Availability:
 
- 		[NF7]: The system needs to be operational 24/7
+ 		[NFR4]: The system needs to be operational 24/7
 
-		Robustness
- 		Exception handling
+		Robustness:
+
+		[NFR5]: The system's database uses proper methods to guarantee fault tolerance  
 
  		Interoperability:
 
- 		[NFR10]: The system is interoperable with the external payment service
+ 		[NFR6]: Both the PowerEnJoy app and the AdminPowerEnJoy app are compatible with all the major mobile OS's ( iOS, Android, Windows)
 
  		Integrity:
 
- 		[NF11]: The system has the proper data storage hardware to guarantee the integrity of the data
+ 		[NFR7]: The system has the proper data storage hardware to guarantee the integrity of the data
 
  		Security:
 
- 		[NF12.1]: The system has an encription protocol which guarantees the safety of the users' passwords, identity card data, payent info data and driving license data
+ 		[NFR8]: The system has an encription protocol which guarantees the safety of the users' passwords, identity card data, payent info data and driving license data
+
+ 		LIMITATIONS
+
+ 		Interfaces to other applications:
+
+ 		[NFR9]: The system is able to interact with the external payment service of choice
+
+ 		Safety and security consideration:
+
+ 		[NFR]: A system failure does not impair the ability of the users to drive the cars and exit from them
