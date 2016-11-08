@@ -39,4 +39,16 @@ Unfortunately, ten minutes after her reservation, Daniel - her boss - texts her 
 
 Usually Franco uses public transportation to go to work, but since on Wednesdays he needs to go to a different building which is not well served by the subway and he does not have a car, he registered to PowerEnJoy to be able to go there by car.
 So as he does every week Franco reserves a car through the appropriate function on the app, checking the "From my position" option. Then he reaches the car and unlocks it through the "Unlock the car" option, ignites it and drives to work. The place where he needs to go is near a PowerEnJoy power grid station, so he checks that there are currently available power grids there through the "See charging stations near me" function, sees that there are indeed available parking spots at the usual place, and parks there, also taking care of plugging the car in, which nets him a 30% discount on the ride.
-   
+
+8) BACK TO MILAN
+
+Pietro moved back to Milan recently, so he wants to return to use PowerEnJoy, to which he is already registered. Realizing that he has forgotten his password, he decides to initiate the password retrieval procedure via the “Retrieve your password” link in the app’s login screen. After inserting his e-mail address, he confirms and quickly receives an e-mail containing his password. Upon logging in he realizes that both his credit card and id card data are outdated, so he uses the “Edit profile” function in the “My profile” section to insert his new credit card and identity card expiration date. After checking the correctness of the data he typed he confirms the modification. At this point Pietro is able to start using PowerEnJoy again.
+
+4.1 TRIP TO THE SUPERMARKET
+4.2 TRANSFER STUDENT
+4.3 CINEMA WITH FRIENDS
+4.4 JOB INTERVIEW
+4.5 ABANDONED CAR
+4.6 TRIP TO THE COMPANY
+4.7 USUAL WEDNESDAY OF WORK
+4.8 BACK TO MILAN
