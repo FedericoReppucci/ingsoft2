@@ -1,0 +1,19 @@
+// entities
+
+1. Person
+2. User
+3. Employee
+4. Car
+5. SystemServer
+6. PowerEnJoy app
+7. AdminPowerEnJoy app
+
+
+
+// facts
+
+
+// assertions
+
+
+// predicates
