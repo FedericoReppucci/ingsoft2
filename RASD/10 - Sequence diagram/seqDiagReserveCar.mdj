@@ -1941,7 +1941,7 @@
 									"containerChangeable": false,
 									"containerExtending": false,
 									"left": 40,
-									"top": 680,
+									"top": 624,
 									"width": 73.52978515625,
 									"height": 40,
 									"autoResize": false,
@@ -1970,7 +1970,7 @@
 										"$ref": "AAAAAAFYNEd0yy2ghMw="
 									},
 									"lineStyle": 0,
-									"points": "113:684;136:684;136:680"
+									"points": "113:643;136:643"
 								},
 								{
 									"_type": "UMLSeqMessageView",
