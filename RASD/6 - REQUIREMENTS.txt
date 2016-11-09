@@ -210,29 +210,22 @@ During requirements elicitation, we identified the need to specify some addition
 
 - Employee
 
-	[G12]: An employee is notified if a car is parked in a non safe area
+	[G12]: If a car is parked in a non safe area, an employee will retrieve it
 
 		[R12.1]: Each employee has access to an application, AdminPowerEnJoy, on their phone
 		[R12.2]: When a car is locked the system checks its GPS coordinates, and if they correspond to those of a non safe area all employees are notified through AdminPowerEnJoy that the car needs to be retrieved
-
-	[G13]: An employee is able find the position of the car to retrieve
-
-		[R13.1]: When an employee is notified of a car to retrieve, the notification contains the information necessary to set up the navigator of the company's cars to find the position of the car to retrieve
+		[R12.3]: AdminPowerEnJoy allows an employee to accept a retrieval request through the "Retrieval procedure" function
+		[R12.4]: If an employee has already accepted a retrieval request, the retrieval request can no longer be accepted
+		[R12.5]: After 12 hours, if an employee has accepted a retrieval request but has not retrieved the car, the request is issued again by the system and another employee can accept it
+		[R12.6]: When an employee is notified of a car to retrieve, the notification contains the information necessary to set up the navigator of the company's cars to find the position of the car to retrieve
+		[R12.7]: AdminPowerEnJoy allows an employee to unlock any car for which he/she has accepted a retrieval request
 
 	Domain assumptions to ensure the desired outcome:
 
 		[D3.0]: The GPS coordinates of the cars received by the system always correspond to the actual positions of the cars.
 		[D9]: The company's cars used by the employees are equipped with a navigation system
+		[D10]: After a finite number of times that a retrieval notification is sent for the same car, that car is retrieved
 
-	[G14.0]: The employee is able to announce that he/she will retrieve a specific car
-	[G14.1]: If an employee has already announced that he/she will retrieve a specific car, no other employee can do the same
-
-		[R14.1]: AdminPowerEnJoy allows an employee to accept a retrieval request through the "Retrieval procedure" function
-		[R14.2]: If an employee has already accepted a retrieval request, the app does not show the retrieval request anymore
-
-	[G15]: The employee is able to open any car he/she needs to retrieve
-
-		[R15.1]: AdminPowerEnJoy allows an employee to unlock any car for which he/she has accepted a retrieval request
 
 	[G16]: No one is charged for the retrieval of a car
 

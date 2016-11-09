@@ -41,6 +41,8 @@ sig Car{
 	passengers : set Person,
 	plugged : lone PowerGrid
 }{
+	//state specification for a car
+
 	state in Available => position in SafeArea && ( no r : Reservation | r.reservedCar = this && r.status in Active ) && engine in Off
 
 	state in Dislocated => position in NonSafeArea && ( no r : Reservation | r.reservedCar = this && r.status in Active ) && engine in Off
@@ -50,6 +52,9 @@ sig Car{
 	state in Unavailable => ( one r : Reservation | r.reservedCar = this && r.status in Active && r.wasUsed.isTrue )   && engine in Off
 
 	state in InUse => engine in On
+
+	//if the engine is on, the car has a driver
+	engine in On => #driver > 0
 }
 
 abstract sig CarState {}

@@ -30,6 +30,8 @@ EXCEPTIONS
 
 - The car cannot be recharged/moved : the employees request the help of a special unit that handles these situations
 
+- The employee fails to retrieve the car within 12 hours: the retrieval request is issued again by the system and another employee can accept it
+
 SPECIAL REQUIREMENTS
 
 - The system's server needs to be operational and responsive enough to allow the procedure to be carried out in a reasonable amount of time.
