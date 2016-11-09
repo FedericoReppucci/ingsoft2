@@ -51,10 +51,14 @@ sig Car{
 
 	state in Unavailable => ( one r : Reservation | r.reservedCar = this && r.status in Active && r.wasUsed.isTrue )   && engine in Off
 
-	state in InUse => engine in On
+	state in InUse <=> engine in On
 
-	//if the engine is on, the car has a driver
-	engine in On => #driver > 0
+	//if and only if the engine is on, the car has a driver ( the moment when the driver enters the car and the engine is still off is not modeled ) and can have passengers
+	engine in On <=> #driver > 0
+	#passengers > 0 => engine in On
+	
+	//a car can be plugged in if and only if the engine is off
+	#plugged > 0 <=> engine in Off && position in SpecialSafeArea
 }
 
 abstract sig CarState {}
@@ -79,6 +83,9 @@ sig Person{
 		near : set Car,
 		driving : lone Car,
 		canOpen : set Car
+}{
+	canOpen in near
+	canOpen <=> this in User || this in Employee
 }
 
 //a user has an ID card and a credit card, can have at most one active reservation
@@ -87,6 +94,8 @@ sig User extends Person{
 	paymentInfo : one CreditCard,
 	activeReservation : lone Reservation,
 	pendingPayment : lone PaymentRequest
+}{
+	canOpen <=>  ( one r : Reservation | r.reservingUser = this && r.status in Active  && r.wasUsed.isFalse )
 }
 
 //an employee can be notified of several retrieval request, and have accepted at most one of them 
