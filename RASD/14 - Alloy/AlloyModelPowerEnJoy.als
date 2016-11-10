@@ -30,15 +30,16 @@ sig Reservation{
 }
 
 abstract sig UsedState{}
-sig Used,Unused extends UsedState{}
+sig Used,Unused extends UsedState{}{ #this = 1}
 
 abstract sig ReservationStatus{}
-sig Active, Inactive extends ReservationStatus{}
+sig Active, Inactive extends ReservationStatus{}{ #this = 1}
 
 //a car has a state, a current position, can have a driver, passengers, and can be plugged  in a power grid
 sig Car{
 	state : one CarState,
 	engine : one EngineState,
+	battery : one BatteryLevel,
 	position : one CityArea,
 	driver : lone Person,
 	passengers : set Person,
@@ -68,11 +69,14 @@ abstract sig CarState {}
 sig Available, Reserved, Dislocated, Unavailable, InUse extends CarState{}
 
 abstract sig EngineState{}
-sig On,Off extends EngineState{}
+sig On,Off extends EngineState{}{ #this = 1}
+
+abstract sig BatteryLevel{}
+sig LT20, LT50, MT50 extends BatteryLevel{}{ #this = 1}
 
 //status of an ID card or credit card
 abstract sig Status{}
-sig Valid,Expired extends Status{}
+sig Valid,Expired extends Status{#this = 1}
 
 sig IDCard{
 	status : one Status
@@ -98,7 +102,10 @@ sig User extends Person{
 	pendingPayment : lone PaymentRequest
 }{
 	all c: Car | c in canOpen <=>  ( one r : Reservation | r.reservingUser = this && r.status in Active  && r.wasUsed in Unused )
+	activeReservation.reservingUser = this
 }
+
+fact uniqueId{	all u1,u2 : User | u1.id = u2.id <=> u1 = u2}
 
 //an employee can be notified of several retrieval request, and have accepted at most one of them 
 sig Employee extends Person{
@@ -121,24 +128,30 @@ sig Ride{
 	//if a payment is generated, a user reserved the car and used it
 	#paymentGenerated > 0 => (#reservedBy > 0 && reservedBy.wasUsed in Used)
 
+	/*---temporal facts----
 	paymentGenerated.discount in TwoPlusPassengers =>  #car.passengers > 2 
+	paymentGenerated.discount in HighBattery => car.battery in MT50
+	paymentGenerated.discount in Plugged => car.position in SpecialSafeArea*/
 }
 
 sig PaymentRequest{
 	discount : lone Discount,
-	extraFees : set ExtraFee
+	nonSafe : lone NonSafe,
+	lowBattery : lone LowBattery,
+	farFromPowerGrid : lone FarFromPowerGrid
 }{
-	#discount > 0 => #extraFees = 0
+	#discount > 0 => #(nonSafe + lowBattery + farFromPowerGrid ) = 0
 
 }
 
 abstract sig Discount{}
-sig TwoPlusPassengers, HighBattery, Plugged extends Discount{}
+sig TwoPlusPassengers, HighBattery, Plugged extends Discount{}{ #this = 1}
 
 sig ExtraFee{}
-sig NonSafe, LowBattery, FarFromPowerGrid extends ExtraFee{}
+sig NonSafe, LowBattery, FarFromPowerGrid extends ExtraFee{}{ #this = 1}
 
-
+pred example{}
+run example for 2
 
 //ASSERTIONS
 assert openCar{
