@@ -39,6 +39,7 @@ sig Active, Inactive extends ReservationStatus{}
 sig Car{
 	state : one CarState,
 	engine : one EngineState,
+	battery: one BatteryState,
 	position : one CityArea,
 	driver : lone Person,
 	passengers : set Person,
@@ -46,11 +47,13 @@ sig Car{
 }{
 	//state specification for a car
 
-	state in Available => position in SafeArea && ( no r : Reservation | r.reservedCar = this && r.status in Active ) && engine in Off
+	state in Available => position in SafeArea && ( no r : Reservation | r.reservedCar = this && r.status in Active ) 
+										&& engine in Off && battery not in LT20
 
 	state in Dislocated => position in NonSafeArea && ( no r : Reservation | r.reservedCar = this && r.status in Active ) && engine in Off
 
-	state in Reserved => position in SafeArea && ( one r : Reservation | r.reservedCar = this && r.status in Active  && r.wasUsed in Unused ) && engine in Off
+	state in Reserved => position in SafeArea && ( one r : Reservation | r.reservedCar = this && r.status in Active  && r.wasUsed in Unused )
+										 && engine in Off && battery not in LT20
 
 	state in Unavailable => ( one r : Reservation | r.reservedCar = this && r.status in Active && r.wasUsed in Used )   && engine in Off
 
@@ -69,6 +72,9 @@ sig Available, Reserved, Dislocated, Unavailable, InUse extends CarState{}
 
 abstract sig EngineState{}
 sig On,Off extends EngineState{}
+
+abstract sig BatteryState{}
+sig LT20, LT50, MT50 extends BatteryState{}
 
 //status of an ID card or credit card
 abstract sig Status{}
@@ -121,7 +127,13 @@ sig Ride{
 	//if a payment is generated, a user reserved the car and used it
 	#paymentGenerated > 0 => (#reservedBy > 0 && reservedBy.wasUsed in Used)
 
-	paymentGenerated.discount in TwoPlusPassengers =>  #car.passengers > 2 
+	#paymentGenerated.discount > 0 || #paymentGenerated.extraFees > 0 => car.state not in InUse
+
+	paymentGenerated.discount in TwoPlusPassengers =>  #car.passengers > 2
+	paymentGenerated.discount in  Plugged => car.position in SpecialSafeArea
+	paymentGenerated.discount in HighBattery => car.battery in MT50
+
+	(one ex : ExtraFee | ex in paymentGenerated.extraFees && ex in NonSafe ) => car.position in NonSafeArea
 }
 
 sig PaymentRequest{
@@ -129,13 +141,14 @@ sig PaymentRequest{
 	extraFees : set ExtraFee
 }{
 	#discount > 0 => #extraFees = 0
-
+	
+	
 }
 
 abstract sig Discount{}
 sig TwoPlusPassengers, HighBattery, Plugged extends Discount{}
 
-sig ExtraFee{}
+abstract sig ExtraFee{}
 sig NonSafe, LowBattery, FarFromPowerGrid extends ExtraFee{}
 
 
