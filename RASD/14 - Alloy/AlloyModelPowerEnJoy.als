@@ -1,7 +1,5 @@
 //-------------- PowerEnJoy -------  RASD ----- ALLOY MODEL
 
-open util/boolean
-
 //areas of the city divided into safe and non-safe areas
 sig CityArea{}
 sig SafeArea, NonSafeArea extends CityArea{}
@@ -20,14 +18,19 @@ sig RetrievalRequest{
 //created by a user to reserve a car
 sig Reservation{
 	status : one ReservationStatus,
-	wasUsed : one Bool,
+	wasUsed : one UsedState,
 	reservedCar : one Car,
 	reservingUser : one User
 }{
 	status in Active => reservedCar.state in (Reserved + Unavailable + InUse)
 	status in Active  => reservingUser.id.status in Valid && reservingUser.paymentInfo.status in Valid
 	status in  Active => #reservingUser.pendingPayment = 0 
+	// a reservation can be active if and only if is active for some user
+	status in Active <=> ( some u : User | this = u.activeReservation )
 }
+
+abstract sig UsedState{}
+sig Used,Unused extends UsedState{}
 
 abstract sig ReservationStatus{}
 sig Active, Inactive extends ReservationStatus{}
@@ -47,9 +50,9 @@ sig Car{
 
 	state in Dislocated => position in NonSafeArea && ( no r : Reservation | r.reservedCar = this && r.status in Active ) && engine in Off
 
-	state in Reserved => position in SafeArea && ( one r : Reservation | r.reservedCar = this && r.status in Active  && r.wasUsed.isFalse ) && engine in Off
+	state in Reserved => position in SafeArea && ( one r : Reservation | r.reservedCar = this && r.status in Active  && r.wasUsed in Unused ) && engine in Off
 
-	state in Unavailable => ( one r : Reservation | r.reservedCar = this && r.status in Active && r.wasUsed.isTrue )   && engine in Off
+	state in Unavailable => ( one r : Reservation | r.reservedCar = this && r.status in Active && r.wasUsed in Used )   && engine in Off
 
 	state in InUse <=> engine in On
 
@@ -94,7 +97,7 @@ sig User extends Person{
 	activeReservation : lone Reservation,
 	pendingPayment : lone PaymentRequest
 }{
-	all c: Car | c in canOpen <=>  ( one r : Reservation | r.reservingUser = this && r.status in Active  && r.wasUsed.isFalse )
+	all c: Car | c in canOpen <=>  ( one r : Reservation | r.reservingUser = this && r.status in Active  && r.wasUsed in Unused )
 }
 
 //an employee can be notified of several retrieval request, and have accepted at most one of them 
@@ -116,7 +119,7 @@ sig Ride{
 	//only an employee does not pay for a ride if he/she needs to re trieve a car
 	#paymentGenerated = 0 <=> car in driver.acceptedRequest.carToRetrieve
 	//if a payment is generated, a user reserved the car and used it
-	#paymentGenerated > 0 => (#reservedBy > 0 && reservedBy.wasUsed.isTrue)
+	#paymentGenerated > 0 => (#reservedBy > 0 && reservedBy.wasUsed in Used)
 
 	paymentGenerated.discount in TwoPlusPassengers =>  #car.passengers > 2 
 }
@@ -139,14 +142,12 @@ sig NonSafe, LowBattery, FarFromPowerGrid extends ExtraFee{}
 
 //ASSERTIONS
 assert openCar{
-	some r1, r2 : Reservation |
+	all r1, r2 : Reservation |
 		r1.reservingUser = r2.reservingUser && 
-		r1.status in Active && r2.status in Active
-		implies
-		r1 = r2
+		r1.status in Active && r2.status in Active => r1 = r2
 }
 
-check openCar for 1
+check openCar for 3
 
 
 
