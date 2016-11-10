@@ -81,7 +81,6 @@ sig CreditCard{
 //a human person can be near some cars, being driving one or be able to open one
 sig Person{
 		near : set Car,
-		driving : lone Car,
 		canOpen : set Car
 }{
 	canOpen in near
@@ -102,6 +101,9 @@ sig User extends Person{
 sig Employee extends Person{
 	acceptedRequest : lone RetrievalRequest,
 	notifiedRequests : set RetrievalRequest
+}{
+	acceptedRequest in notifiedRequest
+	canOpen in acceptedRequest.carToRetrieve
 }
 
 //a ride has a driver, a car, can result from a reservation and generate a payment request. A discount and extra fees can be applied
@@ -109,12 +111,23 @@ sig Ride{
 	driver : one Person,
 	car : one Car,
 	reservedBy : lone Reservation,
-	paymentGenerated : lone PaymentRequest,
-	discount : lone Discount,
-	extraFees : set ExtraFee
+	paymentGenerated : lone PaymentRequest
+}{
+	//only an employee does not pay for a ride if he/she needs to re trieve a car
+	#paymentGenerated = 0 <=> car in driver.acceptedRequest.carToRetrieve
+	//if a payment is generated, a user reserved the car and used it
+	#paymentGenerated > 0 => (#reservedBy > 0 && reservedBy.wasUsed.isTrue)
+
+	paymentGenerated.discount in TwoPlusPassengers =>  #car.passengers > 2 
 }
 
-sig PaymentRequest{}
+sig PaymentRequest{
+	discount : lone Discount,
+	extraFees : set ExtraFee
+}{
+	#discount > 0 => extraFees in none
+
+}
 
 abstract sig Discount{}
 sig TwoPlusPassengers, HighBattery, Plugged extends Discount{}
