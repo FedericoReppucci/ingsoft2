@@ -35,7 +35,7 @@ sig Active, Inactive extends ReservationStatus{}
 //a car has a state, a current position, can have a driver, passengers, and can be plugged  in a power grid
 sig Car{
 	state : one CarState,
-	engine : one EngineSate,
+	engine : one EngineState,
 	position : one CityArea,
 	driver : lone Person,
 	passengers : set Person,
@@ -64,7 +64,7 @@ sig Car{
 abstract sig CarState {}
 sig Available, Reserved, Dislocated, Unavailable, InUse extends CarState{}
 
-abstract sig EngineSate{}
+abstract sig EngineState{}
 sig On,Off extends EngineState{}
 
 //status of an ID card or credit card
@@ -84,7 +84,7 @@ sig Person{
 		canOpen : set Car
 }{
 	canOpen in near
-	canOpen <=> this in User || this in Employee
+	all c: Car | c in canOpen <=> (this in User || this in Employee)
 }
 
 //a user has an ID card and a credit card, can have at most one active reservation
@@ -94,7 +94,7 @@ sig User extends Person{
 	activeReservation : lone Reservation,
 	pendingPayment : lone PaymentRequest
 }{
-	canOpen <=>  ( one r : Reservation | r.reservingUser = this && r.status in Active  && r.wasUsed.isFalse )
+	all c: Car | c in canOpen <=>  ( one r : Reservation | r.reservingUser = this && r.status in Active  && r.wasUsed.isFalse )
 }
 
 //an employee can be notified of several retrieval request, and have accepted at most one of them 
@@ -102,7 +102,7 @@ sig Employee extends Person{
 	acceptedRequest : lone RetrievalRequest,
 	notifiedRequests : set RetrievalRequest
 }{
-	acceptedRequest in notifiedRequest
+	acceptedRequest in notifiedRequests
 	canOpen in acceptedRequest.carToRetrieve
 }
 
@@ -125,7 +125,7 @@ sig PaymentRequest{
 	discount : lone Discount,
 	extraFees : set ExtraFee
 }{
-	#discount > 0 => extraFees in none
+	#discount > 0 => #extraFees = 0
 
 }
 
@@ -134,6 +134,20 @@ sig TwoPlusPassengers, HighBattery, Plugged extends Discount{}
 
 sig ExtraFee{}
 sig NonSafe, LowBattery, FarFromPowerGrid extends ExtraFee{}
+
+
+
+//ASSERTIONS
+assert openCar{
+	some r1, r2 : Reservation |
+		r1.reservingUser = r2.reservingUser && 
+		r1.status in Active && r2.status in Active
+		implies
+		r1 = r2
+}
+
+check openCar for 1
+
 
 
 
