@@ -1,7 +1,5 @@
 //-------------- PowerEnJoy -------  RASD ----- ALLOY MODEL
 
-open util/boolean
-
 //areas of the city divided into safe and non-safe areas
 sig CityArea{}
 sig SafeArea, NonSafeArea extends CityArea{}
@@ -20,36 +18,48 @@ sig RetrievalRequest{
 //created by a user to reserve a car
 sig Reservation{
 	status : one ReservationStatus,
-	wasUsed : one Bool,
+	wasUsed : one UsedState,
 	reservedCar : one Car,
 	reservingUser : one User
 }{
 	status in Active => reservedCar.state in (Reserved + Unavailable + InUse)
-	status in Active => reservingUser.id.status in Valid && reservingUser.paymentInfo.status in Valid
-	status in Active => #reservingUser.pendingPayment = 0 
+
+	status in Active  => reservingUser.id.status in Valid && reservingUser.paymentInfo.status in Valid
+	status in  Active => #reservingUser.pendingPayment = 0 
+	// a reservation can be active if and only if is active for some user
+	status in Active <=> ( some u : User | this = u.activeReservation )
+
 }
 
+abstract sig UsedState{}
+sig Used,Unused extends UsedState{}{ #this = 1}
+
 abstract sig ReservationStatus{}
-sig Active, Inactive extends ReservationStatus{}
+sig Active, Inactive extends ReservationStatus{}{ #this = 1}
 
 //a car has a state, a current position, can have a driver, passengers, and can be plugged  in a power grid
 sig Car{
 	state : one CarState,
 	engine : one EngineState,
+	battery : one BatteryLevel,
 	position : one CityArea,
 	driver : lone Person,
 	passengers : set Person,
 	plugged : lone PowerGrid
 }{
+	
+	driver not in passengers
 	//state specification for a car
 
-	state in Available => position in SafeArea && ( no r : Reservation | r.reservedCar = this && r.status in Active ) && engine in Off
+	state in Available => position in SafeArea && ( no r : Reservation | r.reservedCar = this && r.status in Active ) 
+										&& engine in Off && battery not in LT20
 
 	state in Dislocated => position in NonSafeArea && ( no r : Reservation | r.reservedCar = this && r.status in Active ) && engine in Off
 
-	state in Reserved => position in SafeArea && ( one r : Reservation | r.reservedCar = this && r.status in Active  && r.wasUsed.isFalse ) && engine in Off
+	state in Reserved => position in SafeArea && ( one r : Reservation | r.reservedCar = this && r.status in Active  && r.wasUsed in Unused )
+										 && engine in Off && battery not in LT20
 
-	state in Unavailable => ( one r : Reservation | r.reservedCar = this && r.status in Active && r.wasUsed.isTrue )   && engine in Off
+	state in Unavailable => ( one r : Reservation | r.reservedCar = this && r.status in Active && r.wasUsed in Used )   && engine in Off
 
 	state in InUse <=> engine in On
 
@@ -65,11 +75,15 @@ abstract sig CarState {}
 sig Available, Reserved, Dislocated, Unavailable, InUse extends CarState{}
 
 abstract sig EngineState{}
-sig On,Off extends EngineState{}
+sig On,Off extends EngineState{}{ #this = 1}
+
+abstract sig BatteryLevel{}
+sig LT20, LT50, MT50 extends BatteryLevel{}{ #this = 1}
+
 
 //status of an ID card or credit card
 abstract sig Status{}
-sig Valid,Expired extends Status{}
+sig Valid,Expired extends Status{}{#this = 1}
 
 sig IDCard{
 	status : one Status
@@ -81,9 +95,12 @@ sig CreditCard{
 //a human person can be near some cars, being driving one or be able to open one
 sig Person{
 		near : set Car,
-		canOpen : set Car
+		canOpen : set Car,
+		isDriving : lone Car
 }{
+	#isDriving > 0 <=> isDriving.driver = this
 	canOpen in near
+	canOpen.engine in Off
 	all c: Car | c in canOpen <=> (this in User || this in Employee)
 }
 
@@ -94,8 +111,11 @@ sig User extends Person{
 	activeReservation : lone Reservation,
 	pendingPayment : lone PaymentRequest
 }{
-	all c: Car | c in canOpen <=>  ( one r : Reservation | r.reservingUser = this && r.status in Active  && r.wasUsed.isFalse )
+	all c: Car | c in canOpen <=>  ( one r : Reservation | r.reservingUser = this && r.status in Active  && r.wasUsed in Unused )
+	activeReservation.reservingUser = this
 }
+
+fact uniqueId{	all u1,u2 : User | u1.id = u2.id <=> u1 = u2}
 
 //an employee can be notified of several retrieval request, and have accepted at most one of them 
 sig Employee extends Person{
@@ -116,25 +136,29 @@ sig Ride{
 	//only an employee does not pay for a ride if he/she needs to re trieve a car
 	#paymentGenerated = 0 <=> car in driver.acceptedRequest.carToRetrieve
 	//if a payment is generated, a user reserved the car and used it
-	#paymentGenerated > 0 => (#reservedBy > 0 && reservedBy.wasUsed.isTrue)
+	#paymentGenerated > 0 => (#reservedBy > 0 && reservedBy.wasUsed in Used)
 
+	/*---temporal facts----
 	paymentGenerated.discount in TwoPlusPassengers =>  #car.passengers > 2 
+	paymentGenerated.discount in HighBattery => car.battery in MT50
+	paymentGenerated.discount in Plugged => car.position in SpecialSafeArea*/
 }
 
 sig PaymentRequest{
 	discount : lone Discount,
-	extraFees : set ExtraFee
+	nonSafe : lone NonSafe,
+	lowBattery : lone LowBattery,
+	farFromPowerGrid : lone FarFromPowerGrid,
+	generatedBy = ~paymentGenerated
 }{
-	#discount > 0 => #extraFees = 0
+	#discount > 0 => #(nonSafe + lowBattery + farFromPowerGrid ) = 0
 
 }
 
 abstract sig Discount{}
-sig TwoPlusPassengers, HighBattery, Plugged extends Discount{}
+sig TwoPlusPassengers, HighBattery, Plugged extends Discount{}{ #this = 1}
 
-sig ExtraFee{}
-sig NonSafe, LowBattery, FarFromPowerGrid extends ExtraFee{}
-
+<<<<<<< HEAD
 //PREDICATES
 pred min{
 	
@@ -149,6 +173,23 @@ assert canOpenCar{
 		c in r.reservingUser.canOpen
 }
 
+=======
+abstract sig ExtraFee{}
+sig NonSafe, LowBattery, FarFromPowerGrid extends ExtraFee{}{ #this = 1}
+
+pred example{}
+run example for 2
+
+//ASSERTIONS
+assert openCar{
+	all r1, r2 : Reservation |
+		r1.reservingUser = r2.reservingUser && 
+		r1.status in Active && r2.status in Active => r1 = r2
+}
+
+check openCar for 3
+
+>>>>>>> origin/master
 
 
 
