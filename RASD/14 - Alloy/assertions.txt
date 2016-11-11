@@ -1,9 +1,23 @@
 runshow for 4 but 1 CityArea
 
-assert openCar{
-	some r1, r2 : reservation |
-		r1.reservingUser = r2.reservingUser && 
-		r1.status in Active && r2.status in Active
-		implies
-		r1 = r2
+
+//ASSERTIONS
+//If there are two active reservations of one user, therefore those two reservation are the same one
+assert doubleReservation{
+	all r1, r2 : Reservation |
+	r1.reservingUser = r2.reservingUser && 
+	r1.status in Active && r2.status in Active
+	implies
+	r1 = r2
 }
+
+//An user has an active reservation in order to pick up a car and is next to it if and only if he/she can open it
+assert canOpenCar{
+	all r: Reservation, c: Car |
+		c in r.reservingUser.near 
+		<=>
+		c in r.reservingUser.canOpen
+}
+
+
+

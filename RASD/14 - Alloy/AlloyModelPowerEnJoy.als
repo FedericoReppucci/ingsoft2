@@ -25,8 +25,8 @@ sig Reservation{
 	reservingUser : one User
 }{
 	status in Active => reservedCar.state in (Reserved + Unavailable + InUse)
-	status in Active  => reservingUser.id.status in Valid && reservingUser.paymentInfo.status in Valid
-	status in  Active => #reservingUser.pendingPayment = 0 
+	status in Active => reservingUser.id.status in Valid && reservingUser.paymentInfo.status in Valid
+	status in Active => #reservingUser.pendingPayment = 0 
 }
 
 abstract sig ReservationStatus{}
@@ -135,18 +135,19 @@ sig TwoPlusPassengers, HighBattery, Plugged extends Discount{}
 sig ExtraFee{}
 sig NonSafe, LowBattery, FarFromPowerGrid extends ExtraFee{}
 
-
-
-//ASSERTIONS
-assert openCar{
-	some r1, r2 : Reservation |
-		r1.reservingUser = r2.reservingUser && 
-		r1.status in Active && r2.status in Active
-		implies
-		r1 = r2
+//PREDICATES
+pred min{
+	
 }
 
-check openCar for 1
+//ASSERTIONS
+//If one user has an active reservation in order to pick up a car and is next to it, therefore he/she can open it
+assert canOpenCar{
+	all r: Reservation, c: Car |
+		c in r.reservingUser.near 
+		<=>
+		c in r.reservingUser.canOpen
+}
 
 
 
