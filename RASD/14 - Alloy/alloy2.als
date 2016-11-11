@@ -39,22 +39,45 @@ fact canAccessAllFunctions{ all u : User | u.uses in u.accesses.has}
 
 abstract sig Function{}
 one sig ReserveACar extends Function{
+		user : one User,
 		acquiresCars : set GPS,
 		acquiresUser : one GPS,
-		acquireAddress : one GPS
+		acquiresAddress : lone GPS,
 }{
-	//set location sono di uno user e delle macchine in range
-	acquiresCars.signals in 
-	acquiresCars.signals in acquiresUser.signals.inRange
+
+	user.userIsAt = acquiresUser.signals
+	this in user.uses
+	//range restrictions 
+	acquiresCars.signalsFor in ( Car :> acquiresCars.signalsFor)
+	acquiresUser.signalsFor in ( User :> acquiresUser.signalsFor)
+	acquiresAddress.signalsFor in ( Address :> acquiresAddress.signalsFor)
+
+	//acquires cars in range of a user
+	(no acquiresAddress and acquiresCars.signals in acquiresUser.signals.inRange) or 
+	(one acquiresAddress and acquiresCars.signals in acquiresAddress.signals.inRange )
+	
+	//the app finds all the cars in range of the user or address
+	all c : Car, g : GPS | (no acquiresAddress and g.signals in acquiresUser.signals.inRange  and g.signalsFor = c ) iff c in acquiresCars.signalsFor
+	all c : Car, g : GPS | (one acquiresAddress and g.signals in acquiresAddress.signals.inRange  and g.signalsFor = c ) iff c in acquiresCars.signalsFor
+
+	//for all cars in acquiresCars User | acquiresUser.signalsFor is User, User can find acquiresCars.signalsFor
+	acquiresCars.signalsFor = acquiresUser.signalsFor.canFind
 }
+
+//   for all C,L if L | C is in L => C in acquireCars.signals iff L in range L ' 
 
 sig GPS{
 	signals : one Location,
-	signalsFor : one (User + Car)
+	signalsFor : one (User + Car + Address)
 }
 
+fact a{all g : GPS, r : ReserveACar | g in r.acquiresCars + r.acquiresUser + r.acquiresAddress }
+
 //[D3]
-fact GPSIsCorrect{ all g: GPS | g.signals = g.signalsFor.userIsAt  or  g.signals = g.signalsFor.carIsAt  }
+fact GPSIsCorrect{ all g: GPS | g.signals = g.signalsFor.userIsAt  or  g.signals = g.signalsFor.carIsAt or g.signals = g.signalsFor.isAt  }
+
+//can use and acquires c <=> canFind c
+
 
 //-----------------------THE WORLD --------------------
 sig User{
@@ -66,6 +89,9 @@ sig User{
 	//requirements-related user relations
 	accesses : one PowerEnJoyApp,
 	uses : set Function
+}{
+	some canFind iff ReserveACar in uses
+	one specifiedAddress iff ReserveACar in uses
 }
 
 sig Car{
@@ -85,9 +111,11 @@ fact RangeIsReflexive{ all l : Location | l in l.inRange }
 fact RangeIsSymmetric{ all l1,l2 : Location | l2 in l1.inRange implies l1 in l2.inRange }
 
 
-assert G2 { all u : User, c : Car | (c.carIsAt in u.userIsAt.inRange and no u.specifiedAddress) or (c.carIsAt in u.specifiedAddress.isAt) iff c in u.canFind } 
-check G2
+assert G2 { all u : User, c : Car | 
+					ReserveACar in u.uses and
+					(c.carIsAt in u.userIsAt.inRange and no u.specifiedAddress) or (c.carIsAt in u.specifiedAddress.isAt) iff c in u.canFind } 
+check G2 for 2 but 1 User 
 
-pred p{}
-run p for 2
+pred p{one u: User | #u.canFind > 0}
+run p for 2 but 2 User
 
