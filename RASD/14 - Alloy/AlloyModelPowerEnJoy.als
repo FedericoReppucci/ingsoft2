@@ -45,6 +45,8 @@ sig Car{
 	passengers : set Person,
 	plugged : lone PowerGrid
 }{
+	
+	driver not in passengers
 	//state specification for a car
 
 	state in Available => position in SafeArea && ( no r : Reservation | r.reservedCar = this && r.status in Active ) 
@@ -76,12 +78,10 @@ sig On,Off extends EngineState{}{ #this = 1}
 abstract sig BatteryLevel{}
 sig LT20, LT50, MT50 extends BatteryLevel{}{ #this = 1}
 
-abstract sig BatteryState{}
-sig LT20, LT50, MT50 extends BatteryState{}
 
 //status of an ID card or credit card
 abstract sig Status{}
-sig Valid,Expired extends Status{#this = 1}
+sig Valid,Expired extends Status{}{#this = 1}
 
 sig IDCard{
 	status : one Status
@@ -93,9 +93,12 @@ sig CreditCard{
 //a human person can be near some cars, being driving one or be able to open one
 sig Person{
 		near : set Car,
-		canOpen : set Car
+		canOpen : set Car,
+		isDriving : lone Car
 }{
+	#isDriving > 0 <=> isDriving.driver = this
 	canOpen in near
+	canOpen.engine in Off
 	all c: Car | c in canOpen <=> (this in User || this in Employee)
 }
 
@@ -143,7 +146,8 @@ sig PaymentRequest{
 	discount : lone Discount,
 	nonSafe : lone NonSafe,
 	lowBattery : lone LowBattery,
-	farFromPowerGrid : lone FarFromPowerGrid
+	farFromPowerGrid : lone FarFromPowerGrid,
+	generatedBy = ~paymentGenerated
 }{
 	#discount > 0 => #(nonSafe + lowBattery + farFromPowerGrid ) = 0
 
