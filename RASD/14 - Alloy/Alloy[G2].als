@@ -1,7 +1,6 @@
-
 //ALLOY MODEL FOR GOALS [G2.0], [G2.1] AND RELATIVE REQUIREMENTS
 
-//-----------------------THE WORLD --------------------------------------------------------------------------------------
+//-----------------------THE WORLD ------------------------------------------------------
 
 sig User{
 	//goal-related user relations
@@ -21,7 +20,7 @@ sig User{
 }
 
 //only the addresses specified by a user are shown in this model
-fact relevantAddress{ no a : Address | no u : User | a in u.specifiedAddress }
+fact relevantAddress{ no a : Address | no u : User | a in u.specifiedAddress}
 
 sig Car{
 	carIsAt : one Location,
@@ -48,7 +47,7 @@ assert G2 { all u : User, c : AvailableCar |
 					(c.carIsAt in u.userIsAt.inRange and no u.specifiedAddress) or 
 					(one u.specifiedAddress and c.carIsAt in u.specifiedAddress.isAt.inRange) iff c in u.canFind } 
 
-//--------------------- THE MACHINE ----------------------------------------------------------------------------------------------------------
+//--------------------- THE MACHINE --------------------------------------------------------------
 
 one sig PowerEnJoyApp{
 	has : set Function 
@@ -59,9 +58,11 @@ one sig PowerEnJoyApp{
 //[R2.1]: The "Reserve a car" function can be accessed by the user from the home page of the app
 fact userCanAccessAllFunctions{ all u : User | u.uses in u.accesses.has}
 
-//[R2.2]: The "Reserve a car" function allows the user to select a range : in this model we assume the range considered to be the range of choice
+//[R2.2]: The "Reserve a car" function allows the user to select a range : in this model we assume the range 
+//			   considered to be the range of choice
 //[R2.3]: The system acquires the user's current position through the GPS coordinates of the user's phone
-fact userCoordinatesAcquired{ all u : User | ReserveACar in u.uses iff ( one r : ReserveACar | u in r.acquiresUser/*GPS*/.signalsForUser ) }
+fact userCoordinatesAcquired{ all u : User | ReserveACar in u.uses iff ( one r : ReserveACar | u in 
+	r.acquiresUser/*GPS*/.signalsForUser ) }
 
 abstract sig Function{}
 one sig ReserveACar extends Function{
@@ -74,13 +75,18 @@ one sig ReserveACar extends Function{
 	//[R2.4]: The system tracks all available cars' current position through their GPS coordinates
 	acquiresCars.signalsForCar = AvailableCar
 
-	//[R2.5]: The "Reserve a car" function allows the user to select a starting position for the search, which can be either their current location or a given address
-	no acquiresAddress and (all c : Car | c in acquiresUser.signalsForUser.canFind iff c.carIsAt.inRange = acquiresUser.signalsForUser.userIsAt.inRange ) or
-	one acquiresAddress and ( all c : Car | c in acquiresUser.signalsForUser.canFind iff c.carIsAt.inRange = acquiresAddress.signalsForAddress.isAt.inRange )
+	//[R2.5]: The "Reserve a car" function allows the user to select a starting position for the search, which can 
+	//			  be either their current location or a given address
+	no acquiresAddress and (all c : Car | c in acquiresUser.signalsForUser.canFind iff 
+		c.carIsAt.inRange = acquiresUser.signalsForUser.userIsAt.inRange ) or
+	one acquiresAddress and ( all c : Car | c in acquiresUser.signalsForUser.canFind iff 
+		c.carIsAt.inRange = acquiresAddress.signalsForAddress.isAt.inRange )
 }
 
-//[R2.6]: When the user confirms the inserted parameters the search is carried out and the "Reserve a car" function displays to the user
-// the data of the search acquired from the system in a Google provided map : this model shows the instant after confirmation
+//[R2.6]: When the user confirms the inserted parameters the search is carried out and the "Reserve a car" 
+//				function displays to the user
+// the data of the search acquired from the system in a Google provided map : this model shows the instant 
+//after confirmation
 
 //this fact states that GPS coordinates are in general different for different objects 
 fact uniqueGPS{ (all g1, g2 : GPSCar | g1 != g2 iff g1.signalsForCar != g2.signalsForCar) and
@@ -88,10 +94,10 @@ fact uniqueGPS{ (all g1, g2 : GPSCar | g1 != g2 iff g1.signalsForCar != g2.signa
 							(all g1, g2 : GPSAddress | g1 != g2 iff g1.signalsForAddress != g2.signalsForAddress)}
 
 // this fact conveys the meaning of "the user can find only the cars tracked via GPS by the system"
-fact canFindAcquiredCarsOnly{ all r : ReserveACar | r.acquiresCars.signalsForCar = r.acquiresUser.signalsForUser.canFind }
+fact canFindAcquiredCarsOnly{ all r : ReserveACar | 
+	r.acquiresCars.signalsForCar = r.acquiresUser.signalsForUser.canFind }
 
 abstract sig GPS{}
-
 sig GPSCar extends GPS{
 	signals : one Location,
 	signalsForCar : one Car
@@ -117,15 +123,15 @@ sig GPSUser{
 }
 
 
-//[D3.0]: The GPS coordinates of the cars received by the system always correspond to the actual positions of the cars.
-//[D3.1]: The GPS coordinates of a user received by the system always correspond to the actual position of the user.
+//[D3.0]: The GPS coordinates of the cars received by the system always correspond to 
+//			  the actual positions of the cars.
+//[D3.1]: The GPS coordinates of a user received by the system always correspond to 
+//			  the actual position of the user.
 
 fact GPSUserCorrect{ all g : GPSUser | g.signals = g.signalsForUser.userIsAt}
 fact GPSCarCorrect{ all g : GPSCar | g.signals = g.signalsForCar.carIsAt}
 fact GPSUserCorrect{ all g : GPSAddress | g.signals = g.signalsForAddress.isAt}
 
-
 check G2 for 4
-
 
 
