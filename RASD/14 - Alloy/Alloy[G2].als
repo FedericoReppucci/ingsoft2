@@ -23,7 +23,7 @@ sig User{
 fact relevantAddress{ no a : Address | no u : User | a in u.specifiedAddress}
 
 sig Car{
-	carIsAt : one Location,
+	carIsAt : one Location
 }
 sig AvailableCar in Car{}
 
