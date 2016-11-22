@@ -1,0 +1,13 @@
+ACTORS IDENTIFICATION
+
+The actors interacting with our system are the following:
+
+- User: a person who is logged into our system and can use all the services provided
+by the application and the car sharing service.
+
+- PowerEnJoy employee: a person who works for the company and, among other things, is responsible 
+for the retrieval of cars parked outside of the safe areas.
+
+- Non registered person: a person who is browsing PowerEnJoy's website looking for information on the service
+or a person who is using the app but is not yet registered.
+

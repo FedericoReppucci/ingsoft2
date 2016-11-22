@@ -1,0 +1,75 @@
+TABLE OF CONTENTS
+
+1.  INTRODUCTION  
+		A.  Purpose  x  
+		B.  Scope    x
+		C.  Definitions, Acronyms, Abbreviations  x   
+		D.  Reference Documents  x   
+		E.  Document Structure 
+2.  ARCHITECTURAL DESIGN 
+		A.  Overview: High level components and their interaction 
+		C.  Component view -> Composition
+		D.  Deployment view -> Composition
+		E.  Runtime  view:  You  can  use  sequence  diagrams  to  describe  the  way  components interact to accomplish specific tasks typically related to your use cases ->
+			(Interaction+State Dynamics)
+		F.  Component interfaces ->Interface
+		G.  Selected  architectural  styles  and  patterns:  Please  explain  which  styles/patterns  you 
+		used, why, and how    -> Patterns
+		H.  Other design decisions -> (Dependency + Logical + Resources ...)
+3.  ALGORITHM DESIGN: x 
+		Focus on the definition of the most relevant algorithmic part  
+4.  USER  INTERFACE  DESIGN:  
+		Provide  an  overview  on  how  the  user  interface(s)  of  your  system  will look like; if you have included this part in the RASD, you can simply refer to what you have already done, possibly, providing here some extensions if applicable. 
+5.  REQUIREMENTS  TRACEABILITY:  
+		Explain  how  the  requirements  you  have  defined  in  the  RASD map to the design elements that you have defined in this document. 
+6.  EFFORT  SPENT:  
+		In  this  section  you  will  include  information  about  the  number  of  hours  each group member has worked towards the fulfillment of this deadline. 
+7.  REFERENCES 
+
+
+1. INTRODUCTION
+	- Purpose
+	- Scope
+	- Glossary
+	- References
+	- Summary ( Documment Structure) NB: Document rationale/approach!
+
+2. BODY (VIEW/VIEWPOINTS IN TOP DOWN APPROACH ? )
+
+	1. OVERVIEW
+		- Requirements mapping approach
+		- Design decisions methodology
+
+	2. COMPONENT VIEW
+		- External components and interfaces
+		- Software components view
+
+	3.  HIGH-LEVEL SYSTEM ARCHITECTURE
+		- Software architectural pattern 
+		- System architecture
+
+	4. DEPLOYMENT VIEW
+		- Runtime dependencies view
+		- Software components mapping
+		- Technical evnironment requirements
+
+	5. COMPONENTS INTERFACES
+		- Components interaction
+		- Runtime sequence diagrams
+
+	6. COMPONENTS ARCHITECTURE AND PATTERNS
+		- Components architectural view ( also DB: ER diagram)
+		- Object diagrams
+
+	7. USER INTERFACE DESIGN
+
+	8. SELECTED TOOLS
+		- Framework
+		- APIs
+		- Communication protocols
+
+	9. ALGORITHM DESIGN
+
+	10. REQUIREMENTS TRACEABILITY
+
+	11. EFFORT SPENT
