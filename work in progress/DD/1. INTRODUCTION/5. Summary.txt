@@ -1,1 +1,22 @@
-Summary ( Documment Structure) NB: Document rationale/approach!
+Summary ( Documment Structure) 
+NB: Document rationale/approach!
+
+1. OVERVIEW: this section explains how the document is structured, and the reasoning behind the choice of this particular approach.
+
+2. COMPONENT VIEW: this section shows the external software services that interact with the system and the structure of the system's main software components.
+
+3.  HIGH-LEVEL SYSTEM ARCHITECTURE: this section describes the Software Architectural Pattern of choice as well as the physical architecture of the system.
+
+4. DEPLOYMENT VIEW: this section describes how the software components are mapped onto the system's hardware and how they interact with each other at runtime. Moreover, a set of requirements regarding the execution environment of the software is identified.
+
+5. COMPONENTS INTERFACES: this section describes more precisely how the software components are connected, which interfaces they provide and how they interact with each other.
+
+6. COMPONENTS ARCHITECTURE AND PATTERNS: this section specifies for each software component its architecture, as well as the main design patterns used to construct it and their specific purpose.
+
+7. USER INTERFACE DESIGN: this section describes in detail the functionalities of the user interfaces.
+
+8. SELECTED TOOLS: this section specifies all the main frameworks, languages, libraries and tools to use during the development of the system.
+
+9. ALGORITHM DESIGN: this section describes the most critical algorithms to implement, providing a pseudo-code implementation.
+
+10. REQUIREMENTS TRACEABILITY: this section explains how the requirements previously identified are met by the system described in the document.
