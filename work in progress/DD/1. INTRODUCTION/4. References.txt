@@ -1,1 +1,5 @@
-References
+REFERENCES
+
+- The PowerEnJoy Requirements Analysis Specification Document (RASD)
+- IEEE Std 1016 - 2009
+- ...

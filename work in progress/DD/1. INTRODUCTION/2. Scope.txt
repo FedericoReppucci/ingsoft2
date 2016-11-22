@@ -1,1 +1,3 @@
-Scope
+SCOPE
+
+The PowerEnJoy project aims to develop a car-sharing service run exclusively employing electric cars.The system will provide a mobile application by means of which the users, once registered, will be able to use the car sharing services. The main goals of the service are to provide a sustainable and environmentally-friendly car sharing service as well as to promote virtuous behaviors from its users.

@@ -1,1 +1,3 @@
-Purpose
+PURPOSE 
+
+The aim of this document is to provide a complete specification of the PowerEnJoy system's architecture which fullfills the requirements identified during the requirements specification phase. More specifically, this document is meant to serve both as a way to clarify to the stakeholders how the specified system will fulill the requirements and how the requirements have motivated the design decisions presented, as well as a reference for the developers of the system that will guide the implementation phase.
