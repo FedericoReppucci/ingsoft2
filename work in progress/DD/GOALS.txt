@@ -1,0 +1,32 @@
+1.2.1. PERSON
+[G1.0]: Any person is able to register to the service by providing his/her credentials and valid payment info.
+[G1.1]: He/she receives back a password with which he/she is able to access the system.
+Additional goals emerged through scenario analysis
+[GA1.0]: Any person registered to the system is able to log in the application [GA1.1]: Only a person registered to the system is able to log in the application [GA2]: Any person registered to the system is able to retrieve his/her password [GA3]: Any person is able to access the PowerEnJoy website
+
+1.2.2 USER
+[G2.0]: The user is able to find the location of all available cars within a certain range from their current location.
+[G2.1]: The user is able to find the location of all available cars within a certain range from a specified address.
+[G3.0]: The user is able to pick a car among the available ones and reserve it.
+[G3.1]: A reserved car is not available for renting until one hour has passed from the moment a user reserved it.
+[G3.2]: After one hour from its reservation, a car becomes available again (NO LONGER IN USE)
+RATIONALE: G3.2 is formulated in a way which does not completely reflect the desired outcome, since a car is not meant to be available for renting even if an hour has passed from the moment it was reserved if it is currently in use, it has been left with less than 20% battery or it is more than 3km away from the nearest power grid, and therefore it has been substituted with the following goal.
+[G3.2] A car becomes available again after one hour has passed from its reservation and it is parked in a safe area less than 3 km away from a power grid having more than 20% of its battery.
+[G4]: The user pays 1 EUR if he/she doesn't reach the car he/she rent within 1 hour from the reservation.
+[G5]: The user is able to unlock and open the car he/she rent when he/she is nearby the car.
+[G6]: From the moment of ignition, the user is charged for a constant amount of money per minute
+[G7.0]: The charging of the user stops as soon as the driver parks the car in a safe area and exits from it.
+[G7.1]: The car is automatically locked as soon as the driver parks the car in a safe area and exits from it.
+[G8]: A discount of 10% is applied on the last ride if the driver took at least two passengers onto the car and no higher discount or any extra fee can be applied.
+[G9]: If a car is left with more than 50% of its maximum battery available, a discount of 20% is applied on the last ride and no higher discount or any extra fee can be applied.
+[G10]: A discount of 30% is applied on the last ride if a car is left at special parking areas where they can be recharged and the driver takes care of plugging the car into the power grid and no higher discount or any extra fee can be applied.
+[G11.0]: If a car is left at more than 3 kilometers from the nearest power grid station, the user is charged for an extra corresponding to 30% of the amount charged for the last ride.
+[G11.1]: If a car is left with less than 20% of its maximum battery available, the user is charged for an extra corresponding to 30% of the amount charged for the last ride.
+Additional goals emerged through scenario analysis
+[GA4]: If the user has not paid for his/her last ride, the user cannot reserve a car
+[GA5]: If the user's identity card or credit card has expired, he/she cannot reserve a car [GA6]: The user is able to update expired credit card or identity card data
+[GA7]: The user can reserve just one car at a time
+[GA8]: If the user parks the car outside of a safe area he/she is charged for a set extra fee
+
+1.2.3. EMPLOYEES
+[G12]: If a car is parked in a non-safe area, an employee will retrieve it [G13]: No one is charged for the retrieval of a car
