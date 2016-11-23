@@ -1,1 +1,3 @@
-Purpose
+OVERVIEW
+
+The structure of this document is meant to reflect the actual stages of the development of the architecture and design of the system, in order to illustrate not only the final result of the design phase, but also the intermediate steps of this process, and the rationale behind every major design decision. In order to achieve this, the document does not follow a strictly top-down structure, but starts from the design decisions that follow most directly from the requirements, namely the design of the system's main functional components. It is important to note that despite this difference in the rationale behind the structure of the document, for the most part the approach is stll top-down, since such an approach is the most natural way of obaining a cohesive design. 
