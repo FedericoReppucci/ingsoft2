@@ -15,7 +15,7 @@ D1:
 
 D2:
 
-- connection_manager : component which handles the connection with the system's server
+- connection_manager : component which handles the connection with the system's server, also manages the communication encryption
 - state_wrapper : components which collects and manages all the information regarding a car's state coming from the various controllers
 - GPS_controller : software components which interacts with the GPS device of the car to communicate the car's position to the system
 - passemgers_sensors_controller : manages the information provided by the car's sensors in the seats
@@ -42,7 +42,7 @@ D3:
 - map_manager : manages the interaction with the external service providing the maps
 - guest_request_manager : forwards all the unautenthicated requests
 - authenticated_request_manager : forwards all the authenticated requests
-- connection_handler : manages the connection with the system's server
+- connection_handler : manages the connection with the system's server, also manages the communication encryption
 - GPS_driver : the phone's GPS device
 
 D4
@@ -56,7 +56,7 @@ NOTE: only the component which are absent or serve a different purpose from the 
 D5
 
 - firewall : security mudule filtering incoming requests
-- connection-handling_module : manages all the connections with the cars, the users, and the employees
+- connection-handling_module : manages all the connections with the cars, the users, and the employees, also manages the communication encryption
 - dispatcher_module : filters and forwards the incoming messages to the relative subjects of interest
 - user_registration_controller : authorizes and operates modifications to the user's model
 - active_rides_controller : allows other component to abtain information on the rides currently active

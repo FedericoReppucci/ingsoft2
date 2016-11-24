@@ -1,1 +1,13 @@
-Purpose
+HIGH-LEVEL-SYSTEM-ARCHITECTURE
+
+SOFTWARE ARCHITECTURAL PATTERN
+
+Based on the components individuated to carry out all the tasks required of the system, the architectural patter most suited for the system is the event-based ( or pub-sub ) model.
+The main reason for this choice is the need for the system to communicate with different software components, such as cars, the users and the employees' applications, and recieve and send messages related to differents topics. One main objection to the adoption of this pattern may be that there are not so many one-to-many event-driven communications, but we can for example point to the notification system for car retrieval and the system requesting the car's position to allow a user to reserve a car as the two main examples.
+
+SYSTEM ARCHITECTURE
+
+The system architecture naturally follows from the functionality of the components previously described. The result is a three-tier architecture, where the presentation layer is located on the mobile applications and the car, the buisness logic is almost entirely on the server's side ( although both the mobile apps and the software systems on the car contain some control logic, it is mostly used to formulate requests for the server to evaluate, or to pass on messages to act upon ), and the persistency layer comes in the form of a database component.
+
+----------> INSERT ARCHITECTURE DIAGRAM <----------
+
