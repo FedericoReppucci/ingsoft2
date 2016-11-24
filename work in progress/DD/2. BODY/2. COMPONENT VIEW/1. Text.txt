@@ -1,1 +1,80 @@
-Purpose
+COMPONENT VIEW 
+
+In this section two different levels of abstraction are presented, in the form of component diagrams. The first level descibes how the main sofware components of the system interface themselves with the external software components necessary to achieve some of the required functionalities, while the second level illustrates a set of selected software components that achieve all the required functionalities of the system. 
+
+
+----------> INSERT DIAGRAMS HERE <--------------
+
+D1:
+
+- system_component : system's server software component
+- car_component : software component handling the logic, presentation and communication in a car
+- car_drivers : external component representing all the sofware drivers in a car 
+- usr_app_component : software component running on the user's phone
+- empl_app_component : software component runnung on an employee's phone
+
+D2:
+
+- connection_manager : component which handles the connection with the system's server
+- state_wrapper : components which collects and manages all the information regarding a car's state coming from the various controllers
+- GPS_controller : software components which interacts with the GPS device of the car to communicate the car's position to the system
+- passemgers_sensors_controller : manages the information provided by the car's sensors in the seats
+- battery_level_controller : manages the information about the car's battery level
+- locking_state_controller : manages the locking state of the car
+- engine_controller : manages the information about the car's engine state 
+- command_dispatcher : component designed to handle all the commands from the system's server to the car
+- locking_command : accepts locking/unlocking commands from the system and manages the car's locking_actuator_driver
+- charging_state : keeps track of the current charges to the user
+- terminal : displays all the relevant information about the car's state and the current charges to the user
+
+- locking_actuator_driver : driver to lock or unlock the car
+- plug_in_charger_driver : external driver whihc signals directly to the state_wrapper whether the car is plugged in a power supply  
+- *_driver : driver for the corresponding '*' controller
+
+D3:
+
+- user_interface : manages the interaction with the app's user
+- access_manager : generates the password retrieval and login requests of the user
+- registration_manager : generates the registration requests by the user
+- profile_manager : generates the requests to the user's profile pages 
+- reservation_requests_manager : generates reservation requests
+- unlock_request_manager : generates requests to unlock a car
+- map_manager : manages the interaction with the external service providing the maps
+- guest_request_manager : forwards all the unautenthicated requests
+- authenticated_request_manager : forwards all the authenticated requests
+- connection_handler : manages the connection with the system's server
+- GPS_driver : the phone's GPS device
+
+D4
+
+NOTE: only the component which are absent or serve a different purpose from the ones in the previous diagram are listed 
+
+- access_manager : in this case the component only generates login requests
+- push_notification_service : generates notifications when the server sends a message stating that a car needs to be retrieved
+- retrieval_manager : generates requests to accept a car retrieval task
+
+D5
+
+- firewall : security mudule filtering incoming requests
+- connection-handling_module : manages all the connections with the cars, the users, and the employees
+- dispatcher_module : filters and forwards the incoming messages to the relative subjects of interest
+- user_registration_controller : authorizes and operates modifications to the user's model
+- active_rides_controller : allows other component to abtain information on the rides currently active
+- charges_controller : authorizes and operates modifications to the charging history model
+- reservations_controller : authorizes and operates modifications to the reservation model
+- cars_state_controller : authorizes and operates modifications to the cars state model
+- car_retrieval_controller : authorizes and operates modifications to the retroeval requests model
+- website_controller : grants access to the website's model
+- user_model : the model for all the data relative to the users
+- charges_history_model : the model for the data relative to the history of charges to the users requested to the external payment service
+- reservations-model : the model for all the car reservations
+- cars_state_model : the model for the information relative to the state of a car
+- retrieval_request_model : the model for a car's retrieval request
+- website_model : the model for the website
+- database_component : the storage component, where all the data not currently in use is stored
+
+It is important to note that the process of selection and arrangement of the components has highlighted some critical aspects of the non-functional requirements of the system, and some architectural consideration can be based upon them:
+
+- the user's application as well as the employees' application does not need to store any persistent data, and can be basically reduced to a presentation layer and some control logic
+- the system needs to handle a number of heterogeneous communication channels, which can potentially represent a bottleneck for the system's performance
+- in the software architecture of the system's server the data model and the control logic can be identified and decoupled
