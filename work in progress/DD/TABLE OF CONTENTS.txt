@@ -20,25 +20,25 @@
 		- Software architectural pattern 
 		- System architecture
 
-	4. DEPLOYMENT VIEW
-		- Runtime dependencies view
-		- Software components mapping
-		- Technical evnironment requirements
-
-	5. COMPONENTS INTERFACES
-		- Components interaction
+	4. COMPONENTS INTERACTION
+		- Components interfaces
 		- Runtime sequence diagrams
 
-	6. COMPONENTS ARCHITECTURE AND PATTERNS
+	5. COMPONENTS ARCHITECTURE AND PATTERNS
 		- Components architectural view ( also DB: ER diagram)
 		- Object diagrams
 
-	7. USER INTERFACE DESIGN
+	6. USER INTERFACE DESIGN
 
-	8. SELECTED TOOLS
+	7. SELECTED TOOLS
 		- Framework
 		- APIs
 		- Communication protocols
+
+	8. DEPLOYMENT VIEW
+		- Runtime dependencies view
+		- Software components mapping
+		- Technical evnironment requirements
 
 	9. ALGORITHM DESIGN
 

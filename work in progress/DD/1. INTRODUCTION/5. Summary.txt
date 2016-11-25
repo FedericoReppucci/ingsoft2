@@ -7,15 +7,15 @@ NB: Document rationale/approach!
 
 3.  HIGH-LEVEL SYSTEM ARCHITECTURE: this section describes the Software Architectural Pattern of choice as well as the physical architecture of the system.
 
-4. DEPLOYMENT VIEW: this section describes how the software components are mapped onto the system's hardware and how they interact with each other at runtime. Moreover, a set of requirements regarding the execution environment of the software is identified.
+4. COMPONENTS INTERACTION: this section describes more precisely how the software components are connected, which interfaces they provide and how they interact with each other.
 
-5. COMPONENTS INTERFACES: this section describes more precisely how the software components are connected, which interfaces they provide and how they interact with each other.
+5. COMPONENTS ARCHITECTURE AND PATTERNS: this section specifies for each software component its architecture, as well as the main design patterns used to construct it and their specific purpose.
 
-6. COMPONENTS ARCHITECTURE AND PATTERNS: this section specifies for each software component its architecture, as well as the main design patterns used to construct it and their specific purpose.
+6. USER INTERFACE DESIGN: this section describes in detail the functionalities of the user interfaces.
 
-7. USER INTERFACE DESIGN: this section describes in detail the functionalities of the user interfaces.
+7. SELECTED TOOLS: this section specifies all the main frameworks, languages, libraries and tools to use during the development of the system.
 
-8. SELECTED TOOLS: this section specifies all the main frameworks, languages, libraries and tools to use during the development of the system.
+8. DEPLOYMENT VIEW: this section describes how the software components are mapped onto the system's hardware and how they interact with each other at runtime. Moreover, a set of requirements regarding the execution environment of the software is identified.
 
 9. ALGORITHM DESIGN: this section describes the most critical algorithms to implement, providing a pseudo-code implementation.
 
