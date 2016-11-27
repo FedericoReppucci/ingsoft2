@@ -1,1 +1,7 @@
-Purpose
+Since our system architecture is, as explained before, a three-tier architecture we need a suite of software for each of them.
+
+Starting from the business logic tier, we chose as application server Apache Tomcat. Despite Tomcat doesn’t offer all of the services of a commercial JEE Application Server, it includes the most commonly used services and it supports “plug-ins” and “add-ons” to enable enhancing Tomcat with specific services that can be needed.
+
+On the data layer, we chose MySQL. It is a free and open-source and multi-platform database management system. MySQL is one of the most spread DBMS, developed by Oracle. It is scalable and flexible with high performance and availability.
+
+Regarding the presentation layer, to develop the frontend website we chose Java Enterprise Edition, although the website is pretty simple and used mainly to inform people about PowerEnJoy services. To develop the software for the cars, since they run Microsoft Windows Embedded Automotive, we adopt the Windows Automotive Application Framework and Visual Studio as IDE. On the mobile phone, we are interested in developing a native application for Android, Apple, and Windows platform. Google (better to say Alphabet), Apple, and Microsoft provide the properly IDE to develop for their platforms (Android, iOS, Windows Phone), that are Android Studio, XCode, and Visual Studio, respectively.
