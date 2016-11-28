@@ -1,3 +1,34 @@
+SELECTED TOOLS
+
+OPERATING SYSTEMS
+
+SUSE Linux Enterprise 10: is the operating system running on the server machines
+
+Microsoft Windows Embedded Automotive: is the operating system that the provided cars come with
+
+Windows, iOS and Android are identified as the operating systems for which the mobile application will be developed
+
+APPLICATION SERVER
+
+Apache Tomcat: 	the main reasons for choosing Tomcat as the application server are its overall stability and completeness of docmentation. Moreover, since it is an open source software the additional cost of a license will be avoided. On the other hand, Tomcat does not offer all the serices that usually come with a commercial JEE Application Server, but it still includes all the most commonly used services, and any additional need can be resonably covered by plugins and addons.
+
+DATABASE
+
+MySql: among all the available DBMSs, MySQL stands out for its scalability and flexibility, which also comes along with good performnces and availability. In addition it is open source, just like Tomcat, and can run on multiple platforms. All these reasons contribute to make MySQL our DBMS of choice.
+
+FRAMEWORKS
+
+J2EE: is a solid framework which will be used to ease the development of the application logic and the presentation layer for both the website and the apps on the server side.
+
+Windows Automotive Application Framework: is chosen as a native framework that our windows developers are familiar with.
+
+IDES
+
+The selected IDEs are NetBeans for the development of the server-side application, VisualStudio for the development of the software running on the cars, and AndroidStudio, XCode and VisualStudio are the integrated environments selected to develop for Android, iOS and Windows respectively.
+
+
+------------- 
+
 Since our system architecture is, as explained before, a three-tier architecture we need a suite of software for each of them.
 
 Starting from the business logic tier, we chose as application server Apache Tomcat. Despite Tomcat doesn’t offer all of the services of a commercial JEE Application Server, it includes the most commonly used services and it supports “plug-ins” and “add-ons” to enable enhancing Tomcat with specific services that can be needed.
