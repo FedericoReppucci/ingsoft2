@@ -8,4 +8,4 @@ Peverelli: 3h	+ 0.5h	+ 3h + 3h + 2.5h, +2h, +2h + 6h	+3h + 5h + 9h + 8h	[47h]
 DD
 Together: 2h + 2.5h + 3.5h +3h +3h [14h]
 Reppucci: 2h + 2h + 2,5h + 3h	[9,5]
-Peverelli: 2h +2h
+Peverelli: 2h +2h +5h
