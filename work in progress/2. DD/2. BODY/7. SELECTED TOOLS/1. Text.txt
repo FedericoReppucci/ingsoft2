@@ -14,7 +14,7 @@ Apache Tomcat: 	the main reasons for choosing Tomcat as the application server a
 
 DATABASE
 
-MySql: among all the available DBMSs, MySQL stands out for its scalability and flexibility, which also comes along with good performnces and availability. In addition it is open source, just like Tomcat, and can run on multiple platforms. All these reasons contribute to make MySQL our DBMS of choice.
+MySQL: among all the available DBMSs, MySQL stands out for its scalability and flexibility, which also comes along with good performnces and availability. In addition it is open source, just like Tomcat, and can run on multiple platforms. All these reasons contribute to make MySQL our DBMS of choice.
 
 FRAMEWORKS
 
