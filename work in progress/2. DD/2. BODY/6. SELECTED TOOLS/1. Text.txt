@@ -10,17 +10,22 @@ Windows, iOS and Android are identified as the operating systems for which the m
 
 APPLICATION SERVER
 
-Apache Tomcat: 	the main reasons for choosing Tomcat as the application server are its overall stability and completeness of docmentation. Moreover, since it is an open source software the additional cost of a license will be avoided. On the other hand, Tomcat does not offer all the serices that usually come with a commercial JEE Application Server, but it still includes all the most commonly used services, and any additional need can be resonably covered by plugins and addons.
+Payara: is an open-source application server derived from Glassfish, and although it's not Java EE certified it is effectively Java EE 7 compliant and offers far more stable patch releases, security fixes, production support and developer support. It also has a very responsive community.
 
 DATABASE
 
-MySQL: among all the available DBMSs, MySQL stands out for its scalability and flexibility, which also comes along with good performnces and availability. In addition it is open source, just like Tomcat, and can run on multiple platforms. All these reasons contribute to make MySQL our DBMS of choice.
+MySQL: among all the available DBMSs, MySQL stands out for its scalability and flexibility, which also comes along with good performnces and availability. In addition it is open source, just like Payara, and can run on multiple platforms. All these reasons contribute to make MySQL our DBMS of choice.
 
 FRAMEWORKS
 
 J2EE: is a solid framework which will be used to ease the development of the application logic and the presentation layer for both the website and the apps on the server side.
 
 Windows Automotive Application Framework: is chosen as a native framework that our windows developers are familiar with.
+
+COMMUNICATION
+
+On the server side JMS is used as the messaging API, and the messages are exchanged in a text-based XML format via SOAP Transport Protocol.
+On the client side Kaazing WebSocket Gateway APIs are used to support JMS messaging
 
 IDES
 
