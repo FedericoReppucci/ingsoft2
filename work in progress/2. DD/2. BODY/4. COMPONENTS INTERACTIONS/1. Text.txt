@@ -1,1 +1,27 @@
-Purpose
+COMPONENTS INTERACTION
+
+INTERFACES
+
+
+The following diagrams specify the interfaces of some of the main buisness-logic components of the system. The components are represented as classes of a UML class diagram, where each component has  public methods representing the interfaces it offers to other components, and private attributes representing all the components which can be  accessed by that specific component.
+
+INSERT   RequestManager ...
+
+A RequestManager is a client-side componet which recieves messages and sends requests to the server through the ConnectionHandler component. The dispatch(msg,topic) method is called by the connection handler to deliver a message from the server, while the request manager calls the publish(msg,topic) method offered by the ConnectionHandler. This serves the purpose of implementing a messaging system where the connection-related details remain not visible to the more functionality-oriented components, in this case the RequestManager.
+Depending on the specific purpose, different implementation of the RequestManager accept different types of requests to deliver.
+
+INSERT   Dispatcher ...
+
+This server-side component is the core of the messaging system. A publisher calls it to publish a message, and the Dispatcher takes care of delivering the message to all the subscribers to the specific topic of the message.
+
+INSERT Controller ...
+
+A Controller is the component which implements the core of the buisness logic. It connects the classes which contain the data of the system whith the messaging infrastructure, processes each incoming message and retrieves the necessary data to perform various actions, usually resulting in another message being sent to the appropriate recipients. For these reasons a Controller has access to the Dispatcher, and also to the data model components necessary to perform its designated tasks.
+
+INSERT DataModel	
+
+A data model component initializes and manages the run-time classes which store the system data in main memory, providing a series of methods for other component to access such data. It also interacts with the PersistenceModule, in order to access the database and retrieve the necessary data not yet stored in memory.
+
+INTERACTIONS
+
+In this section a series of sequence diagrams show how the main components of the system interact with one another to realize some of the required functionalities.
