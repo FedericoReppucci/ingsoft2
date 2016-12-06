@@ -1,0 +1,8 @@
+class ReservationModel {
+    
+    attribute List reservationList;
+    
+    method void addReservation(Reservation reservation) {
+        reservationList.add(reservation);
+    }
+}
