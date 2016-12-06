@@ -1,1 +1,3 @@
-Purpose
+ALGORITHM DESIGN 
+
+In this section the algorithmic steps to either accept or reject a reservation from a user are displayed in pseudo-code
