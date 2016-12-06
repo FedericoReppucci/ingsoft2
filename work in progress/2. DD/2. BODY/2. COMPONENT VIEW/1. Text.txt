@@ -12,6 +12,11 @@ D1:
 - car_drivers : external component representing all the sofware drivers in a car 
 - usr_app_component : software component running on the user's phone
 - empl_app_component : software component runnung on an employee's phone
+- personal_computer : represents the software component of a home PC or similar device requesting a web page from the server
+- GPS_driver : external component providing an interface for GPS localization
+- google_maps_service : external software component providing the maps for the application
+- payment_service : external component providing an interface to charge the users
+- database : the persistent data storage unit 
 
 D2:
 
@@ -71,7 +76,7 @@ D5
 - cars_state_model : the model for the information relative to the state of a car
 - retrieval_request_model : the model for a car's retrieval request
 - website_model : the model for the website
-- database_component : the storage component, where all the data not currently in use is stored
+- persistence_unit : the component which manages the interface with the database and ensures that all the necessary data is retrieved from or sent to the database
 
 It is important to note that the process of selection and arrangement of the components has highlighted some critical aspects of the non-functional requirements of the system, and some architectural consideration can be based upon them:
 

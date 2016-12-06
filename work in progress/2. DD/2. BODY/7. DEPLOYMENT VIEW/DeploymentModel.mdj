@@ -97,7 +97,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "ApplicationServer",
+											"text": "IBM Power System E850",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5
 										},
@@ -5436,7 +5436,7 @@
 							"left": 576,
 							"top": 320,
 							"width": 100,
-							"height": 25,
+							"height": 38,
 							"autoResize": false,
 							"text": " over TCP / IP",
 							"wordWrap": true
@@ -6393,7 +6393,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "ApplicationServer",
+					"name": "IBM Power System E850",
 					"stereotype": "device",
 					"visibility": "public",
 					"isAbstract": false,

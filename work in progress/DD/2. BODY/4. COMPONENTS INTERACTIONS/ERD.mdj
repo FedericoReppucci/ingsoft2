@@ -4172,7 +4172,7 @@
 							"primaryKey": false,
 							"foreignKey": false,
 							"nullable": false,
-							"unique": true
+							"unique": false
 						},
 						{
 							"_type": "ERDColumn",
@@ -4253,7 +4253,7 @@
 							"name": "CarCode",
 							"type": "CHAR",
 							"length": 0,
-							"primaryKey": true,
+							"primaryKey": false,
 							"foreignKey": true,
 							"nullable": false,
 							"unique": false
@@ -4638,8 +4638,8 @@
 							],
 							"type": "DATETIME",
 							"length": 0,
-							"primaryKey": false,
-							"foreignKey": false,
+							"primaryKey": true,
+							"foreignKey": true,
 							"nullable": false,
 							"unique": false
 						},

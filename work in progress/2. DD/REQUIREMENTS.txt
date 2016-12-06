@@ -28,11 +28,11 @@ NOTE: here we chose not to detail the interaction between the app and the system
 [R3.3]: As long as the car was not reserved by another user in the meantime, when the user confirms the car is marked as reserved by the system and the user can see the "Reservation successful!" message on the app.
 
 
-[R3.1]: When the system marks a car as reserved any reservation request from any user is rejected by the system while the car is in the reserved state.
-[R3.2]: A car is in reserved state for one hour from the moment it was marked as reserved.
-[R3.3]: A car in reserved state is not signaled by the system during the "Reserve a car" procedure.
-[R3.4]: After one hour from its reservation a car is no longer in reserved state.
-[R3.5]: A car not in reserved state is considered available by the system only if it is parked in a safe area less than 3 km away from a power grid station and has more than 20% of its battery.
+[R3.4]: When the system marks a car as reserved any reservation request from any user is rejected by the system while the car is in the reserved state.
+[R3.5]: A car is in reserved state for one hour from the moment it was marked as reserved.
+[R3.6]: A car in reserved state is not signaled by the system during the "Reserve a car" procedure.
+[R3.7]: After one hour from its reservation a car is no longer in reserved state.
+[R3.8]: A car not in reserved state is considered available by the system only if it is parked in a safe area less than 3 km away from a power grid station and has more than 20% of its battery.
 
 [R4.1]: One hour after a car has been reserved if it was never ignited the system charges for 1 EUR the user who reserved it.
 
@@ -44,6 +44,7 @@ NOTE: a user is a logged in person, therefore he/she is identified by the system
 [R6.1]: When a car is ignited the system starts charging the last user who reserved the car
 [R6.2]: When the charging starts, the display on the car shows a "Current charge" field with a number representing the current total charge, which starts from 0
 [R6.3]: Once a minute the "Current charge" value is incremented by a set amount
+
 [R7.1]: When a car is stopped and the sensors in the car detect no one inside, if a user was being charged for the car the system stops charging him/her.
 NOTE: in R7.1 we mean as soon as both conditions are met, the user stops being charged.
 
@@ -66,15 +67,14 @@ NOTE: in R7.1 we mean as soon as both conditions are met, the user stops being c
 
 [RA4]: If a user with a pending payment procedure tries to reserve a car, a pop-up lets the user know that he/she needs to pay for his/her last ride to be able to reserve a car and the app does not allow the user complete the reservation procedure
 
-[RA4]: If in the user's profile either the credit card or identity card expiration date has already passed, when the user tries to reserve a car a pop-up lets him/her know that the data in the user's profile need to be updated and the app prevents the reservation procedure from being completed
+[RA5]: If in the user's profile either the credit card or identity card expiration date has already passed, when the user tries to reserve a car a pop-up lets him/her know that the data in the user's profile need to be updated and the app prevents the reservation procedure from being completed
 
 [RA6.1]: From the home page of the app the user can access the "My profile" section
 [RA6.2]: From the "My profile" section the user can use the "Edit profile" button to modify his/her credential and payment info
 [RA6.3]: The system can check via the external payment service whether the payment info inserted are valid
 [RA6.4]: If the inserted payment info is valid the user can save the changes by tapping the "Confirm" button.
 
-[RA7]: If the user has already a reservation which is not expired yet when he/she tries to reserve a car, a pop-up lets the user know that he/she needs to pay for his/her last ride to
-be able to reserve a car and the app does not allow the user complete the reservation procedure
+[RA7]: If the user has already a reservation which is not expired yet when he/she tries to reserve a car, a pop-up lets the user know that he/she cannot reserve a car and the app does not allow the user complete the reservation procedure
 
 [RA8]: When a car is locked the system checks its GPS coordinates, and if they correspond to those of a non-safe area the last user who reserved the car is charged for a set extra fee.
 
