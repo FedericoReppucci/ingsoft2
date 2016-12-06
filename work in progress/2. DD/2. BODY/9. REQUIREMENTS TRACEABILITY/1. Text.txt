@@ -109,8 +109,8 @@ COMPONENTS: GPSController, CarStateController, CarStateModel,
 [R13.6]: When an employee is notified of a car to retrieve, the notification contains the information necessary to set up the navigator of the company's cars to find the position of the car to retrieve
 [R13.7]: AdminPowerEnJoy allows an employee to unlock any car for which he/she has accepted a retrieval request
 
-COMPONENTS:
+COMPONENTS: UserInterface, RetrievalManager, PushMotificationManager, UnlockrequestManager, AuthenticatedRequestManager, CarStateController, CarStateModel, CarRetrievalController, RetrievalRequestModel
 
 [R14.1]: When the employee ignites a car which was opened through AdminPowerEnJoy the system does not initiate any charging procedure
 
-COMPONENTS: 
+COMPONENTS: UnlockRequestManager, AuthenticatedRequestManager, CarStateController, CarStateModel, CommandDispatcher, LockingCommand
