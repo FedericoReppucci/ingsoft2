@@ -1,15 +1,15 @@
 REQ TODO
 
-- add access to external payment service for user_registration_controller
+[√] add access to external payment service for user_registration_controller
 
-- add way to deliver SMTP (e-mail)
+[√] add way to deliver SMTP (e-mail)
 
-- rename duplicate requirements 3.1,...- in order
+[√] rename duplicate requirements 3.1,...- in order
 
-- R12.X -> R13.X, R13 -> R14
+[√] R12.X -> R13.X, R13 -> R14
 
-- RA4 (second one) -> RA5
+[√] RA4 (second one) -> RA5
 
-- fix RA7
+[√] fix RA7
 
 - ux paragraph

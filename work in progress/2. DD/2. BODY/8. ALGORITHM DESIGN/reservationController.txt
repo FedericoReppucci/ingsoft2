@@ -1,50 +1,50 @@
-
 class ReservationController implements Publish, Subscriber{
-
-	attribute ReservationModel reservationModel
-    
-	method void checkAndAddReservation(Reservation reservation) {
-		try{
-			doubleReservationCheck(reservation);
-			lastPaymentCheck(reservation);
+    attribute ReservationModel reservationModel
+    method void checkAndAddReservation(Reservation reservation) {
+        try{
+            doubleReservationCheck(reservation);
+            lastPaymentCheck(reservation);
             validityUserDataCheck(reservation);
-
+              carAvailabilityCheck(reservation);
+            
             reservationModel.addReservation(reservation);
-
-		} catch(DoubleCheckReservation or PendingPaymentException or
-                InvalidUserDataException){
-			throw ReservationException
-		}
-	}
-
+            
+        } catch(DoubleCheckReservation or 
+                 PendingPaymentException or
+                 InvalidUserDataException or
+                 NotAvailableCarException){
+            throw ReservationException
+        }
+    }
+    
     method void doubleReservationCheck(Reservation reservation) {
         user = reservation.getUser();
-        reservationToCheck = reservationModel.getNotExpiredReservation(user);
+        reservationToCheck =
+                reservationModel.getNotExpiredReservation(user);
         
-        if reservationToCheck != null
+        if (reservationToCheck != null)
             throw DoubleCheckReservation
     }
     
     method void lastPaymentCheck(Reservation reservation){
         user = reservation.getUser();
         payment = user.getLastPayment();
-                
-        if payment.isPending()
+        
+        if (payment.isPending())
             throw PendingPaymentException
     }
 
-    method validityUserDataCheck(Reservation reservation){
+    method void validityUserDataCheck(Reservation reservation){
         userData = reservation.getUser().getUserData();
         
-        if not userData.areValid()
+        if (not userData.areValid())
             throw InvalidUserDataException
     }
 
-    method carAvailabilityCheck(Reservation reservation){
+    method void carAvailabilityCheck(Reservation reservation){
         carState = reservation.getCar().getCarState();
         
-        if not carState.isAvailable()
+        if (not carState.isAvailable())
             throw NotAvailableCarException
     }
-
 }

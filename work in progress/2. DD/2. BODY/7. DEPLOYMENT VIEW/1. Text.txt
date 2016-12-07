@@ -1,6 +1,7 @@
 DEPLOYMENT
 
 The deployment of the software components follows naturally from the previous design decisions: the native application clients will be installed on the clients and enployee's phones, according to the phone's OS. For the application server a device of the IBM Power System series has been selected, which provides good flexibility and scalability potential, as well as reliability and is in general a solid choice for medium-sized enterprise applications. The application server software modules are organized in a .ear archive to guarantee a coherent deployment. Another .war file has been created to separate the software components which realize the website service, in case this module needs to be moved to another machine in the future.	
+
 TECHNICAL ENVIRONMENT REQUIREMENTS
 
 No particular conditions need to be met to allow the system to function properely, barring some basic needs such as a suitable physical space to collocate the application server and a good enterprise ethernet connection.
