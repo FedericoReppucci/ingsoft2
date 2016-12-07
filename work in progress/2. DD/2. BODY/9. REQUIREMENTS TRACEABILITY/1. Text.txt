@@ -111,6 +111,6 @@ COMPONENTS: GPSController, CarStateController, CarStateModel,
 
 COMPONENTS: UserInterface, RetrievalManager, PushMotificationManager, UnlockrequestManager, AuthenticatedRequestManager, CarStateController, CarStateModel, CarRetrievalController, RetrievalRequestModel
 
-[R14.1]: When the employee ignites a car which was opened through AdminPowerEnJoy the system does not initiate any charging procedure
+[R14]: When the employee ignites a car which was opened through AdminPowerEnJoy the system does not initiate any charging procedure
 
 COMPONENTS: UnlockRequestManager, AuthenticatedRequestManager, CarStateController, CarStateModel, CommandDispatcher, LockingCommand
