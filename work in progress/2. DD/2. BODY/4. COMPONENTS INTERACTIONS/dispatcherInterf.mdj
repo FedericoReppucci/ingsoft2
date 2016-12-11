@@ -74,7 +74,8 @@
 											"underline": false,
 											"text": "«Component»",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -99,7 +100,8 @@
 											"underline": false,
 											"text": "RequestManager",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -118,13 +120,14 @@
 											"containerExtending": false,
 											"left": 208,
 											"top": -368,
-											"width": 72,
+											"width": 80.49462890625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "(from Model)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -148,7 +151,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -214,7 +218,8 @@
 											"underline": false,
 											"text": "-connectionHandler: ConnectionHandler",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -389,7 +394,8 @@
 											"underline": false,
 											"text": "«Component»",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -414,7 +420,8 @@
 											"underline": false,
 											"text": "UsrAuthenticatedRequestManager",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -433,13 +440,14 @@
 											"containerExtending": false,
 											"left": -464,
 											"top": 208,
-											"width": 72,
+											"width": 80.49462890625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "(from Model)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -463,7 +471,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -529,7 +538,8 @@
 											"underline": false,
 											"text": "-gpsDriver: GPSDriver",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -583,7 +593,8 @@
 											"underline": false,
 											"text": "+requestMapInfo(startingPoint: GPSCoord, radius: Dist): MapInfo",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLOperationView",
@@ -611,7 +622,8 @@
 											"underline": false,
 											"text": "+requestReservation(car: CarInfo): ReservationOutcome",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLOperationView",
@@ -639,7 +651,8 @@
 											"underline": false,
 											"text": "+requestProfileData(): ProfileData",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLOperationView",
@@ -667,7 +680,8 @@
 											"underline": false,
 											"text": "+requestMyReservation(): Reservation",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLOperationView",
@@ -695,7 +709,8 @@
 											"underline": false,
 											"text": "+requestUnlock(myReserv: Reservation): UnlockOutcome",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -845,7 +860,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -864,13 +880,14 @@
 											"containerExtending": false,
 											"left": 549,
 											"top": 327,
-											"width": 400,
+											"width": 434.03369140625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "UsrGuestRequestManager",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -889,13 +906,14 @@
 											"containerExtending": false,
 											"left": -288,
 											"top": 176,
-											"width": 72,
+											"width": 80.49462890625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "(from Model)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -919,7 +937,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -933,7 +952,7 @@
 									"containerExtending": false,
 									"left": 544,
 									"top": 320,
-									"width": 410,
+									"width": 444.03369140625,
 									"height": 25,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -969,7 +988,7 @@
 									"containerExtending": false,
 									"left": 544,
 									"top": 345,
-									"width": 410,
+									"width": 444.03369140625,
 									"height": 10,
 									"autoResize": false
 								},
@@ -1003,13 +1022,14 @@
 											"containerExtending": false,
 											"left": 549,
 											"top": 360,
-											"width": 400,
+											"width": 434.03369140625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "+requestDataValidation(ccData: CreditCardData): ValidationOutcome",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLOperationView",
@@ -1031,13 +1051,14 @@
 											"containerExtending": false,
 											"left": 549,
 											"top": 375,
-											"width": 400,
+											"width": 434.03369140625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "+requestRegitration(regData: RegistrationData): RegistrationOutcome",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -1051,7 +1072,7 @@
 									"containerExtending": false,
 									"left": 544,
 									"top": 355,
-									"width": 410,
+									"width": 444.03369140625,
 									"height": 38,
 									"autoResize": false
 								},
@@ -1115,7 +1136,7 @@
 							"containerExtending": false,
 							"left": 544,
 							"top": 320,
-							"width": 410,
+							"width": 444.03369140625,
 							"height": 73,
 							"autoResize": false,
 							"stereotypeDisplay": "label",
@@ -1187,7 +1208,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -1206,13 +1228,14 @@
 											"containerExtending": false,
 											"left": 549,
 											"top": 207,
-											"width": 399,
+											"width": 401.349609375,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "EmplGuestRequestManager",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -1231,13 +1254,14 @@
 											"containerExtending": false,
 											"left": 32,
 											"top": -448,
-											"width": 72,
+											"width": 80.49462890625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "(from Model)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -1261,7 +1285,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -1275,7 +1300,7 @@
 									"containerExtending": false,
 									"left": 544,
 									"top": 200,
-									"width": 409,
+									"width": 411.349609375,
 									"height": 25,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -1311,7 +1336,7 @@
 									"containerExtending": false,
 									"left": 544,
 									"top": 225,
-									"width": 409,
+									"width": 411.349609375,
 									"height": 10,
 									"autoResize": false
 								},
@@ -1345,13 +1370,14 @@
 											"containerExtending": false,
 											"left": 549,
 											"top": 240,
-											"width": 399,
+											"width": 401.349609375,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "+requestRetrieval(retrData: RetrievalData): RetrievalReqOutcome",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLOperationView",
@@ -1373,13 +1399,14 @@
 											"containerExtending": false,
 											"left": 549,
 											"top": 255,
-											"width": 399,
+											"width": 401.349609375,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "+loginRequest(usr: Username, pwd: Password): LoginOutcome",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -1393,7 +1420,7 @@
 									"containerExtending": false,
 									"left": 544,
 									"top": 235,
-									"width": 409,
+									"width": 411.349609375,
 									"height": 38,
 									"autoResize": false
 								},
@@ -1457,7 +1484,7 @@
 							"containerExtending": false,
 							"left": 544,
 							"top": 200,
-							"width": 409,
+							"width": 411.349609375,
 							"height": 73,
 							"autoResize": false,
 							"stereotypeDisplay": "label",
@@ -1515,8 +1542,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 733,
-									"top": 289,
+									"left": 742,
+									"top": 291,
 									"width": 0,
 									"height": 13,
 									"autoResize": false,
@@ -1528,7 +1555,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -1548,8 +1576,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 718,
-									"top": 289,
+									"left": 727,
+									"top": 293,
 									"width": 0,
 									"height": 13,
 									"autoResize": false,
@@ -1561,7 +1589,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -1581,8 +1610,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 762,
-									"top": 290,
+									"left": 771,
+									"top": 288,
 									"width": 0,
 									"height": 13,
 									"autoResize": false,
@@ -1594,7 +1623,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								}
 							],
 							"visible": true,
@@ -1613,7 +1643,7 @@
 								"$ref": "AAAAAAFYoeHpNqfLdAs="
 							},
 							"lineStyle": 1,
-							"points": "748:319;748:273",
+							"points": "760:319;754:273",
 							"stereotypeDisplay": "label",
 							"showVisibility": true,
 							"showProperty": true,
@@ -1668,7 +1698,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -1701,7 +1732,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -1734,7 +1766,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								}
 							],
 							"visible": true,
@@ -1753,7 +1786,7 @@
 								"$ref": "AAAAAAFYoeo7fqg4BAM="
 							},
 							"lineStyle": 1,
-							"points": "659:199;541:150",
+							"points": "660:199;541:150",
 							"stereotypeDisplay": "label",
 							"showVisibility": true,
 							"showProperty": true,
@@ -1808,7 +1841,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -1841,7 +1875,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -1874,7 +1909,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								}
 							],
 							"visible": true,
@@ -1949,7 +1985,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -1968,13 +2005,14 @@
 											"containerExtending": false,
 											"left": 29,
 											"top": 199,
-											"width": 395,
+											"width": 418.39306640625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "EmplAuthenticatedRequestManager",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -1993,13 +2031,14 @@
 											"containerExtending": false,
 											"left": -192,
 											"top": -64,
-											"width": 72,
+											"width": 80.49462890625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "(from Model)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -2023,7 +2062,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -2037,7 +2077,7 @@
 									"containerExtending": false,
 									"left": 24,
 									"top": 192,
-									"width": 405,
+									"width": 428.39306640625,
 									"height": 25,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -2073,7 +2113,7 @@
 									"containerExtending": false,
 									"left": 24,
 									"top": 217,
-									"width": 405,
+									"width": 428.39306640625,
 									"height": 10,
 									"autoResize": false
 								},
@@ -2107,13 +2147,14 @@
 											"containerExtending": false,
 											"left": 29,
 											"top": 232,
-											"width": 395,
+											"width": 418.39306640625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "+requestMyRetrievals(): RetrievalRequest",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLOperationView",
@@ -2135,13 +2176,14 @@
 											"containerExtending": false,
 											"left": 29,
 											"top": 247,
-											"width": 395,
+											"width": 418.39306640625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "+acceptRequest(retrievReq: RetrievalRequest): AcceptanceOutcome",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLOperationView",
@@ -2163,13 +2205,14 @@
 											"containerExtending": false,
 											"left": 29,
 											"top": 262,
-											"width": 395,
+											"width": 418.39306640625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "+requestMyRetrievals(): RetrievalRequest",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLOperationView",
@@ -2191,13 +2234,14 @@
 											"containerExtending": false,
 											"left": 29,
 											"top": 277,
-											"width": 395,
+											"width": 418.39306640625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "+requestUnlock(carCode: CarCode)",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -2211,7 +2255,7 @@
 									"containerExtending": false,
 									"left": 24,
 									"top": 227,
-									"width": 405,
+									"width": 428.39306640625,
 									"height": 68,
 									"autoResize": false
 								},
@@ -2275,7 +2319,7 @@
 							"containerExtending": false,
 							"left": 24,
 							"top": 192,
-							"width": 405,
+							"width": 428.39306640625,
 							"height": 103,
 							"autoResize": false,
 							"stereotypeDisplay": "label",
@@ -2333,7 +2377,7 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 328,
+									"left": 332,
 									"top": 151,
 									"width": 0,
 									"height": 13,
@@ -2346,7 +2390,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -2366,8 +2411,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 320,
-									"top": 138,
+									"left": 324,
+									"top": 139,
 									"width": 0,
 									"height": 13,
 									"autoResize": false,
@@ -2379,7 +2424,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -2399,7 +2445,7 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 343,
+									"left": 349,
 									"top": 176,
 									"width": 0,
 									"height": 13,
@@ -2412,7 +2458,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								}
 							],
 							"visible": true,
@@ -2431,7 +2478,7 @@
 								"$ref": "AAAAAAFYoe5BH6jcgbs="
 							},
 							"lineStyle": 1,
-							"points": "305:191;368:150",
+							"points": "312:191;371:150",
 							"stereotypeDisplay": "label",
 							"showVisibility": true,
 							"showProperty": true,
@@ -3263,15 +3310,16 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 13,
-											"top": 21,
+											"left": 85,
+											"top": 53,
 											"width": 283,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "«Component»",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -3288,15 +3336,16 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 13,
-											"top": 36,
+											"left": 85,
+											"top": 68,
 											"width": 283,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "Dispatcher",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -3313,15 +3362,16 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": -480,
-											"top": -384,
-											"width": 72,
+											"left": -336,
+											"top": -320,
+											"width": 80.49462890625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "(from Model)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -3338,14 +3388,15 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": -480,
-											"top": -384,
+											"left": -336,
+											"top": -320,
 											"width": 0,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -3357,8 +3408,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 8,
-									"top": 16,
+									"left": 80,
+									"top": 48,
 									"width": 293,
 									"height": 38,
 									"autoResize": false,
@@ -3403,15 +3454,16 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 13,
-											"top": 59,
+											"left": 85,
+											"top": 91,
 											"width": 283,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "-connectionHandlingModule",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -3431,15 +3483,16 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 13,
-											"top": 74,
+											"left": 85,
+											"top": 106,
 											"width": 283,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "-userRegistrationController",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -3459,15 +3512,16 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 13,
-											"top": 89,
+											"left": 85,
+											"top": 121,
 											"width": 283,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "-activeRidesController",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -3487,15 +3541,16 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 13,
-											"top": 104,
+											"left": 85,
+											"top": 136,
 											"width": 283,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "-chargesController",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -3515,15 +3570,16 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 13,
-											"top": 119,
+											"left": 85,
+											"top": 151,
 											"width": 283,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "-reservationController",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -3543,15 +3599,16 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 13,
-											"top": 134,
+											"left": 85,
+											"top": 166,
 											"width": 283,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "-carStateController",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -3571,15 +3628,16 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 13,
-											"top": 149,
+											"left": 85,
+											"top": 181,
 											"width": 283,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "-carRetrievalController",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -3599,15 +3657,16 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 13,
-											"top": 164,
+											"left": 85,
+											"top": 196,
 											"width": 283,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "-websiteController",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -3619,8 +3678,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 8,
-									"top": 54,
+									"left": 80,
+									"top": 86,
 									"width": 293,
 									"height": 128,
 									"autoResize": false
@@ -3653,15 +3712,16 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 13,
-											"top": 187,
+											"left": 85,
+											"top": 219,
 											"width": 283,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "+dispatch(msg: Message, topic: Topic)",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -3673,8 +3733,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 8,
-									"top": 182,
+									"left": 80,
+									"top": 214,
 									"width": 293,
 									"height": 23,
 									"autoResize": false
@@ -3697,8 +3757,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": -248,
-									"top": -160,
+									"left": -176,
+									"top": -128,
 									"width": 10,
 									"height": 10,
 									"autoResize": false
@@ -3721,8 +3781,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": -248,
-									"top": -160,
+									"left": -176,
+									"top": -128,
 									"width": 10,
 									"height": 10,
 									"autoResize": false
@@ -3737,8 +3797,8 @@
 							"showShadow": true,
 							"containerChangeable": true,
 							"containerExtending": false,
-							"left": 8,
-							"top": 16,
+							"left": 80,
+							"top": 48,
 							"width": 293,
 							"height": 189,
 							"autoResize": false,
@@ -3791,6 +3851,7 @@
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -3808,6 +3869,7 @@
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -3825,6 +3887,7 @@
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -3842,6 +3905,7 @@
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -3859,6 +3923,7 @@
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -3876,6 +3941,7 @@
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -3893,6 +3959,7 @@
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -3910,6 +3977,7 @@
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -4026,7 +4094,8 @@
 											"underline": false,
 											"text": "«Component»",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -4051,7 +4120,8 @@
 											"underline": false,
 											"text": "Controller",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -4070,13 +4140,14 @@
 											"containerExtending": false,
 											"left": 32,
 											"top": -304,
-											"width": 72,
+											"width": 80.49462890625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "(from Model)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -4100,7 +4171,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -4166,7 +4238,8 @@
 											"underline": false,
 											"text": "-dispatcherModule",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -4220,7 +4293,8 @@
 											"underline": false,
 											"text": "+publishMessage(msg: Message, topic: Topic)",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -4234,7 +4308,7 @@
 									"containerExtending": false,
 									"left": 280,
 									"top": 69,
-									"width": 281,
+									"width": 294.22265625,
 									"height": 23,
 									"autoResize": false
 								},
@@ -4370,7 +4444,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -4395,7 +4470,8 @@
 											"underline": false,
 											"text": "CarStateController",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -4414,13 +4490,14 @@
 											"containerExtending": false,
 											"left": -400,
 											"top": 304,
-											"width": 72,
+											"width": 80.49462890625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "(from Model)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -4444,7 +4521,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -4510,7 +4588,8 @@
 											"underline": false,
 											"text": "-carStateModel",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -4564,7 +4643,8 @@
 											"underline": false,
 											"text": "+getCarStateInfo(carInfo: CarInfo): CarState",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLOperationView",
@@ -4592,7 +4672,8 @@
 											"underline": false,
 											"text": "+getCarStateInfo(carCode: CarCode): CarState",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -4606,7 +4687,7 @@
 									"containerExtending": false,
 									"left": 184,
 									"top": 408,
-									"width": 281,
+									"width": 295.0478515625,
 									"height": 38,
 									"autoResize": false
 								},
@@ -4741,7 +4822,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -4774,7 +4856,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -4807,7 +4890,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								}
 							],
 							"visible": true,
@@ -4882,7 +4966,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -4907,7 +4992,8 @@
 											"underline": false,
 											"text": "CarRetrievalController",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -4926,13 +5012,14 @@
 											"containerExtending": false,
 											"left": -720,
 											"top": -128,
-											"width": 72,
+											"width": 80.49462890625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "(from Model)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -4956,7 +5043,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -4970,7 +5058,7 @@
 									"containerExtending": false,
 									"left": 112,
 									"top": 176,
-									"width": 152,
+									"width": 159.56982421875,
 									"height": 25,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -5022,7 +5110,8 @@
 											"underline": false,
 											"text": "-retrievalRequestModel",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -5036,7 +5125,7 @@
 									"containerExtending": false,
 									"left": 112,
 									"top": 201,
-									"width": 152,
+									"width": 157.74169921875,
 									"height": 23,
 									"autoResize": false
 								},
@@ -5196,7 +5285,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -5221,7 +5311,8 @@
 											"underline": false,
 											"text": "ReservationController",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -5240,13 +5331,14 @@
 											"containerExtending": false,
 											"left": -320,
 											"top": 16,
-											"width": 72,
+											"width": 80.49462890625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "(from Model)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -5270,7 +5362,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -5284,7 +5377,7 @@
 									"containerExtending": false,
 									"left": 384,
 									"top": 216,
-									"width": 148,
+									"width": 156.7197265625,
 									"height": 25,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -5336,7 +5429,8 @@
 											"underline": false,
 											"text": "-reservationModel",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -5509,7 +5603,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -5542,7 +5637,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -5575,7 +5671,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								}
 							],
 							"visible": true,
@@ -5649,7 +5746,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -5682,7 +5780,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -5715,7 +5814,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								}
 							],
 							"visible": true,
@@ -5790,7 +5890,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -5815,7 +5916,8 @@
 											"underline": false,
 											"text": "ChargesController",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -5834,13 +5936,14 @@
 											"containerExtending": false,
 											"left": 48,
 											"top": -416,
-											"width": 72,
+											"width": 80.49462890625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "(from Model)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -5864,7 +5967,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -5930,7 +6034,8 @@
 											"underline": false,
 											"text": "-chargesHistoryModel",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -5958,7 +6063,8 @@
 											"underline": false,
 											"text": "-externalPaymentService",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -5972,7 +6078,7 @@
 									"containerExtending": false,
 									"left": 584,
 									"top": 145,
-									"width": 154,
+									"width": 166.583984375,
 									"height": 38,
 									"autoResize": false
 								},
@@ -6131,7 +6237,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -6164,7 +6271,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -6197,7 +6305,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								}
 							],
 							"visible": true,
@@ -6272,7 +6381,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -6297,7 +6407,8 @@
 											"underline": false,
 											"text": "ActiveRidesController",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -6316,13 +6427,14 @@
 											"containerExtending": false,
 											"left": -960,
 											"top": 128,
-											"width": 72,
+											"width": 80.49462890625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "(from Model)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -6346,7 +6458,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -6360,7 +6473,7 @@
 									"containerExtending": false,
 									"left": 184,
 									"top": 256,
-									"width": 147,
+									"width": 155.65966796875,
 									"height": 25,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -6412,7 +6525,8 @@
 											"underline": false,
 											"text": "-carStateController",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -6586,7 +6700,8 @@
 									"underline": false,
 									"text": "+<<uses>>",
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -6608,7 +6723,7 @@
 									"containerExtending": false,
 									"left": 103,
 									"top": 375,
-									"width": 42,
+									"width": 42.1865234375,
 									"height": 13,
 									"autoResize": false,
 									"alpha": 0.6350267496968451,
@@ -6620,7 +6735,8 @@
 									"underline": false,
 									"text": "«uses»",
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -6653,7 +6769,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								}
 							],
 							"visible": true,
@@ -6728,7 +6845,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -6753,7 +6871,8 @@
 											"underline": false,
 											"text": "UserRegistrationController",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -6772,13 +6891,14 @@
 											"containerExtending": false,
 											"left": -112,
 											"top": -80,
-											"width": 72,
+											"width": 80.49462890625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
 											"text": "(from Model)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "LabelView",
@@ -6802,7 +6922,8 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -6816,7 +6937,7 @@
 									"containerExtending": false,
 									"left": 520,
 									"top": 288,
-									"width": 177,
+									"width": 189.91162109375,
 									"height": 25,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -6868,7 +6989,8 @@
 											"underline": false,
 											"text": "-userModel",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										}
 									],
 									"visible": true,
@@ -7041,7 +7163,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -7074,7 +7197,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -7107,7 +7231,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								}
 							],
 							"visible": true,
@@ -7181,7 +7306,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -7214,7 +7340,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -7247,7 +7374,8 @@
 									"edgePosition": 1,
 									"underline": false,
 									"horizontalAlignment": 2,
-									"verticalAlignment": 5
+									"verticalAlignment": 5,
+									"wordWrap": false
 								}
 							],
 							"visible": true,
@@ -7302,6 +7430,7 @@
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -7400,6 +7529,7 @@
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -7544,6 +7674,7 @@
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -7592,6 +7723,7 @@
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -7640,6 +7772,7 @@
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -7657,6 +7790,7 @@
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -7720,6 +7854,7 @@
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -7768,6 +7903,7 @@
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
