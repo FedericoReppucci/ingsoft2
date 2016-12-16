@@ -1,0 +1,3 @@
+TESTING SRATEGY
+
+The testing strategy selected for the integration test is a bottom-up strategy. This strategy has been chosen since the structure of the software system is already hierachycal and the bottom-up approach allows to test all the interaction between components in a very sistematic way. Moreover, the developement process will follow a bottom-up approach as well, and this will ensure that the integration is performed in an incremental way.   

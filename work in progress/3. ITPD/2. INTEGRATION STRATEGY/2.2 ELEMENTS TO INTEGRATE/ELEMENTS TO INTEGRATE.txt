@@ -1,6 +1,6 @@
 ELEMENTS TO INTEGRATE
 
-In this section the elements to be integrated are most of the components specified in the component diagram described in the design document:
+In this section the elements to be integrated are most of the components specified in the component diagram described in the design document.
 
 System level:
 	- System component
@@ -29,6 +29,8 @@ System component
 
 	- persistence unit
 
+	/*-- insert diagram -- */
+
 Car component
 	
 	- terminal
@@ -42,6 +44,8 @@ Car component
 	- engine controller
 	- charging state
 
+	/*-- insert diagram -- */
+
 Employee app component
 
 	- user interface
@@ -53,6 +57,8 @@ Employee app component
 	- guest request manager
 	- authenticated request manager
 
+		/*-- insert diagram -- */
+
 User app component
 
 	- user interface
@@ -61,6 +67,9 @@ User app component
 	- profile manager
 	- reservation request manager
 	- unlock request manager
+	- map manager
 
 	- guest request manager
 	- authenticated request manager
+
+	/*-- insert diagram -- */
