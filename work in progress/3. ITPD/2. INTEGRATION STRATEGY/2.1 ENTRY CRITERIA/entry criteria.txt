@@ -1,0 +1,3 @@
+ENTRY CRITERIA
+
+Since this documents describes the integration test of all the single components, before a component can be integrated in the test plan all the unit-level tests need to be performed. The single component is required to provide all the interfaces described in the Design Document (DD) and these interfaces need to provide the expected functionality described during the design process. In addition the interaction between the application server, the database and the client applications needs to be functioning properely.

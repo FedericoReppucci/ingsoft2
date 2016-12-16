@@ -1,0 +1,66 @@
+ELEMENTS TO INTEGRATE
+
+In this section the elements to be integrated are most of the components specified in the component diagram described in the design document:
+
+System level:
+	- System component
+	- Car component
+	- user app component
+	- employee app component
+
+	/* -- insert altered diagram --*/
+
+System component
+
+	- user registration controller
+	- active rides controller
+	- charges controller
+	- reservation controller
+	- car state controller
+	- car retrieval controller
+	- website controller
+
+	- user model
+	- charges history model
+	- reservation model
+	- car state model
+	- retrieval request model
+	- website model
+
+	- persistence unit
+
+Car component
+	
+	- terminal
+	- state wrapper
+	- command dispatcher
+	- locking command (?)
+	- GPS controller
+	- passengers sensor controller
+	- battery level controller
+	- locking state controller
+	- engine controller
+	- charging state
+
+Employee app component
+
+	- user interface
+	- access manager
+	- retrieval manager
+	- unlock request manager
+	- push notification manager
+
+	- guest request manager
+	- authenticated request manager
+
+User app component
+
+	- user interface
+	- access manager
+	- registration manager
+	- profile manager
+	- reservation request manager
+	- unlock request manager
+
+	- guest request manager
+	- authenticated request manager

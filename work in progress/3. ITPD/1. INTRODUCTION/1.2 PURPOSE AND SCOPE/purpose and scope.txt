@@ -1,0 +1,7 @@
+PURPOSE
+
+This documents describes a plan for the integration test for the system. In this document are specified the elements which need to be tested, the overall testing srtategy, a brief description of all the tests to perform together with the objective of the test and the requirements to pass it. This document also contains a description of the testing tools to be employed in the testing process and eventual program stubs or specific test data that need to be produced. This document needs to be a reference for everyone who will contribute to the testing process.
+
+SCOPE
+
+The PowerEnJoy project aims to develop a car-sharing service run exclusively employing electric cars.The system will provide a mobile application by means of which the users, once registered, will be able to use the car sharing services. The main goals of the service are to provide a sustainable and environmentally-friendly car sharing service as well as to promote virtuous behaviors from its users.

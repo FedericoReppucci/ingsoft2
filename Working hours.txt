@@ -9,3 +9,8 @@ DD
 Together: 2h + 2.5h + 3.5h +3h +3h +4h [18h]
 Reppucci: 2h + 2h + 2,5h + 3h +2h	[11,5]
 Peverelli: 2h +2h +5h +2h + 2h +3h +1h [16h]
+
+ITPD
+Together:
+Reppucci:
+Peverelli:
