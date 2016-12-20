@@ -1,9 +1,16 @@
 PROGRAM STUBS AND TEST DATA REQUIRED
 
-Dispatcher Driver:
+Dispatcher Driver: testing driver which simulate a dispatcher sending messages to the controllers of the system.
 
-Dispatcher Stub:
+Dispatcher Stub: testing stub which other components can send messages to.
 
-Car Drivers Stub:
+Car Drivers Stub: testing driver simulating input from the car's software drivers.
 
-GPS Driver Stub(User App and Employee app):
+Map Service Driver: a driver sending data representing a map.
+
+GPS Driver Stub(User App and Employee app): a stub that the AuthenticatedRequestManager component can call to recieve GPS coordinates.
+
+TEST DATA
+
+A set of data representing maps is needed to test the related functionalities. 
+A function to generate fake GPS coordinates.
