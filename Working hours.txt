@@ -12,5 +12,5 @@ Peverelli: 2h +2h +5h +2h + 2h +3h +1h [16h]
 
 ITPD
 Together:
-Reppucci:
-Peverelli: +4h [4h]
+Reppucci: +3h [3]
+Peverelli: +4h +2h [6h]
