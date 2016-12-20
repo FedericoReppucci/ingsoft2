@@ -1,3 +1,10 @@
 
+Stub: software module which substitutes a component or functionality
 
-//TODO specify glossary
+Driver: software module designed to stimulate another software component which needs to be tested
+
+J2EE: Java 2 Enterprise Edition
+
+App: mobile aplication
+
+External payment service: a software system which allows the company to charge the users
