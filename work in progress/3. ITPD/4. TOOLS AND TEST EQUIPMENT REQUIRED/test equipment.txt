@@ -1,0 +1,15 @@
+TOOLS AND TEST EQUIPMENT REQUIRED
+
+JUnit: will be used as the testing framework for the J2EE server application and the android version of the mobile app
+
+Nunit: will be used as the testing framework for the Windows version of the app, and the software running in the cars.
+
+XCUITest: will be used as a testing framework for the  iOS version of the mobile app.
+
+Mockito: will be used to provide stubs and scaffholding during the integration test for the J2EE server application and the android version of the mobile app.
+
+Moq: will be used to provide stubs and scaffholding during the integration test for the Windows version of the app, and the software running in the cars.
+
+OCMock: will be used to provide stubs and scaffholding during the integration test for the  iOS version of the mobile app.
+
+Arquillian: will be used for tests against the J2EE container in the server application.
