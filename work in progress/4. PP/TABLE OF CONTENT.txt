@@ -13,6 +13,35 @@ TABLE OF CONTENT
 		2.2.1. COCOMO II METODOLOGY
 		2.2.2. COCOMO II CALCULATION
 3. PLANNING PROCESS
-4. RISK MANAGEMENT
-5. USED TOOLS
-6. EFFORT SPENT
+4. RESOURCE ALLOCATION
+5. RISK MANAGEMENT
+6. USED TOOLS
+7. EFFORT SPENT
+
+
+1 Introduction 1
+1.1 RevisionHistory ......................... 1
+1.2 Purposeandscope ........................ 1
+1.3 Definitions,Acronyms,Abbreviations . . . . . . . . . . . . . 2
+1.3.1 Definitions ........................ 2 
+1.3.2 Acronyms......................... 
+1.3.3 Abbreviations....................... 2
+1.4 ReferenceDocuments ...................... 2
+2 Project size, cost and effort estimation 3
+2.1 Sizeestimation:functionpoints................. 3 
+2.1.1 InternalLogicFiles(ILFs)................ 4 
+2.1.2 ExternalLogicFiles(ELFs)............... 6 
+2.1.3 ExternalInputs(EIs) .................. 6 
+2.1.4 ExternalInquiries(EQs)................. 8 
+2.1.5 ExternalOutputs(EOs)................. 9 
+2.1.6 Overallestimation .................... 9
+2.2 Costandeffortestimation: COCOMOII . . . . . . . . . . . 10
+2.2.1 ScaleDrivers ....................... 10
+2.2.2 CostDrivers ....................... 12
+2.2.3 E↵ortequation ...................... 19
+2.2.4 Scheduleestimation ................... 19
+3 Schedule
+4 Resource allocation
+5 Risk management
+Appendix A Changelog Appendix B Hours of work
+21 24 29 32 33
