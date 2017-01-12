@@ -1,0 +1,90 @@
+[R1.1]: The app is available for any person to download and run on his/her phone
+[R1.2]: From the home page of the app any person can carry out the registration procedure
+[R1.3]: The registration procedure requires a person's credentials and payment info to be carried out
+[R1.4]: The registration procedure uses the external payment service to verify the validity of the provided payment info
+[R1.5]: At the end of the registration procedure the person whose credentials were used is registered in the system
+[R1.6]: At the end of the registration procedure the person receives an e-mail containing a password which he/she can use to access the system
+[R1.7]: At the end of the registration procedure the person can ask the system to send another mail
+
+[RA1.1]: The app allows any person to log in by providing a valid e-mail and password
+[RA1.2]: The app does not allow any person who does not provide a valid e-mail and password to log in
+
+[RA2.1]: From the home page of the app the password retrieval procedure can be initiated by any person
+[RA2.2]: If a person provides a valid e-mail address during the password retrieval procedure the system sends an e-mail to that address containing the associated password
+
+[RA3]: Access to the PowerEnJoy's website (a static page) is granted upon request by the system (no login required)
+
+[R2.1]: The "Reserve a car" function can be accessed by the user from the home page of the app
+[R2.2]: The "Reserve a car" function allows the user to select a range (distance)
+[R2.3]: The system acquires the user's current position through the GPS coordinates of the user's phone
+[R2.4]: The system tracks all available cars' current position through their GPS coordinates 
+[R2.4.1]: The cars must possess a device which can be tracked via GPS
+[R2.5]: The "Reserve a car" function allows the user to select a starting position for the search, which can be either their current location or a given address
+[R2.6]: When the user confirms the inserted parameters the search is carried out and the "Reserve a car" function displays to the user the data of the search acquired from the system in a Google provided map
+NOTE: here we chose not to detail the interaction between the app and the system, to avoid talking about any architectural detail.
+
+[R3.1]: The app allows the user to tap on any available car on the map displayed as the result of a search conducted through the "Reserve a car" function.
+[R3.2]: When a user taps on a car the app generates a pop-up asking the user if he/she wants to confirm the reservation.
+[R3.3]: As long as the car was not reserved by another user in the meantime, when the user confirms the car is marked as reserved by the system and the user can see the "Reservation successful!" message on the app.
+
+
+[R3.4]: When the system marks a car as reserved any reservation request from any user is rejected by the system while the car is in the reserved state.
+[R3.5]: A car is in reserved state for one hour from the moment it was marked as reserved.
+[R3.6]: A car in reserved state is not signaled by the system during the "Reserve a car" procedure.
+[R3.7]: After one hour from its reservation a car is no longer in reserved state.
+[R3.8]: A car not in reserved state is considered available by the system only if it is parked in a safe area less than 3 km away from a power grid station and has more than 20% of its battery.
+
+[R4.1]: One hour after a car has been reserved if it was never ignited the system charges for 1 EUR the user who reserved it.
+
+[R5.1]: From the home page of the app the user can access the "My reservations" section
+[R5.2]: In the "My reservations" section if the user has reserved a car less than an hour ago an active reservation is displayed with an "Unlock" button
+[R5.3]: If the user is less than 10 meters away from the car and presses the unlock button the car unlocks
+NOTE: a user is a logged in person, therefore he/she is identified by the system through an account and a GPS position. Whether the physical person who opens the car is the same who reserved it is not our concern.
+
+[R6.1]: When a car is ignited the system starts charging the last user who reserved the car
+[R6.2]: When the charging starts, the display on the car shows a "Current charge" field with a number representing the current total charge, which starts from 0
+[R6.3]: Once a minute the "Current charge" value is incremented by a set amount
+
+[R7.1]: When a car is stopped and the sensors in the car detect no one inside, if a user was being charged for the car the system stops charging him/her.
+NOTE: in R7.1 we mean as soon as both conditions are met, the user stops being charged.
+
+[R7.2]: One minute after a car has been stopped and the sensors in the car detect no one inside, the system locks the car.
+
+[R8]: The moment the car is stopped, if the sensor in the car detected two passengers the system records it as a possible discount of 10%
+[R12]: After two minutes since the car has been stopped and its sensors detected no one was inside, the system applies all the extra fees and if there are none it applies the highest discount among the possible ones to the cost of the ride
+
+[R9]: The moment the car is stopped and the sensors in the car detect no one inside, if the car has more than 50% of its maximum battery the system records it as a possible discount of 20%.
+[R12]: After two minutes since the car has been stopped and its sensors detected no one was inside, the system applies all the extra fees and if there are none it applies the highest discount among the possible ones to the cost of the ride.
+
+[R10]: If before 2 minutes since the moment the car has been stopped and its sensors detected no one was inside the car is plugged in a power grid and its position is within a special parking area, the system records it as a possible discount of 30%.
+[R12]: After two minutes since the car has been stopped and its sensors detected no one was inside, the system applies all the extra fees and if there are none it applies the highest discount among the possible ones to the cost of the ride
+
+[R11.0]: The moment the car is stopped and the sensors in the car detect no one inside, if the safe area nearest to the car is more than 3km away from it, the system records an extra fee of 30%
+[R12]: After two minutes since the car has been stopped and its sensors detected no one was inside, the system applies all the extra fees and if there are none it applies the highest discount among the possible ones to the cost of the ride
+
+[R11.1]: The moment the car is stopped and the sensors in the car detect no one inside, if the car has less than 20% of its maximum battery, the system records an extra fee of 30%.
+[R12]: After two minutes since the car has been stopped and its sensors detected no one was inside, the system applies all the extra fees and if there are none it applies the highest discount among the possible ones to the cost of the ride.
+
+[RA4]: If a user with a pending payment procedure tries to reserve a car, a pop-up lets the user know that he/she needs to pay for his/her last ride to be able to reserve a car and the app does not allow the user complete the reservation procedure
+
+[RA5]: If in the user's profile either the credit card or identity card expiration date has already passed, when the user tries to reserve a car a pop-up lets him/her know that the data in the user's profile need to be updated and the app prevents the reservation procedure from being completed
+
+[RA6.1]: From the home page of the app the user can access the "My profile" section
+[RA6.2]: From the "My profile" section the user can use the "Edit profile" button to modify his/her credential and payment info
+[RA6.3]: The system can check via the external payment service whether the payment info inserted are valid
+[RA6.4]: If the inserted payment info is valid the user can save the changes by tapping the "Confirm" button.
+
+[RA7]: If the user has already a reservation which is not expired yet when he/she tries to reserve a car, a pop-up lets the user know that he/she cannot reserve a car and the app does not allow the user complete the reservation procedure
+
+[RA8]: When a car is locked the system checks its GPS coordinates, and if they correspond to those of a non-safe area the last user who reserved the car is charged for a set extra fee.
+
+[R12.1]: Each employee has access to an application, AdminPowerEnJoy, on their phone
+[R12.2]: When a car is locked the system checks its GPS coordinates, and if they correspond to those of a non-safe area all employees are notified through AdminPowerEnJoy that the car needs to be retrieved
+[R12.3]: AdminPowerEnJoy allows an employee to accept a retrieval request through the "Retrieval procedure" function
+[R12.4]: If an employee has already accepted a retrieval request, the retrieval request can no longer be accepted
+[R12.5]: After 12 hours, if an employee has accepted a retrieval request but has not retrieved the car, the request is issued again by the system and another employee can accept it
+[R12.6]: When an employee is notified of a car to retrieve, the notification contains the information necessary to set up the navigator of the company's cars to find the position of the car to retrieve
+[R12.7]: AdminPowerEnJoy allows an employee to unlock any car for which he/she has accepted a retrieval request
+
+[R13.1]: When the employee ignites a car which was opened through AdminPowerEnJoy the system does not initiate any charging procedure
+

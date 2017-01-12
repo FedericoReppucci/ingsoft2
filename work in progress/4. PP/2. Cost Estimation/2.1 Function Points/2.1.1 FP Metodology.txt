@@ -1,0 +1,40 @@
+
+
+INTERNAL LOGICAL FILE
+- reservation
+- car_state
+- profile state
+- safe area
+- user information
+- payment
+- Employee data
+- retrieval request
+- ride
+
+
+EXTERNAL INTERFACE FILE
+- payment data
+- maps
+
+
+EXTERNAL INPUT
+- Login
+- Edit profile
+- GPS coordinates
+
+EXTERNAL OUTPUT
+- view payment history
+
+
+EXTERNAL INQUIRY 
+- Retrieve password
+- Register
+- Retrieve a car
+- Reserve a car (from user position/address)
+- Browse profile
+- Logout
+- Browse website
+
+---
+- Ride a car
+- Plug in a car
