@@ -1,0 +1,30 @@
+2.2.1. COCOMO II METODOLOGY
+2.2.2. COCOMO II CALCULATION
+
+SCALE FACTOR
+
+Precedentedness: [very low] this is the first project for the development team with this characteristics and size.
+
+** Development Flexibility: [Nominal] the only pre-established requirements are the pre-existing interfaces of the cars
+
+Architecture / Risk Resolution: 
+
+Team Cohesion: [very high] the development team is composed by 2 student attending a MSc Computer Engineering. The communication is agile and efficent since they are collegues that work together every day, and are on good terms with each other. Furthermore, they have worked together in previous projects. 
+
+Process Maturity: [Level 1] The development process is unstructured and unsupervised. The division of labor is weekly established and the stakeholders are not involved in our decisions. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
