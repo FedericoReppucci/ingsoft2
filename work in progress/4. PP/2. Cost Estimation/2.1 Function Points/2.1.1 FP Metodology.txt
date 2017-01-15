@@ -1,40 +1,8 @@
 
+FUNCTION POINTS METHODOLOGY
 
-INTERNAL LOGICAL FILE
-- reservation
-- car_state
-- profile state
-- safe area
-- user information
-- payment
-- Employee data
-- retrieval request
-- ride
+The main purpose for this fuction points analysis is to estimate the size of the application, in order to come up with an accurate prediction of the time and resources required to complete the development process.
 
+The function points methodology categorizes data at rest and data in motion in order to derive the lines of source code requied to develop the corresponding functionalities, scaled based on a multiplicaive factor depending on the programming language used.
 
-EXTERNAL INTERFACE FILE
-- payment data
-- maps
-
-
-EXTERNAL INPUT
-- Login
-- Edit profile
-- GPS coordinates
-
-EXTERNAL OUTPUT
-- view payment history
-
-
-EXTERNAL INQUIRY 
-- Retrieve password
-- Register
-- Retrieve a car
-- Reserve a car (from user position/address)
-- Browse profile
-- Logout
-- Browse website
-
----
-- Ride a car
-- Plug in a car
+--- insert programming lang chart --- 
