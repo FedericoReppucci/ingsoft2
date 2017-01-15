@@ -1,0 +1,15 @@
+
+ABBREVIATIONS
+
+ILF: Internal Logical File
+EIF: External Interface File
+EO: External Output
+EI: External Input
+EQ: External Inquiry
+DET: Data Element Type
+RET: Record Element Type
+FTR: File Types Referenced
+UFP: Unadjusted Function Point
+
+DEFINITIONS
+
