@@ -1,0 +1,115 @@
+COST DRIVERS
+
+http://www.functionpointmodeler.com/fpm-infocenter/index.jsp?topic=%2Fcom.functionpointmodeler.fpm.help%2Fditafiles%2Fconcepts%2Fcc-56.htm'l'
+
+product, platform, personnel, and project (+ GENERAL)
+
+
+Post-architecture effort estimation.
+
+Product factors
+  RequiredSoftwareReliability(RELY) 
+  [NOMINAL - 1.00]
+      - The user cannot open the car
+      - The car remains open (It doesn't close automatically)
+      - ...
+  A system failure can at most cause the loss of a small amount of money. For instance, during the failure, a user could not be able to reserve a car or the payment procedure could not be well performed.
+
+  DataBaseSize(DATA) ***
+  [ - ]
+  The DATA cost driver is obtained by calculating the ratio of bytes in the testing database to SLOC in the program.
+  In the testing database, we assume that each field, being always raw data (string, dates, identifiers, numbers, booleans), can take up at most 20byte. This is a pessimistic upper bound that can be useful for a quick estimate of the testing database size.
+  We consider to have:
+  - 100 users: each user, considering all its fields, takes up at most 20byte * 18 = 360byte
+  - 10 ride/user: each ride, considering all its fields, takes up at most 20byte * 5 = 100byte
+  - 10 reservation/user: each reservation, considering all its fields, takes up at most 20byte * 5 = 100byte
+  - 20 cars: each car, considering all its fields, takes up at most 20byte * 9 = 180byte
+  - 20 retrieval requests: each retrieval requests, considering all its fields, takes up at most 20byte * 5 = 100byte
+  - 20 employee: each employee, considering all its fields, takes up at most 20byte * 6 = 120byte
+  - 1000 payments: each payment, considering all its fields, takes up at most 20byte * 9 = 180byte
+  - 100 profile stats: each profile stats, considering all its fields, takes up at most 20byte * 3 = 60byte
+
+  //TODO WEEEEEEEEBBBBB SITEEEEE
+ 
+  The safe area is mainly a collection of points. Each point has 2 coordinates. Each coordinate we can suppose takes up 8byte.
+  We consider to have 100 points the describe the edges of polygons: the total occupied size is 100 * 8 * 2 byte = 16000byte
+
+  The total size is: 446KB
+  From the functional point, the SLOC is: 
+
+  Hence, the ratio DBbyte/SLOC is: 446000/
+
+  ProductComplexity(CPLX)
+  [avarage: ]
+  The analysis is done on the entire system, considering always the worst case.
+  * Control Operations [HIGH - 1,17]: the system uses queues and complex data structures, in order to handle users, cars, reservation request.
+  * Computational Operations [LOW - 0,87]: the system evaluates a very simple computational operations. 
+  Examples:
+    1) user profile statistics (additions)
+    2) find the nearest car within a range (distance from 2 point formula)
+    3) bonus calculation (percentages calculation)
+    4) payment calculation (addition, multiplication)
+  * Device-dependent Operations [NOMINAL 1,00]: I/O processing includes device selection, status checking, and error processing. //TOREVIEW
+  * Data Management Operations [HIGH 1,17]: the system stores data in a structural way through a DBMS. Therefore the system seeks, reads and writes the data. Data can be also filtered, analyzed, manipulated.
+  * User Interface Management Operations [LOW 0,87]: the graphic user interface is composed of simple input forms, buttons, radio buttons, and text. The most complex form is the one that displays the map. In this case, however, the majority of work is performed by Google's API.
+
+  DevelopedforReusability(RUSE)
+  [NOMINAL - 1,00]
+  This project has been designed following general good practices of reusability of the components. Each component has been thought to be self-contained with a specific purpose.
+
+  DocumentationMatchtoLife-CycleNeeds(DOCU)
+  [NOMINAL - 1,00]
+  The project is well documented. A set of starting documents (RASD, DD, ITPD) analyze each aspect of the project, from the requirements to the software components. Also, the code is documented, becoming easy to ready and quick to modify.
+
+
+Platform factors
+  ExecutionTimeConstraint(TIME)   
+  [NOMINAL - 1,00]
+  The system processes mainly request-response actions, without CPU bound processes.
+
+  MainStorageConstraint(STOR)
+  [NOMINAL - 1,00]
+  This constraint is essentially irrelevant, since there are nost contraint on the hardware.
+
+  PlatformVolatility(PVOL)  
+  [LOW - 0,87]
+  The platform of the system is composted of: operating systems, application server, framework (e.g. J2EE), IDEs, the cars' electronics, smartphones' hardware. Each of them is receive a major update (both hardware and software) at most 1 time for year. 
+
+Personnel Factors
+  Analyst Capability (ACAP)
+  [NOMINAL - 1,00]
+  The analysts of this project are MSc graduated students without experience. Their decisions are driven by guidelines, good practices, and personal knowledge.
+
+  Programmer Capability (PCAP)
+  [NOMINAL - 1,00]
+  The programmers are the same people that have designed the project. They know very well the principles of objective oriented programming languages and the main patterns.
+
+  Personnel Continuity (PCON)
+  [VERY HIGH - 0,81]
+  The project has been followed by the team from the beginning to the end.
+
+  Applications Experience (APEX)
+  [LOW - 1,10]
+  The majority of the software and technologies that the developers is supposed to deal with is almost unknown.
+
+  Platform Experience (PLEX)
+  [LOW - 1,09]
+  The majority of the software and hardware that the developers is supposed to deal with is almost unknown.
+
+  Language and Tool Experience (LTEX)
+  [LOW - 1,09]
+  This level is an average value considering a good knowledge of Java programming language, moderate of J2EE, and poor of C# and Objective-C.
+
+Project Factors
+  Use of Software Tools (TOOL)  
+  [VERY LOW - 1,17]
+  CASE tools were not used during the development of the project.
+
+  Multisite Development (SITE)
+  [Extra High - 0,80]
+  The team is very small (2 people) and have worked all together, in the same room. They also use instant message clients to talk.
+
+General Factor
+  Required Development Schedule (SCED)
+  [NOMINAL - 1,00]
+  The schedule of the project has been completely respected, without rushing before the milestones.

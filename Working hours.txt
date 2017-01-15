@@ -14,3 +14,8 @@ ITPD
 Together:
 Reppucci: +3h + 4h [7h]
 Peverelli: +4h +2h [6h]
+
+PP
+Together: 6 [6]
+Reppucci: 6 [6]
+Peverelli: 
