@@ -1,0 +1,175 @@
+INTERNAL LOGICAL FILES
+
+Any set of data originated and maintained by the application is considered an Inernal Logical File (ILF).
+
+ ILFs are rated and scored, and the rating is based upon the number of data elements (DETs) and the record element types (RETs).
+
+ DET’s are atomic data visible by the user. Record element types have a more elusive definition, but in simple terms can be seen as the number of sub-records contained within the main record of each ILF.
+
+ The table below lists both the level (low, average or high) and appropriate score (7, 10 or 15)
+
+ ---- insert table ---
+
+ In the following paragraph we list the ILFs identified within our application and their corresponding rating:
+
+ User data: record storing information about the users
+ DETs: 18
+ RETs: 3
+ Corresponding complexity: Low
+
+ Reservation: record storing information about a user-made reservation
+ DETs: 5
+ RETs: 2
+ Corresponding complexity: Low
+
+Pofile stats: data derived from each user's rides 
+ DETs: 3
+ RETs: 1
+ Corresponding complexity: Low
+
+ Payment: record of a user's payment
+ DETs: 9
+ RETs: 3
+ Corresponding complexity: Low
+
+ Ride: record containing information about a single ride
+ DETs: 5
+ RETs: 3
+ Corresponding complexity: Low
+
+ Safe area: a record storing the information about safe areas
+ DETs: 3
+ RETs: 1
+ Corresponding complexity: Low
+
+ Car state: record storing information about the sate of a car
+ DETs: 9
+ RETs: 1
+ Corresponding complexity: Low
+
+ Retrieval request: record storing a car retrieval request
+ DETs: 5
+ RETs: 2
+ Corresponding complexity: Low
+
+ Employee data: record storing information about an employee
+ DETs: 6
+ RETs: 2
+ Corresponding complexity: Low
+
+//TODO ILF for website page (see new ER diagram)
+
+ UFP = 9 * 7 = 63
+
+ For reference on how these fiures were extracted, consult the entity-relation diagram present in the PowerEnJoy Design Document, and the following material: 
+ http://www.functionpointmodeler.com/fpm-infocenter/index.jsp?topic=%2Fcom.functionpointmodeler.fpm.help%2Fditafiles%2Fconcepts%2Fcon-91.html
+
+ EXTERNAL INTERFACE FILES
+
+ External Interface Files (EIF) are files created and managed by another application, but used by the application for which the function point count is beibg carried out. 
+ The rating is based upon the number of data elements (DETs) and the record types (RETs). The table below lists both the level (low, average or high) and appropriate score (5, 7 or 10) 
+
+ --- insert table ---
+
+ Maps provided by Google
+ Considering that the maps are provided by an external service, an accurate analysis of DETs RETs proves to be rather inparctical, but we can assume the worst-case amount of data to manage to be high.
+ Corresponding complexity: High
+
+ UFP = 1 * 10 = 10
+
+ EXTERNAL INPUT
+
+ External Inputs (EI) are transactions (or elementary processes) that bring data from outside the application domain (or application boundary) to inside that application boundary.
+ EI’s are rated and scored accordong to the number of data element types (DET’s) and the file types referenced (FTR’s). 
+ File Types Referenced(FTR) are file types referenced by a transaction. An FTR must also be an internal logical file or external interface file.
+ The table below lists both the level (low, average or high) and appropriate score (3, 4 or 6).
+
+ --- insert table ---
+
+ Registration (with data insertion)
+ DETs: 18
+ FTRs: 1 
+ Corresponding complexity: average
+
+Car reservation
+DETs: 5
+FTRs: 3
+Corresponding complexity: high
+
+Modify profile data
+DETs: 17
+FTRs: 1
+Corresponding complexity: average
+
+NOTE : the function point count takes into consideration the fact that three different clients will be developed through three different programming languages. As a result of this, each input, output or inquiry involving both the client side and the server of the application will be counted in total four times, each time with the appropriate coefficient derpending on the selected programming language 
+
+UFP = 2 * 4 + 6 = 14 (considered four times)
+
+ EXTERNAL OUTPUT
+
+ External Outputs (EO) are transactions (or elementary processes) that take data from a resting position to outside the application domain and  present information to a user through processing logic other than, or in addition to, the retrieval of data or control information . The processing logic must contain at least one mathematical formula or calculation, create derived data, maintain one or more ILFs or alter the behavior of the system. 
+ EOs are rated and scored according to the number of data elements (DETs) and the file types referenced (FTRs). The table below lists both the level (low, average or high) and appropriate score (4, 5 or 7).
+
+ --- insert table ---
+
+Retrieval notification
+DETs: 2
+FTRs: 1
+Corresponding complexity: low
+
+Display personal data
+DETs: 19
+FTRs: 1
+Corresponding complexity: low
+
+Display payment history
+DETs: 9
+FTRs: 1
+Corresponding complexity: low
+
+UFP = 2 * 4 (considered four times) + 4 = 8 (considered four times ) + 4
+
+ EXTERNAL INQUIRY
+
+External Inquiry (EQ) is an elementary process with both input and output components that results in data retrieval from one or more internal logical files and external interface files. The input process does not update or maintain any FTRs (Internal Logical Files or External Interface Files) and the output side does not contain derived data.
+
+Payment data validation: validation of the credit card data provided by the user 
+DETs: 2
+FTRs: 1 
+Corresponding complexity: low
+
+Password retrieval: 
+DETs: 2
+FTRs: 1
+Corresponding complexity: low
+
+Payment request:
+DETs: 3
+FTRs: 1
+Corresponding complexity: low
+
+Browse website( request of the static page ):
+DETs: 1
+FTRs: 1
+Corresponding complexity: low
+
+Login
+DETs: 2
+FTRs: 1
+Corresponding complexity: low
+
+Car positions inquiry
+DETs: 4
+FTRs: 1
+Corresponding complexity: low
+
+Map inquiry (to the external system)
+DETs: 2 
+FTRs: NA
+Corresponding complexity: low 
+
+UFP = 6 * 3 (considered four times) + 3 = 18 (considered four times) + 3
+
+
+---------- TOTAL COUNT = 80 + 40(considered four times) 
+			SLOC count: 46 * 80 + 40 * ( 53(java) + 27(Objective C) + 54(C#) + 46(J2EE)) = 10.880 
