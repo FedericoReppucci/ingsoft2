@@ -9,16 +9,13 @@ Post-architecture effort estimation.
 
 Product factors
   RequiredSoftwareReliability(RELY) 
-  [NOMINAL - 1.00]
-      - The user cannot open the car
-      - The car remains open (It doesn't close automatically)
-      - ...
+  [NOMINAL - 1,00]
   A system failure can at most cause the loss of a small amount of money. For instance, during the failure, a user could not be able to reserve a car or the payment procedure could not be well performed.
 
-  DataBaseSize(DATA) ***
-  [ - ]
+  DataBaseSize(DATA)
+  [NOMINAL - 1,00]
   The DATA cost driver is obtained by calculating the ratio of bytes in the testing database to SLOC in the program.
-  In the testing database, we assume that each field, being always raw data (string, dates, identifiers, numbers, booleans), can take up at most 20byte. This is a pessimistic upper bound that can be useful for a quick estimate of the testing database size.
+  In the testing database, we assume that each field, being always raw data (string, dates, identifiers, numbers, booleans), can take up at most 20byte. This is a pessimistic upper bound, useful for a quick estimate of the testing database size.
   We consider to have:
   - 100 users: each user, considering all its fields, takes up at most 20byte * 18 = 360byte
   - 10 ride/user: each ride, considering all its fields, takes up at most 20byte * 5 = 100byte
@@ -35,12 +32,12 @@ Product factors
   We consider to have 100 points the describe the edges of polygons: the total occupied size is 100 * 8 * 2 byte = 16000byte
 
   The total size is: 446KB
-  From the functional point, the SLOC is: 
+  From the functional point, the SLOC is: 10880 (see Functional Point Count capture)
 
-  Hence, the ratio DBbyte/SLOC is: 446000/
+  Hence, the ratio DBbyte/SLOC is: 446000/10880 = 41 
 
   ProductComplexity(CPLX)
-  [avarage: ]
+  [avarage: 1,05]
   The analysis is done on the entire system, considering always the worst case.
   * Control Operations [HIGH - 1,17]: the system uses queues and complex data structures, in order to handle users, cars, reservation request.
   * Computational Operations [LOW - 0,87]: the system evaluates a very simple computational operations. 
@@ -59,7 +56,7 @@ Product factors
 
   DocumentationMatchtoLife-CycleNeeds(DOCU)
   [NOMINAL - 1,00]
-  The project is well documented. A set of starting documents (RASD, DD, ITPD) analyze each aspect of the project, from the requirements to the software components. Also, the code is documented, becoming easy to ready and quick to modify.
+  The project is well documented. A set of starting documents (RASD, DD, ITPD) analyze each aspect of the project, from the requirements to the software components. Also, the code is documented, making it easy to ready and quick to modify.
 
 
 Platform factors
@@ -69,7 +66,7 @@ Platform factors
 
   MainStorageConstraint(STOR)
   [NOMINAL - 1,00]
-  This constraint is essentially irrelevant, since there are nost contraint on the hardware.
+  This constraint is essentially irrelevant, since there are not contraint on the hardware.
 
   PlatformVolatility(PVOL)  
   [LOW - 0,87]

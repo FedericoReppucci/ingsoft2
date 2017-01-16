@@ -1,0 +1,24 @@
+
+PREC    0,05
+FLEX    0,03
+RESL
+TEAM    0,01
+PMA     0,05
+
+RELY    1,00
+DATA    1,00
+CPLX    1,05
+RUSE    1,00
+DOCU    1,00
+TIME    1,00
+STOR    1,00
+PVOL    0,87
+ACAPO   1,00
+PCAP    1,00
+PCON    0,81
+APEX    1,10
+PLEX    1,09
+LTEX    1,09
+TOOL    1,17
+SITE    0,80
+SCED    1,00
