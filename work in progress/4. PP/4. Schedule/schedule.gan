@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2016-10-01" view-index="0" gantt-divider-location="544" resource-divider-location="300" version="2.8.1" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2016-10-01" view-index="0" gantt-divider-location="394" resource-divider-location="300" version="2.8.1" locale="en_US">
     <description/>
-    <view zooming-state="default:8" id="gantt-chart">
-        <field id="tpd3" name="Name" width="310" order="0"/>
-        <field id="tpd4" name="Begin date" width="91" order="1"/>
-        <field id="tpd5" name="End date" width="137" order="2"/>
+    <view zooming-state="default:10" id="gantt-chart">
+        <field id="tpd3" name="Name" width="220" order="0"/>
+        <field id="tpd4" name="Begin date" width="68" order="1"/>
+        <field id="tpd5" name="End date" width="100" order="2"/>
         <timeline><![CDATA[0]]></timeline>
     </view>
     <view id="resource-table">
@@ -34,7 +34,7 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Project" color="#8cb6ce" shape="0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0" meeting="false" start="2016-10-16" duration="113" complete="0" expand="true"/>
+        <task id="0" name="Project" color="#8cb6ce" shape="0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0" meeting="false" start="2016-10-16" duration="397" complete="0" expand="true"/>
         <task id="9" name="RASD" color="#8cb6ce" meeting="false" start="2016-10-20" duration="25" complete="0" expand="false">
             <task id="37" name="Initial problem analisys" meeting="false" start="2016-10-20" duration="2" complete="0" expand="true"/>
             <task id="38" name="Goals identification" meeting="false" start="2016-10-21" duration="5" complete="0" expand="true"/>
@@ -60,15 +60,19 @@
             <task id="64" name="Final revision" meeting="false" start="2016-12-11" duration="1" complete="0" expand="true"/>
             <task id="65" name="DD milestone" color="#8cb6ce" meeting="true" start="2016-12-11" duration="0" complete="0" expand="true"/>
         </task>
-        <task id="21" name="ITPD" meeting="false" start="2016-12-16" duration="30" complete="0" expand="true">
+        <task id="21" name="ITPD" meeting="false" start="2016-12-16" duration="30" complete="0" expand="false">
             <task id="70" name="Introduction" meeting="false" start="2016-12-16" duration="1" complete="0" expand="true"/>
             <task id="71" name="Integration strategy" meeting="false" start="2016-12-16" duration="1" complete="0" expand="true"/>
             <task id="72" name="Individual tests" meeting="false" start="2016-12-21" duration="15" complete="0" expand="true"/>
             <task id="73" name="Glossary and references" meeting="false" start="2017-01-07" duration="1" complete="0" expand="true"/>
             <task id="74" name="ITPD milestone" color="#8cb6ce" meeting="true" start="2017-01-15" duration="0" complete="0" expand="true"/>
         </task>
-        <task id="25" name="PP" meeting="false" start="2017-01-12" duration="1" complete="0" expand="true"/>
-        <task id="28" name="PP milestone" color="#8cb6ce" meeting="true" start="2017-01-22" duration="0" complete="0" expand="true"/>
+        <task id="76" name="Programming" meeting="false" start="2016-10-01" duration="1" complete="0" expand="true"/>
+        <task id="77" name="Unit testing" meeting="false" start="2016-10-01" duration="1" complete="0" expand="true"/>
+        <task id="78" name="System test" meeting="false" start="2016-10-01" duration="1" complete="0" expand="true"/>
+        <task id="79" name="Deployment" meeting="false" start="2016-10-01" duration="1" complete="0" expand="true"/>
+        <task id="80" name="Acceptance test" meeting="false" start="2016-10-01" duration="1" complete="0" expand="true"/>
+        <task id="81" name="Maintinance/Technical support" meeting="false" start="2016-10-01" duration="1" complete="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>

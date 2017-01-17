@@ -1,24 +1,44 @@
 
-PREC    0,05
-FLEX    0,03
-RESL
-TEAM    0,01
-PMA     0,05
+PREC    	0,05
+FLEX    	0,03
+RESL		4,24
+TEAM    	0,01
+PMA     	0,05
 
-RELY    1,00
-DATA    1,00
-CPLX    1,05
-RUSE    1,00
-DOCU    1,00
-TIME    1,00
-STOR    1,00
-PVOL    0,87
-ACAPO   1,00
-PCAP    1,00
-PCON    0,81
-APEX    1,10
-PLEX    1,09
-LTEX    1,09
-TOOL    1,17
-SITE    0,80
-SCED    1,00
+RELY    	1,00
+DATA    	1,00
+CPLX    	1,05
+RUSE    	1,00
+DOCU    	1,00
+TIME    	1,00
+STOR    	1,00
+PVOL    	0,87
+ACAPO   	1,00
+PCAP    	1,00
+PCON    	0,81
+APEX    	1,10
+PLEX    	1,09
+LTEX    	1,09
+TOOL    	1,17
+SITE    	0,80
+SCED    	1,00
+
+
+PM = A*SIZE^E*PROD EMi
+
+A		2,94
+E		0,9538
+B		0,91
+KSLOC	10,88
+PM		26
+PEOPLE	2
+MONTHS	13
+
+Analysis and Design					23 %		3
+Programming				    	  	32 %		4,16 
+Unit testing					  	10 %		1,3
+System testing                    	10 %		1,3
+Deployment						  	10 %		1,3
+Acceptance test                	  	10 %		1,3
+Maintinance/Technical support		10 %		1,3
+

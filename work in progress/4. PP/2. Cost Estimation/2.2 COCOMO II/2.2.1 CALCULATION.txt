@@ -12,6 +12,9 @@ Development Flexibility (FLEX)
 The only pre-established requirements are the pre-existing interfaces of the cars
 
 Architecture / Risk Resolution (RESL)
+[Nominal - 4,24]
+
+
 
 Team Cohesion (TEAM)
 [VERY HIGH - 0,01] 
