@@ -34,8 +34,9 @@ PM		26
 PEOPLE	2
 MONTHS	13
 
+
 Analysis and Design					23 %		3
-Programming				    	  	32 %		4,16 
+Development				    	  	32 %		4,16 (+1 extra)
 Unit testing					  	10 %		1,3
 System testing                    	10 %		1,3
 Deployment						  	10 %		1,3

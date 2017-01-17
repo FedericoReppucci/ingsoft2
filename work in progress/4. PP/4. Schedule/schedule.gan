@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2016-10-01" view-index="0" gantt-divider-location="394" resource-divider-location="300" version="2.8.1" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-05-01" view-index="0" gantt-divider-location="441" resource-divider-location="300" version="2.8.1" locale="en_US">
     <description/>
-    <view zooming-state="default:10" id="gantt-chart">
-        <field id="tpd3" name="Name" width="220" order="0"/>
-        <field id="tpd4" name="Begin date" width="68" order="1"/>
-        <field id="tpd5" name="End date" width="100" order="2"/>
+    <view zooming-state="default:9" id="gantt-chart">
+        <field id="tpd3" name="Name" width="281" order="0"/>
+        <field id="tpd4" name="Begin date" width="67" order="1"/>
+        <field id="tpd5" name="End date" width="72" order="2"/>
         <timeline><![CDATA[0]]></timeline>
+        <option id="color.recent"><![CDATA[#009900 #ff0033 #0000ff #eeeeee]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="209" order="0"/>
@@ -34,45 +35,56 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Project" color="#8cb6ce" shape="0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0" meeting="false" start="2016-10-16" duration="397" complete="0" expand="true"/>
-        <task id="9" name="RASD" color="#8cb6ce" meeting="false" start="2016-10-20" duration="25" complete="0" expand="false">
-            <task id="37" name="Initial problem analisys" meeting="false" start="2016-10-20" duration="2" complete="0" expand="true"/>
-            <task id="38" name="Goals identification" meeting="false" start="2016-10-21" duration="5" complete="0" expand="true"/>
-            <task id="39" name="Domain Assumptions identification" meeting="false" start="2016-10-25" duration="1" complete="0" expand="true"/>
-            <task id="40" name="Scenarios identification" meeting="false" start="2016-10-29" duration="7" complete="0" expand="true"/>
-            <task id="41" name="Use cases identification" meeting="false" start="2016-10-30" duration="6" complete="0" expand="true"/>
-            <task id="42" name="Requirements identification" meeting="false" start="2016-11-04" duration="6" complete="0" expand="true"/>
-            <task id="43" name="Alloy model" meeting="false" start="2016-11-09" duration="5" complete="0" expand="true"/>
-            <task id="44" name="RASD milestone" color="#8cb6ce" meeting="true" start="2016-11-13" duration="0" complete="0" expand="true"/>
+        <task id="0" name="Project" color="#8cb6ce" shape="0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0" meeting="false" start="2016-10-20" duration="429" complete="0" expand="true">
+            <task id="82" name="RASD" color="#8cb6ce" meeting="false" start="2016-10-20" duration="25" complete="0" expand="true">
+                <task id="83" name="Initial problem analisys" color="#009900" meeting="false" start="2016-10-20" duration="2" complete="0" expand="true"/>
+                <task id="84" name="Goals identification" color="#009900" meeting="false" start="2016-10-21" duration="5" complete="0" expand="true"/>
+                <task id="85" name="Domain Assumptions identification" color="#009900" meeting="false" start="2016-10-25" duration="1" complete="0" expand="true"/>
+                <task id="128" name="meeting with stakeholders" color="#009900" meeting="false" start="2016-10-25" duration="1" complete="0" expand="true"/>
+                <task id="86" name="Scenarios identification" color="#009900" meeting="false" start="2016-10-29" duration="7" complete="0" expand="true"/>
+                <task id="87" name="Use cases identification" color="#0000ff" meeting="false" start="2016-10-30" duration="6" complete="0" expand="true"/>
+                <task id="88" name="Requirements identification" color="#0000ff" meeting="false" start="2016-11-04" duration="6" complete="0" expand="true"/>
+                <task id="89" name="Alloy model" color="#0000ff" meeting="false" start="2016-11-09" duration="5" complete="0" expand="true"/>
+                <task id="90" name="RASD milestone" color="#8cb6ce" meeting="true" start="2016-11-13" duration="0" complete="0" expand="true"/>
+            </task>
+            <task id="91" name="Improvement of RASD" meeting="false" start="2016-11-16" duration="7" complete="0" expand="true">
+                <task id="92" name="RASD update" color="#ff0033" meeting="false" start="2016-11-16" duration="1" complete="0" expand="true"/>
+                <task id="93" name="RASD update" color="#ff0033" meeting="false" start="2016-11-19" duration="1" complete="0" expand="true"/>
+                <task id="94" name="RASD update" color="#ff0033" meeting="false" start="2016-11-22" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="95" name="DD" meeting="false" start="2016-11-22" duration="20" complete="0" expand="true">
+                <task id="96" name="Introduction" color="#009900" meeting="false" start="2016-11-22" duration="2" complete="0" expand="true"/>
+                <task id="129" name="meeting with stakeholders" color="#009900" meeting="false" start="2016-11-23" duration="1" complete="0" expand="true"/>
+                <task id="97" name="Software components identification" color="#009900" meeting="false" start="2016-11-24" duration="12" complete="0" expand="true"/>
+                <task id="98" name="User Interface Design" color="#ff0033" meeting="false" start="2016-11-30" duration="1" complete="0" expand="true"/>
+                <task id="99" name="Data Model" color="#0000ff" meeting="false" start="2016-12-03" duration="1" complete="0" expand="true"/>
+                <task id="100" name="Algorithm design" color="#ff0033" meeting="false" start="2016-12-06" duration="1" complete="0" expand="true"/>
+                <task id="101" name="Requirements traceability" color="#0000ff" meeting="false" start="2016-12-06" duration="1" complete="0" expand="true"/>
+                <task id="102" name="Final revision" color="#0000ff" meeting="false" start="2016-12-11" duration="1" complete="0" expand="true"/>
+                <task id="103" name="DD milestone" color="#8cb6ce" meeting="true" start="2016-12-11" duration="0" complete="0" expand="true"/>
+            </task>
+            <task id="104" name="ITPD" meeting="false" start="2016-12-16" duration="30" complete="0" expand="true">
+                <task id="105" name="Introduction" color="#0000ff" meeting="false" start="2016-12-16" duration="1" complete="0" expand="true"/>
+                <task id="106" name="Integration strategy" color="#0000ff" meeting="false" start="2016-12-16" duration="1" complete="0" expand="true"/>
+                <task id="107" name="Individual tests" color="#ff0033" meeting="false" start="2016-12-21" duration="15" complete="0" expand="true"/>
+                <task id="108" name="Glossary and references" color="#0000ff" meeting="false" start="2017-01-07" duration="1" complete="0" expand="true"/>
+                <task id="109" name="ITPD milestone" color="#8cb6ce" meeting="true" start="2017-01-15" duration="0" complete="0" expand="true"/>
+            </task>
+            <task id="110" name="Development" color="#009900" meeting="false" start="2017-01-15" duration="138" complete="0" expand="true"/>
+            <task id="130" name="meeting with stakeholders" color="#009900" meeting="false" start="2017-03-19" duration="1" complete="0" expand="true"/>
+            <task id="117" name="Development milestone" color="#8cb6ce" meeting="true" start="2017-06-01" duration="0" complete="0" expand="true"/>
+            <task id="111" name="Unit testing" color="#ff0033" meeting="false" start="2017-06-05" duration="41" complete="0" expand="true"/>
+            <task id="120" name="Unit testing milestone" color="#8cb6ce" meeting="true" start="2017-07-15" duration="0" complete="0" expand="true"/>
+            <task id="112" name="System test" color="#009900" meeting="false" start="2017-07-15" duration="41" complete="0" expand="true"/>
+            <task id="131" name="meeting with stakeholders" color="#009900" meeting="false" start="2017-08-05" duration="1" complete="0" expand="true"/>
+            <task id="122" name="System test milestone" color="#8cb6ce" meeting="true" start="2017-08-24" duration="0" complete="0" expand="true"/>
+            <task id="113" name="Deployment" color="#009900" meeting="false" start="2017-08-24" duration="41" complete="0" expand="true"/>
+            <task id="124" name="Development milestone" color="#8cb6ce" meeting="true" start="2017-10-03" duration="0" complete="0" expand="true"/>
+            <task id="132" name="meeting with stakeholders" color="#009900" meeting="false" start="2017-10-04" duration="1" complete="0" expand="true"/>
+            <task id="114" name="Acceptance test" color="#0000ff" meeting="false" start="2017-10-03" duration="40" complete="0" expand="true"/>
+            <task id="126" name="Acceptance test milestone" color="#8cb6ce" meeting="true" start="2017-11-11" duration="0" complete="0" expand="true"/>
+            <task id="115" name="Maintinance/Technical support" color="#009900" meeting="false" start="2017-11-11" duration="42" complete="0" expand="true"/>
         </task>
-        <task id="16" name="Improvement of RASD" meeting="false" start="2016-11-16" duration="7" complete="0" expand="false">
-            <task id="48" name="RASD update" meeting="false" start="2016-11-16" duration="1" complete="0" expand="true"/>
-            <task id="49" name="RASD update" meeting="false" start="2016-11-19" duration="1" complete="0" expand="true"/>
-            <task id="50" name="RASD update" meeting="false" start="2016-11-22" duration="1" complete="0" expand="true"/>
-        </task>
-        <task id="18" name="DD" meeting="false" start="2016-11-22" duration="20" complete="0" expand="false">
-            <task id="58" name="Introduction" meeting="false" start="2016-11-22" duration="2" complete="0" expand="true"/>
-            <task id="59" name="Software components identification" meeting="false" start="2016-11-24" duration="12" complete="0" expand="true"/>
-            <task id="60" name="User Interface Design" meeting="false" start="2016-11-30" duration="1" complete="0" expand="true"/>
-            <task id="61" name="Data Model" meeting="false" start="2016-12-03" duration="1" complete="0" expand="true"/>
-            <task id="62" name="Algorithm design" meeting="false" start="2016-12-06" duration="1" complete="0" expand="true"/>
-            <task id="63" name="Requirements traceability" meeting="false" start="2016-12-06" duration="1" complete="0" expand="true"/>
-            <task id="64" name="Final revision" meeting="false" start="2016-12-11" duration="1" complete="0" expand="true"/>
-            <task id="65" name="DD milestone" color="#8cb6ce" meeting="true" start="2016-12-11" duration="0" complete="0" expand="true"/>
-        </task>
-        <task id="21" name="ITPD" meeting="false" start="2016-12-16" duration="30" complete="0" expand="false">
-            <task id="70" name="Introduction" meeting="false" start="2016-12-16" duration="1" complete="0" expand="true"/>
-            <task id="71" name="Integration strategy" meeting="false" start="2016-12-16" duration="1" complete="0" expand="true"/>
-            <task id="72" name="Individual tests" meeting="false" start="2016-12-21" duration="15" complete="0" expand="true"/>
-            <task id="73" name="Glossary and references" meeting="false" start="2017-01-07" duration="1" complete="0" expand="true"/>
-            <task id="74" name="ITPD milestone" color="#8cb6ce" meeting="true" start="2017-01-15" duration="0" complete="0" expand="true"/>
-        </task>
-        <task id="76" name="Programming" meeting="false" start="2016-10-01" duration="1" complete="0" expand="true"/>
-        <task id="77" name="Unit testing" meeting="false" start="2016-10-01" duration="1" complete="0" expand="true"/>
-        <task id="78" name="System test" meeting="false" start="2016-10-01" duration="1" complete="0" expand="true"/>
-        <task id="79" name="Deployment" meeting="false" start="2016-10-01" duration="1" complete="0" expand="true"/>
-        <task id="80" name="Acceptance test" meeting="false" start="2016-10-01" duration="1" complete="0" expand="true"/>
-        <task id="81" name="Maintinance/Technical support" meeting="false" start="2016-10-01" duration="1" complete="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
