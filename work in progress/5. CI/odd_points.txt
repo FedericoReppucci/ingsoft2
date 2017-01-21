@@ -1,0 +1,126 @@
+1) All class names, interface names, method names, class variables, method variables, and constants used should have meaningful names and do what the name suggests.
+• classes: no problems detected.
+• interfaces: no problems detected.
+• methods: no problems detected.
+• class variables: no problems detected.
+• method variables: no problems detected.
+• constants: no problems detected.
+
+3) Class names are nouns, in mixed case, with the first letter of each word in capitalized.
+The name of the class is SetCalendar. It is not composed of nouns in mixed case, but it represents the XML element model "set-calendar". Thus, 
+its name is appropriate.
+
+5) Method names should be verbs, with the first letter of each addition word capitalized.
+All the methods are verbs with the first letter of each addition word capitalized.
+
+7) Constants are declared using all uppercase with words separated by an underscore.
+The following constant is in lowercase instead of being in uppercase.
+	line 50: public static final String module = SetCalendar.class.getName(); 
+
+9) No tabs are used to indent
+All indentations are done using tabs.
+
+11) All if, while, do-while, try-catch, and for statements that have only one statement to execute are surrounded by curly braces. 
+• if statement: each if statement has curly braces.
+• while statement: there are not while statements.
+• do-while statement: there are not do-while statements.
+• try-catch statement: each try-catch statement has curly braces.
+• for statement: there are not for statements.
+
+13) Where practical, line length does not exceed 80 characters.
+	line 46: 166 characters (it is a comment)
+	line 110: 99 characters
+	line 112: 105 characters
+	line 113: 137 characters
+	line 113: 133 characters
+	line 117: 82 characters
+	line 119: 92 characters
+	line 130: 87 characters
+	line 136: 82 characters
+	line 138: 126 characters
+	line 141: 86 characters
+	line 143: 82 characters
+	line 144: 84 characters
+	line 146: 82 characters
+	line 147: 86 characters
+	line 148: 86 characters
+	line 149: 84 characters
+	line 150: 103 characters
+	line 151: 99 characters
+	line 152: 84 characters
+	line 153: 89 characters
+	line 165: 93 characters
+	line 192: 118 characters
+	line 201: 127 characters
+	line 232: 105 characters
+	line 254: 98 characters
+	line 267: 97 characters
+	line 335: 111 characters
+
+15) Line break occurs after a comma or an operator
+	No problems detected.
+
+17) A new statement is aligned with the beginning of the expression at the same level as the previous line
+	No problems detected.
+
+19) Commented out code contains a reason for being commented out and a date it can be removed from the source file if determined it is no longer needed.
+	There is not  commented out code;
+
+21) The public class is the first class or interface in the file.
+	Yes, it is.
+
+23) Check that the javadoc is complete.
+	The javadoc miss for the following:
+
+	Constructors
+		public SetCalendar(Element element, SimpleMethod simpleMethod) throws MiniLangException
+	
+	Methods
+		private static boolean autoCorrect(Element element)
+		private static int parseInt(String intStr)
+
+25) The class or interface declarations shall be in the following order:
+	(a) class/interface documentation comment; 
+	(b) class or interface statement;
+	(c) class/interface implementation comment, if necessary; 
+	(d) class (static) variables;
+		i. first public class variables;
+		ii. next protected class variables;
+		iii. next package level (no access modifier);
+		iv. last private class variables. 
+	(e) instance variables;
+		i. first public instance variables;
+		ii. next protected instance variables;
+		iii. next package level (no access modifier);
+		iv. last private instance variables. 
+	(f) constructors;
+	(g) methods.
+
+There is the "autoCorrect" method in the attribute declaration section. By the way, the order of attributes declaration is respected.2
+
+27) Check that the code is free of duplicates, long methods, big classes, breaking encapsulation, as well as if coupling and cohesion are adequate
+	duplicates: the class is free of duplicated code.
+	long method: the longest method (exec) has around 100 rows. I think that is not too much long since it is written to performe just one purpose and there are not pieces of code usefull in different context.
+	big classes: the class has 335 rows. It has a medium size.
+	breaking encapsulation: there are no breaking encapsulation, since the class doesn't implement interfaces.
+	coupling and cohesion: the cohesion is high, especially in the exec method.
+
+29) Check that variables are declared in the proper scope
+	Each variable is declared in the correc scope.
+
+31) Check that all object references are initialized before use
+	• the "element" object, passed to "SetCalendar" constructor, can be null during the execution.
+	• the "element" object, passed to "autoCorrect" method, can be null during the execution.
+	• the "intStr" object, passed to "parseInt" method, can be null during the execution.
+	• 
+
+
+
+
+
+
+
+
+
+
+
