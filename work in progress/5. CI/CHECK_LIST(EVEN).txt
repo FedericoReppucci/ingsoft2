@@ -1,0 +1,115 @@
+CHECK LIST (EVEN)
+
+2.1 NAMING COVENTIONS
+
+2 No one-character variables are used 
+
+4 Interface names are correctly capitalized
+
+6 Variable names are correctly capitalized according to convention
+
+2.2 INDENTION
+
+8 four spaces are consistently used to indent. At line 111, eight spaces are used insead of four
+
+2.3 BRACES
+
+10 The "Kernighan and Ritchie" bracing style is used consistently
+
+2.4 FILE ORGANIZATION
+
+12 Blank lines are correctly used to separate sections
+
+14 Multiple lines exceed 120 charaters:
+      - lines 110 and 111: MinilangValidate.attributeNames(...
+      - line 134: throw new IllegalArgumentException(...
+      - line 183: locale = (Locale) ObjectType.simpleTypeConvert(...
+      - line 192: timeZone = (TimeZone) ObjectType.simpleTypeConvert(...
+      - line 200: fromStamp = (Timestamp) MiniLangUtil.convertType(...
+
+2.5 WRAPPING LINES
+
+16 There are no nested-expressions breaks
+
+2.6 COMMENTS
+
+18 The comments explain clearly what a section of code does, even though they may not be so understandable without knowledge of the context in which the class operates. 
+The reference link for the mini-language documentation is outdated, but the page has a link which redirects to the new documentation page.
+
+2.6 JAVA SOURCE FILES
+
+20 The java souce files contains more than one public class, since it contains both the SetCalendar class and the SetCalendarFactory class.
+
+22 The class does not implement any interface. It extends the MethodOperation abstract class, and does so consistently with the class documentation. 
+
+2.7 PACKAGE AND IMPORT STATEMENTS
+
+24 Package and import statements follow conventions
+
+2.9 CLASS AND INTERFACE DECLARATIONS
+
+26 Methods seem grouped by accessibility in this way:
+	- private static methods first
+	- constructors after the class attributes
+	- public methods right after
+rather then by functionality. That being said, there are only two public static methods, which are both used to address compatibility issues, and one public method which fulfills the class' main functionality, other than a constructor and a toString method. Therefore the methods result also gruped by functionality in this case. A more extensive analysis should be conduced on other source files in order to clarify this point.
+
+2.10 INITIALIZATION AND DECLARATIONS
+
+28 Variables and class members are of the correct type and have the right visibility
+
+30 When a new object is desired, either constructor or appropriate getInstance methods are called
+
+32 Variables are initialized where declared, unless they depend on a computation. In this case all the private static variables of the class depend on a computation carried out in the constructor
+
+2.11 METHOD CALLS
+
+34 parameters are presented in the correct order
+
+36 methods returned values are used properly
+
+2.12 ARRAYS
+
+38 There is no array/collection access by indexes
+
+2.13 OBJECT COMPARISON
+
+40 '==' operator is used in the following instances:
+	- line 168:  if (!setIfNull && newValue == null) 
+	- line 185, 188: if (locale == null) 
+	- line 194, 197: if (timeZone == null)
+
+2.14 OUTPUT FORMAT 
+
+42 At line 158:  
+
+	Debug.logWarning(exc, "Error evaluating scriptlet [" + this.scriptlet + "]: " + exc, module); 
+
+the message is rather generic, but further information is provided by the methods throwing the exception. The same reasoning applies for line 223:
+
+	throw new MiniLangRuntimeException("Exception thrown while parsing attributes: " + e.getMessage(), this);
+
+2.15 COMPUTATION, COMPARISONS AND ASSIGNMENTS
+
+44 no "brute force" solutions found
+
+46 there is no liberal use of parenthesis
+
+48 no integer arithmetic is used
+
+50 all error conditions are legitimate
+
+
+2.16 EXCEPTIONS
+
+52 all relevant exceptions are caught
+
+2.17 FLOW OF CONTROL
+
+54 no 'switch' statements used
+
+56 no loops in the code
+
+2.18 FILES
+
+58-60 no file manipulation (double check)
